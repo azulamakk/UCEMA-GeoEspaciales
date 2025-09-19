@@ -59,6 +59,126 @@
       "metadata": {},
       "data_hash": "29e77ca775970ff77d0fa6d8f33fa8c1",
       "storage_path": "data/essential/prescription_20250917.npz"
+    },
+    {
+      "identifier": "satellite_2024-06-01_2024-06-05",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-19T19:19:26.597699",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "939f9b8bd226faa15823c2955973a516",
+      "storage_path": "data/temporary/satellite_2024-06-01_2024-06-05_20250919_191926.npz"
+    },
+    {
+      "identifier": "weather_2024-06-01_2024-06-05",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-19T19:19:26.609049",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "785e0a2cbcfc319c60b3f811f797cd80",
+      "storage_path": "data/temporary/weather_2024-06-01_2024-06-05_20250919_191926.npz"
+    },
+    {
+      "identifier": "soil_-59.8_-33.8",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-19T19:19:26.610663",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "0efdac1af51b4228b112b50bd3c93c18",
+      "storage_path": "data/temporary/soil_-59.8_-33.8_20250919_191926.npz"
+    },
+    {
+      "identifier": "processed_20250919",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-19T19:19:26.632973",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "0bbaeef1d3af321f8c479303fe01ba50",
+      "storage_path": "data/temporary/processed_20250919_20250919_191926.npz"
+    },
+    {
+      "identifier": "alert_20250919_191926",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-19T19:19:26.681822",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "e77cfb2b16d3ff79deb61c4ded561a01",
+      "storage_path": "data/essential/alert_20250919_191926.npz"
+    },
+    {
+      "identifier": "prescription_20250919",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-19T19:19:27.081607",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "0c3c36d1b2b27df7ccd42e35311259f1",
+      "storage_path": "data/essential/prescription_20250919.npz"
+    },
+    {
+      "identifier": "satellite_2024-06-01_2024-06-05",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-19T19:21:55.642795",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "cb2e8918ee7d5b5a6f1aff4ba44ed811",
+      "storage_path": "data/temporary/satellite_2024-06-01_2024-06-05_20250919_192155.npz"
+    },
+    {
+      "identifier": "weather_2024-06-01_2024-06-05",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-19T19:21:55.657090",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "691526d826423f389b087b9d56b9adbf",
+      "storage_path": "data/temporary/weather_2024-06-01_2024-06-05_20250919_192155.npz"
+    },
+    {
+      "identifier": "soil_-61.4_-34.4",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-19T19:21:55.659526",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "dc1718a432587df86277af6dc178a6c9",
+      "storage_path": "data/temporary/soil_-61.4_-34.4_20250919_192155.npz"
+    },
+    {
+      "identifier": "processed_20250919",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-19T19:21:55.682834",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "9087d299c5b351ee527384356106cf35",
+      "storage_path": "data/temporary/processed_20250919_20250919_192155.npz"
+    },
+    {
+      "identifier": "alert_20250919_192155",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-19T19:21:55.728195",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "8b3519bc46af50fcba1b4bf60e9851d3",
+      "storage_path": "data/essential/alert_20250919_192155.npz"
+    },
+    {
+      "identifier": "prescription_20250919",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-19T19:21:56.036155",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "76ef73c643d5cd2c868d7a078071b478",
+      "storage_path": "data/essential/prescription_20250919.npz"
     }
   ]
 }

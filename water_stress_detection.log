@@ -79,3 +79,171 @@ Ensure that you are not aggregating at a higher resolution than you intended; th
 2025-09-19 18:02:25,667 - data_acquisition.soil_data - ERROR - Error retrieving soil data: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=30)
 2025-09-19 18:02:25,669 - __main__ - ERROR - Error acquiring data: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=30)
 2025-09-19 18:02:25,669 - __main__ - ERROR - Error in full analysis: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=30)
+2025-09-19 18:54:35,464 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-19 18:54:35,465 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-19 18:54:35,466 - __main__ - INFO - Starting single-region analysis for pampas_central, soybean from 2024-06-01 to 2024-06-10
+2025-09-19 18:54:35,466 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-19 18:55:22,161 - data_acquisition.soil_data - ERROR - Error retrieving soil data: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=30)
+2025-09-19 18:55:22,162 - __main__ - ERROR - Error acquiring data: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=30)
+2025-09-19 18:55:22,162 - __main__ - ERROR - Error in single region analysis: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=30)
+2025-09-19 18:55:22,162 - __main__ - ERROR - Error in full analysis: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=30)
+2025-09-19 18:56:29,272 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-19 18:56:29,273 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-19 18:56:29,273 - __main__ - INFO - Starting multi-region analysis for 4 agricultural regions, soybean from 2024-06-01 to 2024-06-05
+2025-09-19 18:56:29,273 - __main__ - INFO - Analyzing 4 regions: pampas_central, cordoba_agriculture, santa_fe_agriculture, buenos_aires_north
+2025-09-19 18:56:29,273 - __main__ - INFO - Analyzing region 1/4: pampas_central
+2025-09-19 18:56:29,273 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-19 18:57:33,300 - data_acquisition.soil_data - ERROR - Error retrieving soil data: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 18:57:33,303 - __main__ - ERROR - Error acquiring data: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 18:57:33,303 - __main__ - ERROR - Error in single region analysis: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 18:57:33,303 - __main__ - ERROR - Error analyzing region pampas_central: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 18:57:33,303 - __main__ - INFO - Analyzing region 2/4: cordoba_agriculture
+2025-09-19 18:57:33,303 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-19 18:57:38,855 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-19 18:57:38,855 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-19 18:57:38,856 - __main__ - INFO - Starting single-region analysis for test_area_small, soybean from 2024-06-01 to 2024-06-03
+2025-09-19 18:57:38,856 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-19 18:57:55,632 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-19 18:57:55,634 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-19 18:57:55,635 - __main__ - INFO - Starting single-region analysis for pampas_central, soybean from 2025-05-08 to 2025-09-05
+2025-09-19 18:57:55,635 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-19 18:58:38,824 - data_acquisition.soil_data - ERROR - Error retrieving soil data: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 18:58:38,830 - __main__ - ERROR - Error acquiring data: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 18:58:38,830 - __main__ - ERROR - Error in single region analysis: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 18:58:38,830 - __main__ - ERROR - Error analyzing region cordoba_agriculture: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 18:58:38,830 - __main__ - INFO - Analyzing region 3/4: santa_fe_agriculture
+2025-09-19 18:58:38,831 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-19 18:59:48,923 - data_acquisition.soil_data - ERROR - Error retrieving soil data: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 18:59:48,925 - __main__ - ERROR - Error acquiring data: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 18:59:48,925 - __main__ - ERROR - Error in single region analysis: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 18:59:48,925 - __main__ - ERROR - Error analyzing region santa_fe_agriculture: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 18:59:48,925 - __main__ - INFO - Analyzing region 4/4: buenos_aires_north
+2025-09-19 18:59:48,925 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-19 18:59:49,432 - googleapiclient.http - WARNING - Sleeping 1.73 seconds before retry 1 of 5 for request: POST https://earthengine.googleapis.com/v1/projects/earthengine-legacy/value:compute?prettyPrint=false&alt=json, after 429
+2025-09-19 18:59:51,672 - googleapiclient.http - WARNING - Sleeping 0.12 seconds before retry 2 of 5 for request: POST https://earthengine.googleapis.com/v1/projects/earthengine-legacy/value:compute?prettyPrint=false&alt=json, after 429
+2025-09-19 18:59:53,128 - googleapiclient.http - WARNING - Sleeping 6.86 seconds before retry 3 of 5 for request: POST https://earthengine.googleapis.com/v1/projects/earthengine-legacy/value:compute?prettyPrint=false&alt=json, after 429
+2025-09-19 19:01:17,660 - data_acquisition.soil_data - ERROR - Error retrieving soil data: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 19:01:17,663 - __main__ - ERROR - Error acquiring data: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 19:01:17,663 - __main__ - ERROR - Error in single region analysis: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 19:01:17,663 - __main__ - ERROR - Error analyzing region buenos_aires_north: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 19:01:17,664 - outputs.prescription_maps - WARNING - Skipping region pampas_central due to error: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 19:01:17,664 - outputs.prescription_maps - WARNING - Skipping region cordoba_agriculture due to error: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 19:01:17,664 - outputs.prescription_maps - WARNING - Skipping region santa_fe_agriculture due to error: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 19:01:17,664 - outputs.prescription_maps - WARNING - Skipping region buenos_aires_north due to error: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 19:01:17,664 - outputs.prescription_maps - INFO - Comprehensive prescription map created for 0 ha across 0 regions
+2025-09-19 19:01:17,666 - __main__ - INFO - Multi-region analysis completed successfully. Results saved to outputs/multi_region_20250919_190117.json
+2025-09-19 19:02:57,507 - data_acquisition.satellite_data - ERROR - Error extracting time series: Computation timed out.
+2025-09-19 19:04:06,415 - data_acquisition.soil_data - ERROR - Error retrieving soil data: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 19:04:06,417 - __main__ - ERROR - Error acquiring data: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 19:04:06,417 - __main__ - ERROR - Error in single region analysis: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 19:04:06,417 - __main__ - ERROR - Error in full analysis: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 19:04:06,991 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-19 19:04:06,991 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-19 19:04:06,991 - __main__ - INFO - Starting single-region analysis for test_area_small, soybean from 2025-05-08 to 2025-09-05
+2025-09-19 19:04:06,991 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-19 19:05:36,018 - data_acquisition.soil_data - ERROR - Error retrieving soil data: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 19:05:36,019 - __main__ - ERROR - Error acquiring data: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 19:05:36,019 - __main__ - ERROR - Error in single region analysis: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 19:05:36,019 - __main__ - ERROR - Error in full analysis: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)
+2025-09-19 19:09:05,252 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-19 19:09:05,254 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-19 19:09:05,254 - __main__ - INFO - Starting single-region analysis for test_area_small, soybean from 2025-09-10 to 2025-09-15
+2025-09-19 19:09:05,254 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-19 19:09:05,515 - data_acquisition.satellite_data - INFO - Processing area: 2570.14 km²
+2025-09-19 19:09:05,515 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-19 19:09:05,517 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-19 19:09:12,403 - data_acquisition.soil_data - INFO - Attempting soil data request (attempt 1/3, timeout=120s)
+2025-09-19 19:10:13,390 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-19 19:10:13,392 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-19 19:10:13,393 - __main__ - INFO - Starting single-region analysis for pampas_central, soybean from 2025-05-08 to 2025-09-05
+2025-09-19 19:10:13,393 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-19 19:10:13,707 - data_acquisition.satellite_data - INFO - Processing area: 163978.85 km²
+2025-09-19 19:10:13,707 - data_acquisition.satellite_data - INFO - Using large area optimization (1km scale)
+2025-09-19 19:10:13,709 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-19 19:10:54,882 - data_acquisition.soil_data - INFO - Attempting soil data request (attempt 1/3, timeout=120s)
+2025-09-19 19:12:55,691 - data_acquisition.soil_data - WARNING - Attempt 1 failed: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=120). Retrying in 1s...
+2025-09-19 19:12:56,697 - data_acquisition.soil_data - INFO - Attempting soil data request (attempt 2/3, timeout=180s)
+2025-09-19 19:15:57,242 - data_acquisition.soil_data - WARNING - Attempt 2 failed: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=180). Retrying in 2s...
+2025-09-19 19:15:59,249 - data_acquisition.soil_data - INFO - Attempting soil data request (attempt 3/3, timeout=240s)
+2025-09-19 19:16:24,789 - data_acquisition.soil_data - ERROR - Error retrieving soil data: 502 Server Error: Bad Gateway for url: https://rest.isric.org/soilgrids/v2.0/properties/query?lon=-61.4&lat=-34.4&property=bdod&property=cec&property=clay&property=nitrogen&property=ocd&property=ocs&property=phh2o&property=sand&property=silt&property=soc&depth=0-5cm&depth=5-15cm&depth=15-30cm&depth=30-60cm&depth=60-100cm&depth=100-200cm&value=mean
+2025-09-19 19:16:24,790 - __main__ - ERROR - Error acquiring data: 502 Server Error: Bad Gateway for url: https://rest.isric.org/soilgrids/v2.0/properties/query?lon=-61.4&lat=-34.4&property=bdod&property=cec&property=clay&property=nitrogen&property=ocd&property=ocs&property=phh2o&property=sand&property=silt&property=soc&depth=0-5cm&depth=5-15cm&depth=15-30cm&depth=30-60cm&depth=60-100cm&depth=100-200cm&value=mean
+2025-09-19 19:16:24,790 - __main__ - ERROR - Error in single region analysis: 502 Server Error: Bad Gateway for url: https://rest.isric.org/soilgrids/v2.0/properties/query?lon=-61.4&lat=-34.4&property=bdod&property=cec&property=clay&property=nitrogen&property=ocd&property=ocs&property=phh2o&property=sand&property=silt&property=soc&depth=0-5cm&depth=5-15cm&depth=15-30cm&depth=30-60cm&depth=60-100cm&depth=100-200cm&value=mean
+2025-09-19 19:16:24,790 - __main__ - ERROR - Error in full analysis: 502 Server Error: Bad Gateway for url: https://rest.isric.org/soilgrids/v2.0/properties/query?lon=-61.4&lat=-34.4&property=bdod&property=cec&property=clay&property=nitrogen&property=ocd&property=ocs&property=phh2o&property=sand&property=silt&property=soc&depth=0-5cm&depth=5-15cm&depth=15-30cm&depth=30-60cm&depth=60-100cm&depth=100-200cm&value=mean
+2025-09-19 19:18:33,600 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-19 19:18:33,601 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-19 19:18:33,602 - __main__ - INFO - Starting single-region analysis for test_area_small, soybean from 2024-06-01 to 2024-06-05
+2025-09-19 19:18:33,602 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-19 19:18:34,665 - data_acquisition.satellite_data - INFO - Processing area: 2570.14 km²
+2025-09-19 19:18:34,665 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-19 19:18:34,666 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-19 19:18:38,688 - data_acquisition.soil_data - INFO - Attempting soil data request (attempt 1/3, timeout=120s)
+2025-09-19 19:19:26,608 - utils.data_management - INFO - Stored satellite_data data: satellite_2024-06-01_2024-06-05
+2025-09-19 19:19:26,610 - utils.data_management - INFO - Stored weather_data data: weather_2024-06-01_2024-06-05
+2025-09-19 19:19:26,611 - utils.data_management - INFO - Stored soil_data data: soil_-59.8_-33.8
+2025-09-19 19:19:26,611 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-19 19:19:26,613 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-19 19:19:26,613 - processing.vegetation_indices - ERROR - Error calculating stress indicators: attempted relative import beyond top-level package
+2025-09-19 19:19:26,653 - utils.data_management - INFO - Stored processed_data data: processed_20250919
+2025-09-19 19:19:26,653 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-19 19:19:26,670 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-19 19:19:26,680 - modeling.ml_models - INFO - Prepared 8 samples with 135 features
+2025-09-19 19:19:26,681 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-19 19:19:26,681 - outputs.alerts - INFO - Alert generated: normal level for soybean at default
+2025-09-19 19:19:26,682 - utils.data_management - INFO - Stored alert_history data: alert_20250919_191926
+2025-09-19 19:19:26,682 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-19 19:19:26,684 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-19 19:19:27,038 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-19 19:19:27,081 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250919
+2025-09-19 19:19:27,087 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250919
+2025-09-19 19:19:27,087 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-19 19:19:27,087 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-19 19:19:27,149 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250919_191927.json
+2025-09-19 19:19:35,356 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-19 19:19:35,356 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-19 19:19:35,356 - __main__ - INFO - Starting multi-region analysis for 4 agricultural regions, soybean from 2024-06-01 to 2024-06-05
+2025-09-19 19:19:35,356 - __main__ - INFO - Analyzing 4 regions: pampas_central, cordoba_agriculture, santa_fe_agriculture, buenos_aires_north
+2025-09-19 19:19:35,356 - __main__ - INFO - Analyzing region 1/4: pampas_central
+2025-09-19 19:19:35,356 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-19 19:19:35,640 - data_acquisition.satellite_data - INFO - Processing area: 163978.85 km²
+2025-09-19 19:19:35,641 - data_acquisition.satellite_data - INFO - Using large area optimization (1km scale)
+2025-09-19 19:19:35,642 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-19 19:19:45,369 - data_acquisition.soil_data - INFO - Attempting soil data request (attempt 1/3, timeout=120s)
+2025-09-19 19:20:10,043 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-19 19:20:10,045 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-19 19:20:10,046 - __main__ - INFO - Starting single-region analysis for pampas_central, soybean from 2025-05-08 to 2025-09-05
+2025-09-19 19:20:10,046 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-19 19:20:10,393 - data_acquisition.satellite_data - INFO - Processing area: 163978.85 km²
+2025-09-19 19:20:10,393 - data_acquisition.satellite_data - INFO - Using large area optimization (1km scale)
+2025-09-19 19:20:10,395 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-19 19:20:20,699 - data_acquisition.soil_data - INFO - Attempting soil data request (attempt 1/3, timeout=120s)
+2025-09-19 19:21:45,898 - data_acquisition.soil_data - WARNING - Attempt 1 failed: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=120). Retrying in 1s...
+2025-09-19 19:21:46,901 - data_acquisition.soil_data - INFO - Attempting soil data request (attempt 2/3, timeout=180s)
+2025-09-19 19:21:55,656 - utils.data_management - INFO - Stored satellite_data data: satellite_2024-06-01_2024-06-05
+2025-09-19 19:21:55,659 - utils.data_management - INFO - Stored weather_data data: weather_2024-06-01_2024-06-05
+2025-09-19 19:21:55,661 - utils.data_management - INFO - Stored soil_data data: soil_-61.4_-34.4
+2025-09-19 19:21:55,661 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-19 19:21:55,662 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-19 19:21:55,662 - processing.vegetation_indices - ERROR - Error calculating stress indicators: attempted relative import beyond top-level package
+2025-09-19 19:21:55,706 - utils.data_management - INFO - Stored processed_data data: processed_20250919
+2025-09-19 19:21:55,706 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-19 19:21:55,717 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-19 19:21:55,727 - modeling.ml_models - INFO - Prepared 15 samples with 135 features
+2025-09-19 19:21:55,727 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-19 19:21:55,728 - outputs.alerts - INFO - Alert generated: normal level for soybean at default
+2025-09-19 19:21:55,728 - utils.data_management - INFO - Stored alert_history data: alert_20250919_192155
+2025-09-19 19:21:55,728 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-19 19:21:55,729 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-19 19:21:56,020 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-19 19:21:56,036 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250919
+2025-09-19 19:21:56,041 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250919
+2025-09-19 19:21:56,041 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-19 19:21:56,041 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-19 19:21:56,108 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250919_192156.json
+2025-09-19 19:21:56,108 - __main__ - INFO - Analyzing region 2/4: cordoba_agriculture
+2025-09-19 19:21:56,108 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-19 19:21:56,395 - data_acquisition.satellite_data - INFO - Processing area: 94874.08 km²
+2025-09-19 19:21:56,396 - data_acquisition.satellite_data - INFO - Using medium area optimization (500m scale)
+2025-09-19 19:21:56,397 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-19 19:22:00,643 - data_acquisition.soil_data - INFO - Attempting soil data request (attempt 1/3, timeout=120s)
+2025-09-19 19:22:21,353 - data_acquisition.soil_data - WARNING - Attempt 1 failed: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=120). Retrying in 1s...
+2025-09-19 19:22:22,360 - data_acquisition.soil_data - INFO - Attempting soil data request (attempt 2/3, timeout=180s)

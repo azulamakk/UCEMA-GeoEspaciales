@@ -1,0 +1,60 @@
+{
+  "timestamp": "2025-09-19T19:01:17.664502",
+  "analysis_type": "multi_region",
+  "crop_type": "soybean",
+  "analysis_period": {
+    "start": "2024-06-01",
+    "end": "2024-06-05"
+  },
+  "regions_analyzed": [
+    "pampas_central",
+    "cordoba_agriculture",
+    "santa_fe_agriculture",
+    "buenos_aires_north"
+  ],
+  "region_results": {
+    "pampas_central": {
+      "error": "HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)"
+    },
+    "cordoba_agriculture": {
+      "error": "HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)"
+    },
+    "santa_fe_agriculture": {
+      "error": "HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)"
+    },
+    "buenos_aires_north": {
+      "error": "HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=60)"
+    }
+  },
+  "national_summary": {
+    "total_regions_analyzed": 4,
+    "successful_analyses": 0,
+    "overall_status": "normal",
+    "alert_distribution": {
+      "critical": 0,
+      "warning": 0,
+      "normal": 0
+    },
+    "high_priority_regions": [],
+    "summary_generated": "2025-09-19T19:01:17.664120"
+  },
+  "combined_alerts": [],
+  "comprehensive_maps": {
+    "argentina_wide_stress_map": "./outputs/comprehensive_maps/argentina_stress_20250919.tif",
+    "argentina_wide_prescription_map": "./outputs/comprehensive_maps/argentina_prescription_20250919.tif",
+    "regional_maps": {}
+  },
+  "combined_prescriptions": {},
+  "comprehensive_prescription_map": {
+    "timestamp": "2025-09-19T19:01:17.664232",
+    "analysis_type": "multi_region_prescription",
+    "crop_type": "soybean",
+    "regional_prescriptions": {},
+    "national_summary": {
+      "total_area_ha": 0,
+      "total_regions": 0,
+      "irrigation_zones_distribution": {},
+      "water_requirements_by_region": {}
+    }
+  }
+}

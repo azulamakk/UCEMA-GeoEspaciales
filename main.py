@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Dict, List, Optional, Any
 import argparse
 import json
+import pandas as pd
 
 # Add project root to path
 sys.path.append(str(Path(__file__).parent))
@@ -68,13 +69,16 @@ class WaterStressDetectionSystem:
         """Load system configuration"""
         default_config = {
             'default_crop_type': 'soybean',
-            'analysis_period_days': 30,
-            'prediction_horizon_days': 7,
+            'analysis_period_days': 120,  # Extended to 4 months for full growing season
+            'prediction_horizon_days': 14,  # Extended prediction horizon
             'alert_threshold': 0.7,
-            'data_retention_days': 30,
-            'model_retrain_frequency_days': 7,
+            'data_retention_days': 365,  # Extended retention for seasonal analysis
+            'model_retrain_frequency_days': 30,  # Monthly model updates
             'output_directory': './outputs',
-            'study_areas': api_config.get_study_area_argentina()
+            'study_areas': api_config.get_study_area_argentina(),
+            'default_study_area': 'pampas_central',  # Default to main agricultural region
+            'enable_multi_region': True,  # Enable analysis of multiple regions
+            'priority_regions': ['pampas_central', 'cordoba_agriculture', 'santa_fe_agriculture', 'buenos_aires_north']
         }
 
         if config_file and Path(config_file).exists():
@@ -88,40 +92,67 @@ class WaterStressDetectionSystem:
 
         return default_config
 
-    async def run_full_analysis(self, study_area: str = 'test_area_small',
+    async def run_full_analysis(self, study_area: str = None,
                                crop_type: str = None,
                                start_date: str = None,
-                               end_date: str = None) -> Dict[str, Any]:
+                               end_date: str = None,
+                               multi_region: bool = None) -> Dict[str, Any]:
         """
-        Run complete water stress analysis for a study area
+        Run complete water stress analysis for study area(s)
 
         Args:
-            study_area: Name of study area from configuration
-            crop_type: Type of crop to analyze
+            study_area: Name of study area from configuration (default: pampas_central)
+            crop_type: Type of crop to analyze (default: soybean)
             start_date: Analysis start date (YYYY-MM-DD)
             end_date: Analysis end date (YYYY-MM-DD)
+            multi_region: Enable multi-region analysis (default: True)
 
         Returns:
             Comprehensive analysis results
         """
         try:
+            # Set defaults
+            study_area = study_area or self.config['default_study_area']
             crop_type = crop_type or self.config['default_crop_type']
+            multi_region = multi_region if multi_region is not None else self.config['enable_multi_region']
 
-            # Set default date range if not provided
-            # Use a safer date range to avoid NASA POWER API issues with recent dates
+            # Set default date range for agricultural growing season analysis
             if not end_date:
-                # Use a date 7 days ago to ensure data availability
-                end_date = (datetime.now() - timedelta(days=7)).strftime('%Y-%m-%d')
+                # Use a date 14 days ago to ensure data availability
+                end_date = (datetime.now() - timedelta(days=14)).strftime('%Y-%m-%d')
             if not start_date:
-                # Use 37 days ago (30 days analysis + 7 days buffer)
-                start_date = (datetime.now() - timedelta(days=self.config['analysis_period_days'] + 7)).strftime('%Y-%m-%d')
+                # Use full growing season analysis (120 days + 14 days buffer)
+                start_date = (datetime.now() - timedelta(days=self.config['analysis_period_days'] + 14)).strftime('%Y-%m-%d')
 
-            self.logger.info(f"Starting analysis for {study_area}, {crop_type} from {start_date} to {end_date}")
+            # Determine regions to analyze
+            if multi_region and study_area == 'pampas_central':
+                regions_to_analyze = self.config['priority_regions']
+                self.logger.info(f"Starting multi-region analysis for {len(regions_to_analyze)} agricultural regions, {crop_type} from {start_date} to {end_date}")
+            else:
+                regions_to_analyze = [study_area]
+                self.logger.info(f"Starting single-region analysis for {study_area}, {crop_type} from {start_date} to {end_date}")
 
-            # Get study area geometry
-            if study_area not in self.config['study_areas']:
-                raise ValueError(f"Unknown study area: {study_area}")
+            # Validate study areas
+            for region in regions_to_analyze:
+                if region not in self.config['study_areas']:
+                    raise ValueError(f"Unknown study area: {region}")
 
+            # Run analysis for each region
+            if len(regions_to_analyze) == 1:
+                # Single region analysis
+                return await self._analyze_single_region(regions_to_analyze[0], crop_type, start_date, end_date)
+            else:
+                # Multi-region analysis
+                return await self._analyze_multiple_regions(regions_to_analyze, crop_type, start_date, end_date)
+
+        except Exception as e:
+            self.logger.error(f"Error in full analysis: {e}")
+            raise
+
+    async def _analyze_single_region(self, study_area: str, crop_type: str, 
+                                   start_date: str, end_date: str) -> Dict[str, Any]:
+        """Analyze a single region"""
+        try:
             area_config = self.config['study_areas'][study_area]
             geometry = area_config['geometry']
 
@@ -163,6 +194,7 @@ class WaterStressDetectionSystem:
                 'study_area': study_area,
                 'crop_type': crop_type,
                 'analysis_period': {'start': start_date, 'end': end_date},
+                'region_info': area_config,
                 'data_acquisition': data_results,
                 'data_quality': quality_results,
                 'time_series_analysis': ts_results,
@@ -176,13 +208,139 @@ class WaterStressDetectionSystem:
             output_path = self.save_analysis_results(analysis_results)
             analysis_results['output_path'] = output_path
 
-            self.logger.info(f"Analysis completed successfully. Results saved to {output_path}")
+            self.logger.info(f"Single region analysis completed successfully. Results saved to {output_path}")
 
             return analysis_results
 
         except Exception as e:
-            self.logger.error(f"Error in full analysis: {e}")
+            self.logger.error(f"Error in single region analysis: {e}")
             raise
+
+    async def _analyze_multiple_regions(self, regions: List[str], crop_type: str, 
+                                      start_date: str, end_date: str) -> Dict[str, Any]:
+        """Analyze multiple regions for comprehensive coverage"""
+        try:
+            region_results = {}
+            combined_alerts = []
+            combined_prescriptions = {}
+
+            self.logger.info(f"Analyzing {len(regions)} regions: {', '.join(regions)}")
+
+            # Analyze each region
+            for i, region in enumerate(regions):
+                self.logger.info(f"Analyzing region {i+1}/{len(regions)}: {region}")
+                
+                try:
+                    region_result = await self._analyze_single_region(region, crop_type, start_date, end_date)
+                    region_results[region] = region_result
+                    
+                    # Collect alerts and prescriptions
+                    if 'alerts' in region_result and 'current_alert' in region_result['alerts']:
+                        alert = region_result['alerts']['current_alert'].copy()
+                        alert['region'] = region
+                        alert['region_name'] = self.config['study_areas'][region]['name']
+                        combined_alerts.append(alert)
+                    
+                    if 'prescription_maps' in region_result:
+                        combined_prescriptions[region] = region_result['prescription_maps']
+                        
+                except Exception as e:
+                    self.logger.error(f"Error analyzing region {region}: {e}")
+                    region_results[region] = {'error': str(e)}
+
+            # Create national summary
+            national_summary = self._create_national_summary(region_results, combined_alerts)
+
+            # Create comprehensive maps
+            comprehensive_maps = self._create_comprehensive_maps(region_results, regions)
+            
+            # Create comprehensive prescription map
+            comprehensive_prescription = self.prescription_generator.create_comprehensive_prescription_map(
+                region_results, crop_type
+            )
+
+            # Compile multi-region results
+            multi_region_results = {
+                'timestamp': datetime.now().isoformat(),
+                'analysis_type': 'multi_region',
+                'crop_type': crop_type,
+                'analysis_period': {'start': start_date, 'end': end_date},
+                'regions_analyzed': regions,
+                'region_results': region_results,
+                'national_summary': national_summary,
+                'combined_alerts': combined_alerts,
+                'comprehensive_maps': comprehensive_maps,
+                'combined_prescriptions': combined_prescriptions,
+                'comprehensive_prescription_map': comprehensive_prescription
+            }
+
+            # Save comprehensive results
+            output_path = self.save_analysis_results(multi_region_results, prefix='multi_region')
+            multi_region_results['output_path'] = output_path
+
+            self.logger.info(f"Multi-region analysis completed successfully. Results saved to {output_path}")
+
+            return multi_region_results
+
+        except Exception as e:
+            self.logger.error(f"Error in multi-region analysis: {e}")
+            raise
+
+    def _create_national_summary(self, region_results: Dict, combined_alerts: List) -> Dict:
+        """Create a national summary from all regional results"""
+        try:
+            total_regions = len(region_results)
+            successful_regions = len([r for r in region_results.values() if 'error' not in r])
+            
+            # Alert level distribution
+            alert_levels = [alert['alert_level'] for alert in combined_alerts]
+            alert_distribution = {
+                'critical': alert_levels.count('critical'),
+                'warning': alert_levels.count('warning'), 
+                'normal': alert_levels.count('normal')
+            }
+            
+            # Overall stress level
+            if alert_distribution['critical'] > 0:
+                overall_status = 'critical'
+            elif alert_distribution['warning'] > 0:
+                overall_status = 'warning'
+            else:
+                overall_status = 'normal'
+                
+            return {
+                'total_regions_analyzed': total_regions,
+                'successful_analyses': successful_regions,
+                'overall_status': overall_status,
+                'alert_distribution': alert_distribution,
+                'high_priority_regions': [alert['region'] for alert in combined_alerts if alert['alert_level'] == 'critical'],
+                'summary_generated': datetime.now().isoformat()
+            }
+            
+        except Exception as e:
+            self.logger.error(f"Error creating national summary: {e}")
+            return {'error': str(e)}
+
+    def _create_comprehensive_maps(self, region_results: Dict, regions: List) -> Dict:
+        """Create comprehensive maps combining all regions"""
+        try:
+            # This would create Argentina-wide maps
+            # For now, return structure for individual region maps
+            comprehensive_maps = {
+                'argentina_wide_stress_map': f"./outputs/comprehensive_maps/argentina_stress_{datetime.now().strftime('%Y%m%d')}.tif",
+                'argentina_wide_prescription_map': f"./outputs/comprehensive_maps/argentina_prescription_{datetime.now().strftime('%Y%m%d')}.tif",
+                'regional_maps': {}
+            }
+            
+            for region in regions:
+                if region in region_results and 'prescription_maps' in region_results[region]:
+                    comprehensive_maps['regional_maps'][region] = region_results[region]['prescription_maps']
+                    
+            return comprehensive_maps
+            
+        except Exception as e:
+            self.logger.error(f"Error creating comprehensive maps: {e}")
+            return {'error': str(e)}
 
     async def acquire_all_data(self, geometry: List[List[float]],
                               start_date: str, end_date: str) -> Dict[str, Any]:
@@ -209,8 +367,12 @@ class WaterStressDetectionSystem:
             # Acquire weather data
             weather_data = self.weather_data.get_weather_data(centroid_lon, centroid_lat, start_date, end_date)
 
-            # Acquire soil data
-            soil_data = self.soil_data.get_soil_data(centroid_lon, centroid_lat)
+            # Acquire soil data with fallback
+            try:
+                soil_data = self.soil_data.get_soil_data(centroid_lon, centroid_lat)
+            except Exception as e:
+                self.logger.warning(f"Soil data unavailable ({e}), using default soil properties")
+                soil_data = self._create_default_soil_data(centroid_lon, centroid_lat)
 
             # Store data with minimization
             self.data_manager.store_data(satellite_data, 'satellite_data', f'satellite_{start_date}_{end_date}')
@@ -227,6 +389,40 @@ class WaterStressDetectionSystem:
         except Exception as e:
             self.logger.error(f"Error acquiring data: {e}")
             raise
+
+    def _create_default_soil_data(self, longitude: float, latitude: float) -> pd.DataFrame:
+        """Create default soil data when API is unavailable"""
+        try:
+            # Default soil properties for Argentina agricultural regions
+            default_properties = {
+                'location_id': f"lon_{longitude}_lat_{latitude}",
+                'property': ['bdod', 'clay', 'sand', 'silt', 'phh2o', 'soc'],
+                'depth_label': ['0-5cm', '5-15cm', '15-30cm'],
+                'depth_top_cm': [0, 5, 15],
+                'depth_bottom_cm': [5, 15, 30],
+                'value': [1400, 25, 45, 30, 6.5, 2.0],  # Typical values for Argentine soils
+                'unit': ['g/dm3', '%', '%', '%', 'pH', '%']
+            }
+            
+            # Create DataFrame with repeated values for each depth
+            records = []
+            for i, prop in enumerate(default_properties['property']):
+                for j, depth in enumerate(default_properties['depth_label']):
+                    records.append({
+                        'location_id': default_properties['location_id'],
+                        'property': prop,
+                        'depth_label': depth,
+                        'depth_top_cm': default_properties['depth_top_cm'][j],
+                        'depth_bottom_cm': default_properties['depth_bottom_cm'][j],
+                        'value': default_properties['value'][i],
+                        'unit': default_properties['unit'][i]
+                    })
+            
+            return pd.DataFrame(records)
+            
+        except Exception as e:
+            self.logger.error(f"Error creating default soil data: {e}")
+            return pd.DataFrame()
 
     def validate_data_quality(self, data_results: Dict[str, Any]) -> Dict[str, Any]:
         """Validate quality of acquired data"""
@@ -524,14 +720,14 @@ class WaterStressDetectionSystem:
             self.logger.error(f"Error in data minimization: {e}")
             return {'error': str(e)}
 
-    def save_analysis_results(self, results: Dict[str, Any]) -> str:
+    def save_analysis_results(self, results: Dict[str, Any], prefix: str = "water_stress_analysis") -> str:
         """Save complete analysis results"""
         try:
             output_dir = Path(self.config['output_directory'])
             output_dir.mkdir(exist_ok=True)
 
             timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-            filename = f"water_stress_analysis_{timestamp}.json"
+            filename = f"{prefix}_{timestamp}.json"
             filepath = output_dir / filename
 
             # Remove large objects for JSON serialization
@@ -563,7 +759,8 @@ class WaterStressDetectionSystem:
 def main():
     """Main entry point"""
     parser = argparse.ArgumentParser(description='Water Stress Detection System')
-    parser.add_argument('--study-area', default='test_area_small', help='Study area name')
+    parser.add_argument('--study-area', default='pampas_central', help='Study area name (default: pampas_central for main agricultural region)')
+    parser.add_argument('--multi-region', action='store_true', help='Enable multi-region analysis for comprehensive coverage')
     parser.add_argument('--crop-type', default='soybean', help='Crop type')
     parser.add_argument('--start-date', help='Start date (YYYY-MM-DD)')
     parser.add_argument('--end-date', help='End date (YYYY-MM-DD)')
@@ -580,17 +777,43 @@ def main():
             study_area=args.study_area,
             crop_type=args.crop_type,
             start_date=args.start_date,
-            end_date=args.end_date
+            end_date=args.end_date,
+            multi_region=args.multi_region
         ))
 
         print(f"Analysis completed successfully!")
         print(f"Results saved to: {results.get('output_path', 'Unknown')}")
 
-        # Print summary
-        if 'alerts' in results and 'current_alert' in results['alerts']:
-            alert = results['alerts']['current_alert']
-            print(f"Current alert level: {alert['alert_level']}")
-            print(f"Alert score: {alert['alert_score']:.2f}")
+        # Print summary based on analysis type
+        if 'analysis_type' in results and results['analysis_type'] == 'multi_region':
+            # Multi-region summary
+            if 'national_summary' in results:
+                summary = results['national_summary']
+                print(f"\n=== NATIONAL SUMMARY ===")
+                print(f"Regions analyzed: {summary.get('total_regions_analyzed', 0)}")
+                print(f"Successful analyses: {summary.get('successful_analyses', 0)}")
+                print(f"Overall status: {summary.get('overall_status', 'unknown').upper()}")
+                
+                if 'alert_distribution' in summary:
+                    dist = summary['alert_distribution']
+                    print(f"Alert distribution: Critical: {dist.get('critical', 0)}, Warning: {dist.get('warning', 0)}, Normal: {dist.get('normal', 0)}")
+                
+                if summary.get('high_priority_regions'):
+                    print(f"High priority regions: {', '.join(summary['high_priority_regions'])}")
+            
+            if 'regions_analyzed' in results:
+                print(f"\nRegions analyzed: {', '.join(results['regions_analyzed'])}")
+        else:
+            # Single region summary
+            if 'alerts' in results and 'current_alert' in results['alerts']:
+                alert = results['alerts']['current_alert']
+                print(f"Current alert level: {alert['alert_level']}")
+                print(f"Alert score: {alert['alert_score']:.2f}")
+                
+            if 'study_area' in results:
+                print(f"Study area: {results['study_area']}")
+                if 'region_info' in results and 'name' in results['region_info']:
+                    print(f"Region: {results['region_info']['name']}")
 
     except Exception as e:
         print(f"Error running analysis: {e}")

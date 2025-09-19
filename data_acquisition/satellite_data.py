@@ -157,17 +157,35 @@ class SatelliteDataAcquisition:
                     .updateMask(cloud_mask.And(cloud_shadow_mask)))
 
     def _extract_time_series(self, collection, geometry) -> pd.DataFrame:
-        """Extract time series data from image collection"""
+        """Extract time series data from image collection with optimization for large areas"""
         try:
+            # Calculate area to determine appropriate scale
+            area_km2 = geometry.area().divide(1e6).getInfo()
+            self.logger.info(f"Processing area: {area_km2:.2f} km²")
+            
+            # Optimize scale and maxPixels based on area size
+            if area_km2 > 100000:  # Very large area (>100,000 km²)
+                scale = 1000
+                maxPixels = 1e8
+                self.logger.info("Using large area optimization (1km scale)")
+            elif area_km2 > 10000:  # Large area (>10,000 km²) 
+                scale = 500
+                maxPixels = 5e8
+                self.logger.info("Using medium area optimization (500m scale)")
+            else:  # Small-medium area
+                scale = 100
+                maxPixels = 1e9
+                self.logger.info("Using standard resolution (100m scale)")
+
             # Define function to extract values for each image
             def extract_values(image):
                 # Calculate mean values for the geometry
                 stats = image.reduceRegion(
                     reducer=ee.Reducer.mean(),
                     geometry=geometry,
-                    scale=100,  # Use 100m resolution to reduce pixel count
-                    maxPixels=1e10,  # Increase maxPixels limit
-                    bestEffort=True  # Use best effort to aggregate at suitable scale
+                    scale=scale,
+                    maxPixels=maxPixels,
+                    bestEffort=True
                 )
 
                 # Get image date
@@ -177,7 +195,20 @@ class SatelliteDataAcquisition:
 
             # Map over collection and extract to DataFrame
             time_series_fc = collection.map(extract_values)
-            time_series_list = time_series_fc.getInfo()['features']
+            
+            # Add timeout handling for getInfo()
+            self.logger.info("Extracting time series data from Google Earth Engine...")
+            try:
+                time_series_list = time_series_fc.getInfo()['features']
+            except Exception as e:
+                if "timed out" in str(e).lower():
+                    self.logger.warning("GEE timeout detected, attempting with smaller sample...")
+                    # Reduce collection size by taking every other image
+                    reduced_collection = collection.filter(ee.Filter.calendarRange(1, 31, 'day_of_month').eq(ee.Filter.calendarRange(1, 15, 'day_of_month')))
+                    time_series_fc = reduced_collection.map(extract_values)
+                    time_series_list = time_series_fc.getInfo()['features']
+                else:
+                    raise e
 
             # Convert to pandas DataFrame
             data = []

@@ -121,8 +121,26 @@ class SoilDataAcquisition:
                 'value': 'mean'
             }
 
-            response = requests.get(self.base_url, params=params, timeout=30)
-            response.raise_for_status()
+            # Implement retry logic with exponential backoff
+            max_retries = 3
+            for attempt in range(max_retries):
+                try:
+                    timeout = 120 + (attempt * 60)  # Increase timeout with retries
+                    self.logger.info(f"Attempting soil data request (attempt {attempt + 1}/{max_retries}, timeout={timeout}s)")
+                    
+                    response = requests.get(self.base_url, params=params, timeout=timeout)
+                    response.raise_for_status()
+                    break  # Success, exit retry loop
+                    
+                except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
+                    if attempt == max_retries - 1:  # Last attempt
+                        self.logger.error(f"All {max_retries} attempts failed for soil data")
+                        raise e
+                    else:
+                        wait_time = 2 ** attempt  # Exponential backoff
+                        self.logger.warning(f"Attempt {attempt + 1} failed: {e}. Retrying in {wait_time}s...")
+                        import time
+                        time.sleep(wait_time)
 
             data = response.json()
             df = self._parse_soilgrids_response(data, f"lon_{longitude}_lat_{latitude}")

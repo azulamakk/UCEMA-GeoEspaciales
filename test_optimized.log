@@ -1,0 +1,8 @@
+2025-09-19 19:07:01,668 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-19 19:07:01,668 - main - INFO - Water Stress Detection System initialized
+2025-09-19 19:07:01,669 - main - INFO - Starting single-region analysis for test_area_small, soybean from 2025-08-20 to 2025-09-12
+2025-09-19 19:07:01,669 - main - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-19 19:07:01,964 - data_acquisition.satellite_data - INFO - Processing area: 2570.14 km²
+2025-09-19 19:07:01,964 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-19 19:07:01,965 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-19 19:07:18,466 - data_acquisition.soil_data - INFO - Attempting soil data request (attempt 1/3, timeout=120s)

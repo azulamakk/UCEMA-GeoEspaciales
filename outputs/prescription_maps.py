@@ -55,7 +55,7 @@ class PrescriptionMapGenerator:
                                stress_data: pd.DataFrame,
                                geometry: Union[List[List[float]], Polygon],
                                crop_type: str = 'soybean',
-                               resolution: float = 30.0,
+                               resolution: float = 100.0,  # Increased for large areas
                                irrigation_efficiency: float = 0.8) -> Dict[str, Any]:
         """
         Create a prescription map for variable rate irrigation
@@ -790,6 +790,89 @@ class PrescriptionMapGenerator:
         except Exception as e:
             self.logger.error(f"Error creating equipment zones: {e}")
             return {}
+    
+    def create_comprehensive_prescription_map(self, region_results: Dict[str, Any],
+                                            crop_type: str = 'soybean') -> Dict[str, Any]:
+        """
+        Create a comprehensive prescription map combining multiple regions
+        
+        Args:
+            region_results: Results from multiple regional analyses
+            crop_type: Type of crop
+            
+        Returns:
+            Comprehensive prescription map for all regions
+        """
+        try:
+            comprehensive_map = {
+                'timestamp': datetime.now().isoformat(),
+                'analysis_type': 'multi_region_prescription',
+                'crop_type': crop_type,
+                'regional_prescriptions': {},
+                'national_summary': {
+                    'total_area_ha': 0,
+                    'total_regions': 0,
+                    'irrigation_zones_distribution': {},
+                    'water_requirements_by_region': {}
+                }
+            }
+            
+            total_area = 0
+            all_zone_stats = {}
+            
+            # Process each region
+            for region_name, region_data in region_results.items():
+                if 'error' in region_data:
+                    self.logger.warning(f"Skipping region {region_name} due to error: {region_data['error']}")
+                    continue
+                
+                if 'prescription_maps' in region_data:
+                    prescription = region_data['prescription_maps']
+                    comprehensive_map['regional_prescriptions'][region_name] = {
+                        'region_area_ha': prescription.get('field_area_ha', 0),
+                        'summary_statistics': prescription.get('summary_statistics', {}),
+                        'prescription_zones': prescription.get('prescription_zones', {})
+                    }
+                    
+                    # Accumulate statistics
+                    area = prescription.get('field_area_ha', 0)
+                    total_area += area
+                    
+                    # Accumulate zone statistics
+                    if 'prescription_zones' in prescription and 'zone_statistics' in prescription['prescription_zones']:
+                        for zone_id, zone_stats in prescription['prescription_zones']['zone_statistics'].items():
+                            zone_name = zone_stats['name']
+                            if zone_name not in all_zone_stats:
+                                all_zone_stats[zone_name] = {'total_area_ha': 0, 'avg_irrigation_rate': 0}
+                            
+                            zone_area = (zone_stats['area_percentage'] / 100) * area
+                            all_zone_stats[zone_name]['total_area_ha'] += zone_area
+                            all_zone_stats[zone_name]['avg_irrigation_rate'] = zone_stats['avg_irrigation_rate']
+            
+            # Calculate national summary
+            comprehensive_map['national_summary']['total_area_ha'] = total_area
+            comprehensive_map['national_summary']['total_regions'] = len([r for r in region_results.values() if 'error' not in r])
+            comprehensive_map['national_summary']['irrigation_zones_distribution'] = all_zone_stats
+            
+            # Calculate water requirements by region
+            for region_name, region_prescription in comprehensive_map['regional_prescriptions'].items():
+                summary_stats = region_prescription.get('summary_statistics', {})
+                area = region_prescription.get('region_area_ha', 0)
+                avg_rate = summary_stats.get('average_irrigation_rate', 0)
+                
+                comprehensive_map['national_summary']['water_requirements_by_region'][region_name] = {
+                    'daily_water_requirement_m3': avg_rate * area * 10,  # Convert mm to m3
+                    'area_ha': area,
+                    'avg_irrigation_rate_mm_day': avg_rate
+                }
+            
+            self.logger.info(f"Comprehensive prescription map created for {total_area:.0f} ha across {len(comprehensive_map['regional_prescriptions'])} regions")
+            
+            return comprehensive_map
+            
+        except Exception as e:
+            self.logger.error(f"Error creating comprehensive prescription map: {e}")
+            return {'error': str(e)}
     
     def _rate_to_equipment_setting(self, rate: float, 
                                   equipment_params: Dict[str, Any]) -> Dict[str, Any]:

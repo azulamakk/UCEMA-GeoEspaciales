@@ -39,27 +39,87 @@ class APIConfig:
         return validation
     
     def get_study_area_argentina(self) -> Dict:
-        """Default study areas for Argentine agricultural regions"""
+        """Comprehensive study areas for Argentine agricultural regions"""
         return {
+            # PRIMARY AGRICULTURAL REGIONS (Optimized sizes for Google Earth Engine)
+            'pampas_central': {
+                'geometry': [[-63.0, -36.0], [-59.0, -36.0], [-59.0, -32.0], [-63.0, -32.0], [-63.0, -36.0]],
+                'name': 'Central Pampas (Buenos Aires/Córdoba Core)',
+                'crops': ['soybean', 'corn', 'wheat'],
+                'priority': 'high'
+            },
+            'cordoba_agriculture': {
+                'geometry': [[-65.0, -33.0], [-62.0, -33.0], [-62.0, -30.0], [-65.0, -30.0], [-65.0, -33.0]],
+                'name': 'Córdoba Agricultural Zone',
+                'crops': ['soybean', 'corn', 'wheat'],
+                'priority': 'high'
+            },
+            'santa_fe_agriculture': {
+                'geometry': [[-62.0, -33.0], [-59.0, -33.0], [-59.0, -29.0], [-62.0, -29.0], [-62.0, -33.0]],
+                'name': 'Santa Fe Agricultural Zone',
+                'crops': ['soybean', 'corn', 'wheat'],
+                'priority': 'high'
+            },
+            'buenos_aires_north': {
+                'geometry': [[-62.0, -36.0], [-58.0, -36.0], [-58.0, -33.0], [-62.0, -33.0], [-62.0, -36.0]],
+                'name': 'Northern Buenos Aires Agricultural Zone',
+                'crops': ['soybean', 'corn', 'wheat'],
+                'priority': 'high'
+            },
+            'buenos_aires_south': {
+                'geometry': [[-63.0, -39.0], [-58.0, -39.0], [-58.0, -36.0], [-63.0, -36.0], [-63.0, -39.0]],
+                'name': 'Southern Buenos Aires Agricultural Zone',
+                'crops': ['wheat', 'barley', 'canola'],
+                'priority': 'medium'
+            },
+            'entre_rios': {
+                'geometry': [[-60.0, -33.0], [-57.5, -33.0], [-57.5, -30.0], [-60.0, -30.0], [-60.0, -33.0]],
+                'name': 'Entre Ríos Agricultural Zone',
+                'crops': ['soybean', 'corn', 'rice'],
+                'priority': 'medium'
+            },
+            'la_pampa': {
+                'geometry': [[-68.0, -38.0], [-64.0, -38.0], [-64.0, -35.0], [-68.0, -35.0], [-68.0, -38.0]],
+                'name': 'La Pampa Agricultural Zone',
+                'crops': ['wheat', 'sunflower', 'corn'],
+                'priority': 'medium'
+            },
+            
+            # NORTHERN AGRICULTURAL REGIONS
+            'santiago_estero': {
+                'geometry': [[-65.0, -29.0], [-62.0, -29.0], [-62.0, -26.0], [-65.0, -26.0], [-65.0, -29.0]],
+                'name': 'Santiago del Estero Agricultural Zone',
+                'crops': ['soybean', 'cotton', 'wheat'],
+                'priority': 'medium'
+            },
+            'tucuman_salta': {
+                'geometry': [[-66.0, -27.0], [-64.0, -27.0], [-64.0, -24.0], [-66.0, -24.0], [-66.0, -27.0]],
+                'name': 'Tucumán-Salta Agricultural Zone',
+                'crops': ['sugarcane', 'soybean', 'citrus'],
+                'priority': 'low'
+            },
+            'chaco': {
+                'geometry': [[-62.0, -28.0], [-59.0, -28.0], [-59.0, -25.0], [-62.0, -25.0], [-62.0, -28.0]],
+                'name': 'Chaco Agricultural Zone',
+                'crops': ['cotton', 'soybean', 'sunflower'],
+                'priority': 'low'
+            },
+            
+            # COMPREHENSIVE NATIONAL ANALYSIS
+            'argentina_complete': {
+                'geometry': [[-68.0, -40.0], [-57.0, -40.0], [-57.0, -24.0], [-68.0, -24.0], [-68.0, -40.0]],
+                'name': 'Complete Argentina Agricultural Analysis',
+                'crops': ['soybean', 'corn', 'wheat', 'sunflower', 'barley'],
+                'priority': 'national',
+                'warning': 'Large area - may require special processing'
+            },
+            
+            # LEGACY/TEST AREAS (kept for compatibility)
             'test_area_small': {
-                'geometry': [[-58.7, -34.8], [-58.3, -34.8], [-58.3, -34.4], [-58.7, -34.4], [-58.7, -34.8]],
-                'name': 'Small Test Area (Buenos Aires Region)',
-                'crops': ['soybean', 'corn', 'wheat']
-            },
-            'pampas_region': {
-                'geometry': [[-68.0, -40.0], [-57.0, -40.0], [-57.0, -30.0], [-68.0, -30.0], [-68.0, -40.0]],
-                'name': 'Pampas Agricultural Region (Large - may hit EE limits)',
-                'crops': ['soybean', 'corn', 'wheat']
-            },
-            'cordoba_small': {
-                'geometry': [[-64.5, -32.0], [-64.0, -32.0], [-64.0, -31.5], [-64.5, -31.5], [-64.5, -32.0]],
-                'name': 'Small Córdoba Test Area',
-                'crops': ['soybean', 'corn', 'wheat']
-            },
-            'buenos_aires_small': {
-                'geometry': [[-59.0, -36.0], [-58.5, -36.0], [-58.5, -35.5], [-59.0, -35.5], [-59.0, -36.0]],
-                'name': 'Small Buenos Aires Test Area',
-                'crops': ['soybean', 'corn', 'wheat']
+                'geometry': [[-60.0, -34.0], [-59.5, -34.0], [-59.5, -33.5], [-60.0, -33.5], [-60.0, -34.0]],
+                'name': 'Small Test Area (Agricultural Focus)',
+                'crops': ['soybean', 'corn', 'wheat'],
+                'priority': 'test'
             }
         }
 
