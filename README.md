@@ -12,36 +12,36 @@ Un sistema integral para detectar y predecir el estrés hídrico en cultivos ext
 - **Minimización de datos**: Cumplimiento con privacidad de datos y optimización de almacenamiento
 - **Análisis de series temporales**: Detección de tendencias, identificación de anomalías, descomposición estacional
 
-## System Architecture
+## Arquitectura del Sistema
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│  Satellite Data │    │  Weather Data   │    │   Soil Data     │
+│ Datos Satelitales│    │ Datos Meteorológicos│   │   Datos Suelo    │
 │   (Sentinel-2)  │    │  (NASA POWER)   │    │  (SoilGrids)    │
 └─────────┬───────┘    └─────────┬───────┘    └─────────┬───────┘
           │                      │                      │
           └──────────────────────┼──────────────────────┘
                                  │
                     ┌─────────────▼─────────────┐
-                    │    Data Processing &      │
-                    │   Feature Engineering     │
+                    │  Procesamiento de Datos & │
+                    │ Ingeniería de Características│
                     └─────────────┬─────────────┘
                                  │
                     ┌─────────────▼─────────────┐
-                    │   Time Series Analysis    │
-                    │   & Anomaly Detection     │
+                    │ Análisis Series Temporales│
+                    │  & Detección Anomalías    │
                     └─────────────┬─────────────┘
                                  │
                     ┌─────────────▼─────────────┐
-                    │   Machine Learning        │
-                    │   (RF + XGBoost)          │
+                    │  Aprendizaje Automático   │
+                    │   (RF + XGBoost)         │
                     └─────────────┬─────────────┘
                                  │
           ┌──────────────────────┼──────────────────────┐
           │                      │                      │
 ┌─────────▼───────┐    ┌─────────▼───────┐    ┌─────────▼───────┐
-│  Alert System  │    │ Prescription    │    │ Data Management │
-│                │    │     Maps        │    │ & Quality       │
+│ Sistema Alertas │    │   Mapas de      │    │ Gestión de Datos│
+│                │    │ Prescripción    │    │  & Calidad      │
 └────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
@@ -66,7 +66,7 @@ earthengine authenticate
 4. **Configurar variables de entorno**:
 ```bash
 cp config/.env.example .env
-# Edit .env with your API credentials
+# Editar .env con tus credenciales de API
 ```
 
 ## Configuración
@@ -81,7 +81,7 @@ GEE_SERVICE_ACCOUNT_KEY=/path/to/your/service-account-key.json
 GEE_PROJECT_ID=your-gee-project-id
 ```
 
-### Study Areas
+### Áreas de Estudio
 
 El sistema viene preconfigurado con regiones agrícolas de Argentina:
 - **Región Pampeana**: Principal área agrícola
@@ -90,7 +90,7 @@ El sistema viene preconfigurado con regiones agrícolas de Argentina:
 
 ## Uso
 
-### Uso basico
+### Uso básico
 Ejecutar el análisis completo para el área de estudio por defecto:
 ```bash
 python main.py
@@ -109,7 +109,7 @@ python main.py --start-date 2024-01-01 --end-date 2024-03-31
 python main.py --config custom_config.json
 ```
 
-### Uso programatico
+### Uso programático
 
 ```python
 from water_stress_detection.main import WaterStressDetectionSystem
@@ -134,167 +134,151 @@ print(f"Nivel de alerta: {alert['alert_level']}")
 
 ## Fuentes de datos
 
-### Satellite Data (Google Earth Engine)
+### Datos satelitales (Google Earth Engine)
 - **Sentinel-2**: Resolución de 10 m, tiempo de revisita de 5 días
 - **Landsat 8/9**: Datos térmicos para cálculo de CWSI
 - **Enmascaramiento de nubes**: Filtrado de calidad automatizado
 
 ### Datos meteorológicos (NASA POWER API)
 - **Variables**: Temperatura, precipitación, evapotranspiración, déficit de presión de vapor
-- **Resolution**: Diaria, 0.5° x 0.625°
-- **Coverage**: Global, desde 1981 hasta la actualidad
+- **Resolución**: Diaria, 0.5° x 0.625°
+- **Cobertura**: Global, desde 1981 hasta la actualidad
 
 ### Datos de suelo (SoilGrids API)
-- **Properties**: Textura, densidad aparente, carbono orgánico, pH
-- **Resolution**: 250m
-- **Depths**: 0-5, 5-15, 15-30, 30-60, 60-100, 100-200 cm
+- **Propiedades**: Textura, densidad aparente, carbono orgánico, pH
+- **Resolución**: 250m
+- **Profundidades**: 0-5, 5-15, 15-30, 30-60, 60-100, 100-200 cm
 
-## Indices de vegetación
+## Índices de vegetación
 
-| Index | Formula | Purpose |
-|-------|---------|---------|
-| NDVI | (NIR - Red) / (NIR + Red) | Salud de la vegetación |
-| GNDVI | (NIR - Green) / (NIR + Green) | Contenido de clorofila |
-| NDWI | (Green - NIR) / (Green + NIR) | Contenido de agua en plantas |
+| Índice | Fórmula | Propósito |
+|--------|---------|-----------|
+| NDVI | (NIR - Rojo) / (NIR + Rojo) | Salud de la vegetación |
+| GNDVI | (NIR - Verde) / (NIR + Verde) | Contenido de clorofila |
+| NDWI | (Verde - NIR) / (Verde + NIR) | Contenido de agua en plantas |
 | CWSI | Basado en temperatura | Estrés hídrico de cultivos |
 | EVI | Índice de vegetación mejorado | Mayor sensibilidad |
-| SAVI | Indice ajustado por suelo | Reducción de influencia del suelo |
+| SAVI | Índice ajustado por suelo | Reducción de influencia del suelo |
 
-## Machine Learning Models
+## Modelos de Aprendizaje Automático
 
-### Random Forest Classifier
-- **Features**: 50+ engineered features
-- **Target**: Water stress level (0-2 scale)
-- **Validation**: Time series cross-validation
-- **Performance**: Typically >85% accuracy
+### Clasificador Random Forest
+- **Características**: +50 características ingenierizadas
+- **Objetivo**: Nivel de estrés hídrico (escala 0-2)
+- **Validación**: Validación cruzada de series temporales
+- **Rendimiento**: Típicamente >85% de precisión
 
-### XGBoost Classifier
-- **Features**: Same feature set as Random Forest
-- **Hyperparameters**: Grid search optimization
-- **Early stopping**: Prevents overfitting
-- **Feature importance**: SHAP values available
+### Clasificador XGBoost
+- **Características**: El mismo conjunto de características que Random Forest
+- **Hiperparámetros**: Optimización con búsqueda en grilla
+- **Parada temprana**: Previene el sobreajuste
+- **Importancia de características**: Valores SHAP disponibles
 
-## Alert System
+## Sistema de Alertas
 
-### Alert Levels
-- **Normal**: No stress detected
-- **Warning**: Early stress indicators
-- **Critical**: Immediate action required
+### Niveles de Alerta
+- **Normal**: No se detecta estrés
+- **Advertencia**: Indicadores tempranos de estrés
+- **Crítico**: Acción inmediata requerida
 
-### Indicators
-- Vegetation indices below thresholds
-- Negative water balance
-- High temperatures
-- Consecutive dry days
-- Statistical anomalies
+### Indicadores
+- Índices de vegetación por debajo de los umbrales
+- Balance hídrico negativo
+- Temperaturas altas
+- Días consecutivos secos
+- Anomalías estadísticas
 
-### Recommendations
-- Irrigation scheduling
-- Stress mitigation strategies
-- Monitoring frequency adjustments
-- Crop-specific advice
+### Recomendaciones
+- Programación de riego
+- Estrategias de mitigación de estrés
+- Ajustes en frecuencia de monitoreo
+- Consejos específicos por cultivo
 
-## Prescription Maps
+## Mapas de Prescripción
 
-### Variable Rate Irrigation
-- **Zones**: 5 irrigation management zones
-- **Rates**: 0-20 mm/day based on stress level
-- **Efficiency**: Accounts for irrigation system efficiency
-- **Formats**: GeoTIFF, interactive maps, JSON
+### Riego de Tasa Variable
+- **Zonas**: 5 zonas de manejo de riego
+- **Tasas**: 0-20 mm/día basadas en el nivel de estrés
+- **Eficiencia**: Considera la eficiencia del sistema de riego
+- **Formatos**: GeoTIFF, mapas interactivos, JSON
 
-### Equipment Integration
-- Boom width and speed parameters
-- Nozzle selection recommendations
-- Pressure and flow rate calculations
-- Application time estimates
+### Integración con Equipos
+- Parámetros de ancho de barra y velocidad
+- Recomendaciones de selección de boquillas
+- Cálculos de presión y caudal
+- Estimaciones de tiempo de aplicación
 
-## Data Management
+## Gestión de Datos
 
-### Data Minimization
-- **Essential data**: Models, alerts, prescriptions (permanent storage)
-- **Temporary data**: Raw satellite/weather data (30-day retention)
-- **Automatic cleanup**: Scheduled removal of expired data
-- **Privacy compliance**: Location anonymization options
+### Minimización de Datos
+- **Datos esenciales**: Modelos, alertas, prescripciones (almacenamiento permanente)
+- **Datos temporales**: Datos satelitales/meteorológicos crudos (retención 30 días)
+- **Limpieza automática**: Eliminación programada de datos vencidos
+- **Cumplimiento de privacidad**: Opciones de anonimización de ubicación
 
-### Quality Control
-- **Validation**: Range checks, outlier detection, completeness
-- **Metrics**: Quality scores, anomaly flags, confidence levels
-- **Reporting**: Automated quality reports with recommendations
+### Control de Calidad
+- **Validación**: Verificación de rangos, detección de valores atípicos, completitud
+- **Métricas**: Puntuaciones de calidad, banderas de anomalías, niveles de confianza
+- **Reportes**: Informes de calidad automatizados con recomendaciones
 
-## Validation Methodology
+## Metodología de Validación
 
-### Ground Truth Integration
-- **Soil moisture sensors**: Optional validation data
-- **Crop models**: Open-source model comparisons (DSSAT, APSIM)
-- **Field observations**: Integration with agricultural institutions
-- **Yield correlation**: Historical yield data validation
+### Integración de Datos de Campo
+- **Sensores de humedad del suelo**: Datos de validación opcionales
+- **Modelos de cultivos**: Comparaciones con modelos de código abierto (DSSAT, APSIM)
+- **Observaciones de campo**: Integración con instituciones agrícolas
+- **Correlación de rendimiento**: Validación con datos históricos de rendimiento
 
-### Performance Metrics
-- **Accuracy**: Classification accuracy for stress detection
-- **Precision/Recall**: Per-class performance metrics
-- **F1-Score**: Balanced performance measure
-- **AUC-ROC**: Overall model discrimination
+### Métricas de Rendimiento
+- **Precisión**: Precisión de clasificación para detección de estrés
+- **Precisión/Sensibilidad**: Métricas de rendimiento por clase
+- **Puntuación F1**: Medida de rendimiento equilibrada
+- **AUC-ROC**: Discriminación general del modelo
 
-## API Rate Limits and Optimization
+## Límites de APIs y Optimización
 
 ### Google Earth Engine
-- **Quota**: Varies by account type
-- **Optimization**: Efficient spatial/temporal filtering
-- **Batching**: Multiple operations per request
+- **Cuota**: Varía según el tipo de cuenta
+- **Optimización**: Filtrado espacial/temporal eficiente
+- **Procesamiento por lotes**: Múltiples operaciones por solicitud
 
 ### NASA POWER
-- **Rate limit**: No explicit limit
-- **Optimization**: Asynchronous requests for multiple locations
-- **Caching**: Local storage of historical data
+- **Límite de tasa**: Sin límite explícito
+- **Optimización**: Solicitudes asíncronas para múltiples ubicaciones
+- **Caché**: Almacenamiento local de datos históricos
 
 ### SoilGrids
-- **Rate limit**: No explicit limit
-- **Optimization**: Bulk coordinate requests
-- **Caching**: Persistent soil data storage
+- **Límite de tasa**: Sin límite explícito
+- **Optimización**: Solicitudes de coordenadas por lotes
+- **Caché**: Almacenamiento persistente de datos de suelo
 
-## Troubleshooting
+## Solución de Problemas
 
-### Common Issues
+### Problemas Comunes
 
-1. **Google Earth Engine Authentication**:
+1. **Autenticación de Google Earth Engine**:
 ```bash
 earthengine authenticate --force
 ```
 
-2. **Missing Dependencies**:
+2. **Dependencias Faltantes**:
 ```bash
 pip install --upgrade -r requirements.txt
 ```
 
-3. **Memory Issues with Large Areas**:
-   - Reduce analysis period
-   - Increase grid resolution parameter
-   - Use spatial subsampling
+3. **Problemas de Memoria con Áreas Grandes**:
+   - Reducir período de análisis
+   - Aumentar parámetro de resolución de grilla
+   - Usar submuestreo espacial
 
-4. **API Timeouts**:
-   - Check internet connection
-   - Reduce request size
-   - Implement retry logic
+4. **Tiempos de Espera de API**:
+   - Verificar conexión a internet
+   - Reducir tamaño de solicitud
+   - Implementar lógica de reintento
 
-### Error Codes
+### Códigos de Error
 
-- **EE001**: Earth Engine authentication failed
-- **API002**: Weather data API timeout
-- **ML003**: Insufficient training data
-- **VAL004**: Data quality validation failed
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/new-feature`)
-3. Commit changes (`git commit -am 'Add new feature'`)
-4. Push to branch (`git push origin feature/new-feature`)
-5. Create Pull Request
-
-
-## Agradecimientos
-Google Earth Engine por el acceso a datos satelitales
-NASA POWER por los datos meteorológicos
-ISRIC SoilGrids por los datos de propiedades de suelo
-Instituciones agrícolas argentinas por la experiencia en el dominio
-Comunidad open-source por las herramientas y librerías
+- **EE001**: Falló la autenticación de Earth Engine
+- **API002**: Tiempo de espera agotado de API de datos meteorológicos
+- **ML003**: Datos de entrenamiento insuficientes
+- **VAL004**: Falló la validación de calidad de datos
