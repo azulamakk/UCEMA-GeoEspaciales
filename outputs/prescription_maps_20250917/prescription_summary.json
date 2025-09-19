@@ -1,0 +1,90 @@
+{
+  "timestamp": "2025-09-17T21:56:03.688409",
+  "crop_type": "soybean",
+  "field_area_ha": 1.600000000000017e-05,
+  "summary_statistics": {
+    "total_irrigation_volume_per_day": 6.25,
+    "average_irrigation_rate": 6.25,
+    "maximum_irrigation_rate": 6.25,
+    "percentage_area_requiring_irrigation": 100.0,
+    "zone_breakdown": {
+      "Moderate Irrigation": {
+        "area_percentage": 100.0,
+        "avg_irrigation_rate": 6.25
+      }
+    },
+    "variable_rate_water_savings_percent": 0,
+    "irrigation_uniformity_coefficient": 1
+  },
+  "prescription_zones": {
+    "zone_definitions": {
+      "1": {
+        "name": "No Irrigation",
+        "min_rate": 0.0,
+        "max_rate": 1.0,
+        "color": "#2E8B57"
+      },
+      "2": {
+        "name": "Light Irrigation",
+        "min_rate": 1.0,
+        "max_rate": 4.0,
+        "color": "#90EE90"
+      },
+      "3": {
+        "name": "Moderate Irrigation",
+        "min_rate": 4.0,
+        "max_rate": 8.0,
+        "color": "#FFD700"
+      },
+      "4": {
+        "name": "Heavy Irrigation",
+        "min_rate": 8.0,
+        "max_rate": 12.0,
+        "color": "#FF8C00"
+      },
+      "5": {
+        "name": "Critical Irrigation",
+        "min_rate": 12.0,
+        "max_rate": 20.0,
+        "color": "#FF4500"
+      }
+    },
+    "zone_statistics": {
+      "1": {
+        "name": "No Irrigation",
+        "area_percentage": 0.0,
+        "pixel_count": "0",
+        "avg_irrigation_rate": 0,
+        "color": "#2E8B57"
+      },
+      "2": {
+        "name": "Light Irrigation",
+        "area_percentage": 0.0,
+        "pixel_count": "0",
+        "avg_irrigation_rate": 0,
+        "color": "#90EE90"
+      },
+      "3": {
+        "name": "Moderate Irrigation",
+        "area_percentage": 100.0,
+        "pixel_count": "1",
+        "avg_irrigation_rate": 6.25,
+        "color": "#FFD700"
+      },
+      "4": {
+        "name": "Heavy Irrigation",
+        "area_percentage": 0.0,
+        "pixel_count": "0",
+        "avg_irrigation_rate": 0,
+        "color": "#FF8C00"
+      },
+      "5": {
+        "name": "Critical Irrigation",
+        "area_percentage": 0.0,
+        "pixel_count": "0",
+        "avg_irrigation_rate": 0,
+        "color": "#FF4500"
+      }
+    }
+  }
+}

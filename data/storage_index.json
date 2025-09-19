@@ -1,0 +1,64 @@
+{
+  "records": [
+    {
+      "identifier": "satellite_2024-08-01_2024-08-10",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-17T21:56:03.320083",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "d982766cdd0fda953b976b9d66d1e851",
+      "storage_path": "data/temporary/satellite_2024-08-01_2024-08-10_20250917_215603.npz"
+    },
+    {
+      "identifier": "weather_2024-08-01_2024-08-10",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-17T21:56:03.323776",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "a9eb1659adc774538b1f389e4a88a365",
+      "storage_path": "data/temporary/weather_2024-08-01_2024-08-10_20250917_215603.npz"
+    },
+    {
+      "identifier": "soil_-58.54_-34.64",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-17T21:56:03.326591",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "5a6a7b17729ad97b5c95a431e9fc68c8",
+      "storage_path": "data/temporary/soil_-58.54_-34.64_20250917_215603.npz"
+    },
+    {
+      "identifier": "processed_20250917",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-17T21:56:03.328234",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "68c72991577a75180b53a2a18dfcbb90",
+      "storage_path": "data/temporary/processed_20250917_20250917_215603.npz"
+    },
+    {
+      "identifier": "alert_20250917_215603",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-17T21:56:03.335585",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "ac7324f4802ee8972e9cc6ca5a6cfd6b",
+      "storage_path": "data/essential/alert_20250917_215603.npz"
+    },
+    {
+      "identifier": "prescription_20250917",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-17T21:56:03.726162",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "29e77ca775970ff77d0fa6d8f33fa8c1",
+      "storage_path": "data/essential/prescription_20250917.npz"
+    }
+  ]
+}

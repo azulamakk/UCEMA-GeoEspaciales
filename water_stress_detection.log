@@ -1,0 +1,81 @@
+2025-09-17 18:01:57,981 - data_acquisition.satellite_data - ERROR - Failed to initialize Google Earth Engine: [Errno 2] No such file or directory: '~/Downloads/accesorios-makk-1746474192317-289e3787dbf5.json'
+2025-09-17 18:02:41,326 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-17 18:02:41,328 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-17 18:02:41,328 - __main__ - INFO - Starting analysis for pampas_region, soybean from 2025-08-18 to 2025-09-17
+2025-09-17 18:02:41,328 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-17 18:02:41,329 - __main__ - ERROR - Error acquiring data: 'float' object is not subscriptable
+2025-09-17 18:02:41,329 - __main__ - ERROR - Error in full analysis: 'float' object is not subscriptable
+2025-09-17 18:04:24,675 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-17 18:04:24,676 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-17 18:04:24,676 - __main__ - INFO - Starting analysis for pampas_region, soybean from 2025-08-18 to 2025-09-17
+2025-09-17 18:04:24,676 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-17 18:04:27,688 - data_acquisition.satellite_data - ERROR - Error extracting time series: Error in map(ID=20250819T141731_20250819T142949_T19HEC):
+Image.reduceRegion: Too many pixels in the region. Found 292194523591, but maxPixels allows only 1000000000.
+Ensure that you are not aggregating at a higher resolution than you intended; that is a frequent cause of this error. If not, then you may set the 'maxPixels' argument to a limit suitable for your computation; set 'bestEffort' to true to aggregate at whatever scale results in 'maxPixels' total pixels; or both.
+2025-09-17 18:04:29,712 - data_acquisition.weather_data - ERROR - Error retrieving weather data: 422 Client Error:  for url: https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CT2M_MIN%2CPRECTOTCORR%2CPET_PT_JPL&community=AG&longitude=-63.6&latitude=-36.0&start=20250818&end=20250917&format=JSON
+2025-09-17 18:04:29,713 - __main__ - ERROR - Error acquiring data: 422 Client Error:  for url: https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CT2M_MIN%2CPRECTOTCORR%2CPET_PT_JPL&community=AG&longitude=-63.6&latitude=-36.0&start=20250818&end=20250917&format=JSON
+2025-09-17 18:04:29,713 - __main__ - ERROR - Error in full analysis: 422 Client Error:  for url: https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CT2M_MIN%2CPRECTOTCORR%2CPET_PT_JPL&community=AG&longitude=-63.6&latitude=-36.0&start=20250818&end=20250917&format=JSON
+2025-09-17 18:12:54,715 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-17 18:12:54,716 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-17 18:12:54,717 - __main__ - INFO - Starting analysis for pampas_region, soybean from 2025-08-11 to 2025-09-10
+2025-09-17 18:12:54,717 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-17 21:47:02,834 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-17 21:47:02,835 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-17 21:47:02,835 - __main__ - INFO - Starting analysis for pampas_region, soybean from 2025-08-11 to 2025-09-10
+2025-09-17 21:47:02,835 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-17 21:51:40,897 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-17 21:51:40,898 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-17 21:51:40,898 - __main__ - INFO - Starting analysis for pampas_region, soybean from 2025-08-11 to 2025-09-10
+2025-09-17 21:51:40,899 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-17 21:51:41,419 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-17 21:51:41,419 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-17 21:51:41,420 - __main__ - INFO - Starting analysis for pampas_region, soybean from 2024-08-01 to 2024-08-10
+2025-09-17 21:51:41,420 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-17 21:51:53,129 - googleapiclient.http - WARNING - Sleeping 1.71 seconds before retry 1 of 5 for request: POST https://earthengine.googleapis.com/v1/projects/earthengine-legacy/value:compute?prettyPrint=false&alt=json, after 429
+2025-09-17 21:51:56,397 - googleapiclient.http - WARNING - Sleeping 3.50 seconds before retry 2 of 5 for request: POST https://earthengine.googleapis.com/v1/projects/earthengine-legacy/value:compute?prettyPrint=false&alt=json, after 429
+2025-09-17 21:52:00,976 - googleapiclient.http - WARNING - Sleeping 6.74 seconds before retry 3 of 5 for request: POST https://earthengine.googleapis.com/v1/projects/earthengine-legacy/value:compute?prettyPrint=false&alt=json, after 429
+2025-09-17 21:52:09,475 - googleapiclient.http - WARNING - Sleeping 13.09 seconds before retry 4 of 5 for request: POST https://earthengine.googleapis.com/v1/projects/earthengine-legacy/value:compute?prettyPrint=false&alt=json, after 429
+2025-09-17 21:55:53,971 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-17 21:55:53,972 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-17 21:55:53,973 - __main__ - INFO - Starting analysis for test_area_small, soybean from 2024-08-01 to 2024-08-10
+2025-09-17 21:55:53,973 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-17 21:56:03,323 - utils.data_management - INFO - Stored satellite_data data: satellite_2024-08-01_2024-08-10
+2025-09-17 21:56:03,326 - utils.data_management - INFO - Stored weather_data data: weather_2024-08-01_2024-08-10
+2025-09-17 21:56:03,326 - utils.data_management - INFO - Stored soil_data data: soil_-58.54_-34.64
+2025-09-17 21:56:03,327 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-17 21:56:03,328 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-17 21:56:03,328 - processing.vegetation_indices - ERROR - Error calculating stress indicators: attempted relative import beyond top-level package
+2025-09-17 21:56:03,328 - processing.vegetation_indices - ERROR - Error calculating temporal derivatives: 'date'
+2025-09-17 21:56:03,328 - processing.vegetation_indices - ERROR - Error calculating anomalies: 'date'
+2025-09-17 21:56:03,328 - __main__ - WARNING - No date column found for merging datasets
+2025-09-17 21:56:03,334 - utils.data_management - INFO - Stored processed_data data: processed_20250917
+2025-09-17 21:56:03,335 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-17 21:56:03,335 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-17 21:56:03,335 - modeling.ml_models - ERROR - Error preparing features: 'date'
+2025-09-17 21:56:03,335 - __main__ - ERROR - Error in ML predictions: 'date'
+2025-09-17 21:56:03,335 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-17 21:56:03,335 - outputs.alerts - ERROR - Error analyzing stress indicators: single positional indexer is out-of-bounds
+2025-09-17 21:56:03,335 - outputs.alerts - INFO - Alert generated: normal level for soybean at default
+2025-09-17 21:56:03,336 - utils.data_management - INFO - Stored alert_history data: alert_20250917_215603
+2025-09-17 21:56:03,336 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-17 21:56:03,337 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-17 21:56:03,688 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-17 21:56:03,726 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250917
+2025-09-17 21:56:03,730 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250917
+2025-09-17 21:56:03,730 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-17 21:56:03,731 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-17 21:56:03,736 - __main__ - INFO - Analysis completed successfully. Results saved to outputs/water_stress_analysis_20250917_215603.json
+2025-09-19 17:30:24,492 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-19 17:30:24,492 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-19 17:30:24,493 - __main__ - INFO - Starting analysis for test_area_small, soybean from 2025-08-13 to 2025-09-12
+2025-09-19 17:30:24,493 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-19 17:31:02,703 - data_acquisition.soil_data - ERROR - Error retrieving soil data: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=30)
+2025-09-19 17:31:02,706 - __main__ - ERROR - Error acquiring data: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=30)
+2025-09-19 17:31:02,706 - __main__ - ERROR - Error in full analysis: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=30)
+2025-09-19 18:01:51,287 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-19 18:01:51,288 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-19 18:01:51,289 - __main__ - INFO - Starting analysis for test_area_small, soybean from 2025-08-13 to 2025-09-12
+2025-09-19 18:01:51,289 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-19 18:02:25,667 - data_acquisition.soil_data - ERROR - Error retrieving soil data: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=30)
+2025-09-19 18:02:25,669 - __main__ - ERROR - Error acquiring data: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=30)
+2025-09-19 18:02:25,669 - __main__ - ERROR - Error in full analysis: HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=30)
