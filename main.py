@@ -76,9 +76,9 @@ class WaterStressDetectionSystem:
             'model_retrain_frequency_days': 30,  # Monthly model updates
             'output_directory': './outputs',
             'study_areas': api_config.get_study_area_argentina(),
-            'default_study_area': 'pampas_central',  # Default to main agricultural region
+            'default_study_area': 'buenos_aires_01_northwest',  # Default to manageable agricultural region
             'enable_multi_region': True,  # Enable analysis of multiple regions
-            'priority_regions': ['pampas_central', 'cordoba_agriculture', 'santa_fe_agriculture', 'buenos_aires_north']
+            'priority_regions': ['buenos_aires_01_northwest', 'buenos_aires_02_northeast', 'cordoba_01_north', 'santa_fe_01_northwest']
         }
 
         if config_file and Path(config_file).exists():
@@ -125,17 +125,23 @@ class WaterStressDetectionSystem:
                 start_date = (datetime.now() - timedelta(days=self.config['analysis_period_days'] + 14)).strftime('%Y-%m-%d')
 
             # Determine regions to analyze
-            if multi_region and study_area == 'pampas_central':
+            if multi_region and study_area == 'all_argentina':
+                # Get all 38 Argentina agricultural regions
+                all_regions = list(self.config['study_areas'].keys())
+                regions_to_analyze = all_regions
+                self.logger.info(f"Starting COMPLETE ARGENTINA analysis for ALL {len(regions_to_analyze)} agricultural regions, {crop_type} from {start_date} to {end_date}")
+            elif multi_region and study_area in ['buenos_aires_01_northwest', self.config['default_study_area']]:
                 regions_to_analyze = self.config['priority_regions']
-                self.logger.info(f"Starting multi-region analysis for {len(regions_to_analyze)} agricultural regions, {crop_type} from {start_date} to {end_date}")
+                self.logger.info(f"Starting multi-region analysis for {len(regions_to_analyze)} priority agricultural regions, {crop_type} from {start_date} to {end_date}")
             else:
                 regions_to_analyze = [study_area]
                 self.logger.info(f"Starting single-region analysis for {study_area}, {crop_type} from {start_date} to {end_date}")
 
-            # Validate study areas
-            for region in regions_to_analyze:
-                if region not in self.config['study_areas']:
-                    raise ValueError(f"Unknown study area: {region}")
+            # Validate study areas (skip validation for 'all_argentina' as it's a special case)
+            if study_area != 'all_argentina':
+                for region in regions_to_analyze:
+                    if region not in self.config['study_areas']:
+                        raise ValueError(f"Unknown study area: {region}")
 
             # Run analysis for each region
             if len(regions_to_analyze) == 1:
@@ -367,12 +373,9 @@ class WaterStressDetectionSystem:
             # Acquire weather data
             weather_data = self.weather_data.get_weather_data(centroid_lon, centroid_lat, start_date, end_date)
 
-            # Acquire soil data with fallback
-            try:
-                soil_data = self.soil_data.get_soil_data(centroid_lon, centroid_lat)
-            except Exception as e:
-                self.logger.warning(f"Soil data unavailable ({e}), using default soil properties")
-                soil_data = self._create_default_soil_data(centroid_lon, centroid_lat)
+            # Use default soil data (skip API that's timing out)
+            self.logger.info("Using default soil properties (skipping unreliable SoilGrids API)")
+            soil_data = self._create_default_soil_data(centroid_lon, centroid_lat)
 
             # Store data with minimization
             self.data_manager.store_data(satellite_data, 'satellite_data', f'satellite_{start_date}_{end_date}')
@@ -759,14 +762,21 @@ class WaterStressDetectionSystem:
 def main():
     """Main entry point"""
     parser = argparse.ArgumentParser(description='Water Stress Detection System')
-    parser.add_argument('--study-area', default='pampas_central', help='Study area name (default: pampas_central for main agricultural region)')
-    parser.add_argument('--multi-region', action='store_true', help='Enable multi-region analysis for comprehensive coverage')
+    parser.add_argument('--study-area', default='all_argentina', help='Study area name (default: all_argentina for complete coverage)')
+    parser.add_argument('--multi-region', action='store_true', default=True, help='Enable multi-region analysis for comprehensive coverage (default: True)')
+    parser.add_argument('--single-region', action='store_true', help='Run single region analysis instead of all Argentina')
     parser.add_argument('--crop-type', default='soybean', help='Crop type')
     parser.add_argument('--start-date', help='Start date (YYYY-MM-DD)')
     parser.add_argument('--end-date', help='End date (YYYY-MM-DD)')
     parser.add_argument('--config', help='Configuration file path')
 
     args = parser.parse_args()
+    
+    # Override multi-region if single-region is explicitly requested
+    if args.single_region:
+        args.multi_region = False
+        if args.study_area == 'all_argentina':
+            args.study_area = 'buenos_aires_01_northwest'  # Default single region
 
     # Initialize system
     system = WaterStressDetectionSystem(args.config)

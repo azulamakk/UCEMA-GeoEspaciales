@@ -316,7 +316,7 @@ class VegetationIndices:
             DataFrame with stress indicators
         """
         try:
-            from ..config.crop_parameters import crop_config
+            from config.crop_parameters import crop_config
             
             # Get crop-specific thresholds
             thresholds = crop_config.get_stress_thresholds(crop_type)
