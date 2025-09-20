@@ -27,6 +27,7 @@ from modeling.ml_models import WaterStressMLPipeline
 from modeling.feature_engineering import FeatureEngineering
 from outputs.alerts import WaterStressAlertSystem
 from outputs.prescription_maps import PrescriptionMapGenerator
+from outputs.statistical_reports import StatisticalReportGenerator
 from utils.data_management import DataMinimizationManager, DataQualityController
 
 class WaterStressDetectionSystem:
@@ -46,6 +47,7 @@ class WaterStressDetectionSystem:
         self.feature_engineering = FeatureEngineering()
         self.alert_system = WaterStressAlertSystem()
         self.prescription_generator = PrescriptionMapGenerator()
+        self.report_generator = StatisticalReportGenerator()
         self.data_manager = DataMinimizationManager()
         self.quality_controller = DataQualityController()
 
@@ -222,6 +224,59 @@ class WaterStressDetectionSystem:
             self.logger.error(f"Error in single region analysis: {e}")
             raise
 
+    async def _analyze_single_region_no_save(self, study_area: str, crop_type: str, 
+                                           start_date: str, end_date: str) -> Dict[str, Any]:
+        """Analyze a single region without saving individual files (for multi-region analysis)"""
+        try:
+            area_config = self.config['study_areas'][study_area]
+            geometry = area_config['geometry']
+
+            # Step 1: Data acquisition
+            data_results = await self.acquire_all_data(geometry, start_date, end_date)
+
+            # Step 2: Data quality validation
+            quality_results = self.validate_data_quality(data_results)
+
+            # Step 3: Data processing and feature engineering
+            processed_data = self.process_and_engineer_features(data_results, crop_type)
+
+            # Step 4: Time series analysis
+            ts_results = self.perform_time_series_analysis(processed_data)
+
+            # Step 5: Machine learning prediction
+            ml_results = self.run_ml_predictions(processed_data, crop_type)
+
+            # Step 6: Generate alerts
+            alert_results = self.generate_alerts(processed_data, ml_results, crop_type)
+
+            # Step 7: Create prescription maps (in memory only)
+            prescription_results = self.create_prescription_maps_no_save(processed_data, geometry, crop_type)
+
+            # Step 8: Data minimization and cleanup
+            cleanup_results = self.apply_data_minimization()
+
+            # Compile final results (no file saving)
+            analysis_results = {
+                'timestamp': datetime.now().isoformat(),
+                'study_area': study_area,
+                'crop_type': crop_type,
+                'analysis_period': {'start': start_date, 'end': end_date},
+                'region_info': area_config,
+                'data_acquisition': data_results,
+                'data_quality': quality_results,
+                'time_series_analysis': ts_results,
+                'ml_predictions': ml_results,
+                'alerts': alert_results,
+                'prescription_maps': prescription_results,
+                'data_management': cleanup_results
+            }
+
+            return analysis_results
+
+        except Exception as e:
+            self.logger.error(f"Error in single region analysis for {study_area}: {e}")
+            return {'error': str(e), 'study_area': study_area, 'timestamp': datetime.now().isoformat()}
+
     async def _analyze_multiple_regions(self, regions: List[str], crop_type: str, 
                                       start_date: str, end_date: str) -> Dict[str, Any]:
         """Analyze multiple regions for comprehensive coverage"""
@@ -237,7 +292,7 @@ class WaterStressDetectionSystem:
                 self.logger.info(f"Analyzing region {i+1}/{len(regions)}: {region}")
                 
                 try:
-                    region_result = await self._analyze_single_region(region, crop_type, start_date, end_date)
+                    region_result = await self._analyze_single_region_no_save(region, crop_type, start_date, end_date)
                     region_results[region] = region_result
                     
                     # Collect alerts and prescriptions
@@ -280,11 +335,11 @@ class WaterStressDetectionSystem:
                 'comprehensive_prescription_map': comprehensive_prescription
             }
 
-            # Save comprehensive results
-            output_path = self.save_analysis_results(multi_region_results, prefix='multi_region')
-            multi_region_results['output_path'] = output_path
+            # Save consolidated results using new system
+            output_paths = self.save_consolidated_analysis_results(multi_region_results)
+            multi_region_results['output_paths'] = output_paths
 
-            self.logger.info(f"Multi-region analysis completed successfully. Results saved to {output_path}")
+            self.logger.info(f"Multi-region analysis completed successfully. Consolidated results saved to {len(output_paths)} files")
 
             return multi_region_results
 
@@ -703,6 +758,54 @@ class WaterStressDetectionSystem:
         except Exception as e:
             self.logger.error(f"Error creating prescription maps: {e}")
             return {'error': str(e)}
+    
+    def create_prescription_maps_no_save(self, processed_data: Dict[str, Any],
+                                       geometry: List[List[float]], crop_type: str) -> Dict[str, Any]:
+        """Create prescription maps for irrigation without saving files (for multi-region analysis)"""
+        try:
+            if 'combined' not in processed_data:
+                return {'error': 'No processed data available for prescription maps'}
+
+            df = processed_data['combined']
+
+            # Create stress data for mapping
+            stress_data = df.tail(1).copy()  # Most recent data
+
+            # Add coordinates (simplified - in practice would use spatial data)
+            # Handle both polygon (list of coordinates) and coordinate pair formats
+            if isinstance(geometry[0], list):
+                # Polygon format: [[lon, lat], [lon, lat], ...]
+                coords = geometry
+            else:
+                # Already a list of coordinate pairs
+                coords = [geometry]
+            
+            # Calculate centroid from all coordinates
+            all_lons = [coord[0] for coord in coords]
+            all_lats = [coord[1] for coord in coords]
+            centroid_lon = sum(all_lons) / len(all_lons)
+            centroid_lat = sum(all_lats) / len(all_lats)
+            stress_data['longitude'] = centroid_lon
+            stress_data['latitude'] = centroid_lat
+
+            # Create prescription map (in memory only)
+            prescription_map = self.prescription_generator.create_prescription_map(
+                stress_data, geometry, crop_type
+            )
+
+            return {
+                'prescription_map': prescription_map,
+                'creation_timestamp': datetime.now().isoformat(),
+                'coordinates': {
+                    'centroid_lon': centroid_lon,
+                    'centroid_lat': centroid_lat,
+                    'geometry': geometry
+                }
+            }
+
+        except Exception as e:
+            self.logger.error(f"Error creating prescription maps: {e}")
+            return {'error': str(e)}
 
     def apply_data_minimization(self) -> Dict[str, Any]:
         """Apply data minimization and cleanup policies"""
@@ -759,6 +862,224 @@ class WaterStressDetectionSystem:
         else:
             return obj
 
+    def save_consolidated_analysis_results(self, results: Dict[str, Any]) -> Dict[str, str]:
+        """Save consolidated national analysis results in organized structure"""
+        try:
+            output_dir = Path(self.config['output_directory'])
+            output_dir.mkdir(exist_ok=True)
+            
+            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+            date_str = datetime.now().strftime('%Y%m%d')
+            
+            output_paths = {}
+            
+            # 1. National Analysis File (complete results)
+            national_file = output_dir / f"argentina_national_analysis_{timestamp}.json"
+            with open(national_file, 'w') as f:
+                json.dump(results, f, indent=2, default=str)
+            output_paths['national_analysis'] = str(national_file)
+            
+            # 2. Consolidated Alerts File
+            alerts_data = {
+                'timestamp': timestamp,
+                'total_regions': len(results.get('regions_analyzed', [])),
+                'national_summary': results.get('national_summary', {}),
+                'regional_alerts': results.get('combined_alerts', []),
+                'alert_distribution': results.get('national_summary', {}).get('alert_distribution', {}),
+                'overall_status': results.get('national_summary', {}).get('overall_status', 'unknown')
+            }
+            alerts_file = output_dir / f"argentina_alerts_consolidated_{date_str}.json"
+            with open(alerts_file, 'w') as f:
+                json.dump(alerts_data, f, indent=2, default=str)
+            output_paths['alerts_consolidated'] = str(alerts_file)
+            
+            # 3. Satellite Data Consolidation
+            satellite_data = self._consolidate_satellite_data(results.get('region_results', {}))
+            satellite_file = output_dir / f"argentina_satellite_data_{date_str}.json"
+            with open(satellite_file, 'w') as f:
+                json.dump(satellite_data, f, indent=2, default=str)
+            output_paths['satellite_data'] = str(satellite_file)
+            
+            # 4. Weather and Soil Data Consolidation
+            weather_soil_data = self._consolidate_weather_soil_data(results.get('region_results', {}))
+            weather_soil_file = output_dir / f"argentina_weather_soil_data_{date_str}.json"
+            with open(weather_soil_file, 'w') as f:
+                json.dump(weather_soil_data, f, indent=2, default=str)
+            output_paths['weather_soil_data'] = str(weather_soil_file)
+            
+            # 5. Prescription Maps Consolidation
+            prescriptions_data = self._consolidate_prescription_data(results.get('combined_prescriptions', {}))
+            prescriptions_file = output_dir / f"argentina_prescription_maps_{date_str}.json"
+            with open(prescriptions_file, 'w') as f:
+                json.dump(prescriptions_data, f, indent=2, default=str)
+            output_paths['prescription_maps'] = str(prescriptions_file)
+            
+            # Create organized directory structure
+            reports_dir = self._create_organized_directories(output_dir, date_str)
+            
+            # Generate statistical reports
+            national_report = self.report_generator.generate_national_summary_report(results, reports_dir)
+            regional_report = self.report_generator.generate_regional_comparison_report(results, reports_dir)
+            
+            if national_report:
+                output_paths['national_summary_report'] = national_report
+            if regional_report:
+                output_paths['regional_comparison_report'] = regional_report
+            
+            self.logger.info(f"Consolidated analysis results saved to {len(output_paths)} files including statistical reports")
+            return output_paths
+            
+        except Exception as e:
+            self.logger.error(f"Error saving consolidated results: {e}")
+            return {}
+
+    def _consolidate_satellite_data(self, region_results: Dict) -> Dict:
+        """Consolidate satellite data from all regions"""
+        consolidated = {
+            'timestamp': datetime.now().isoformat(),
+            'total_regions': len(region_results),
+            'regions': {},
+            'national_statistics': {},
+            'vegetation_indices_summary': {}
+        }
+        
+        ndvi_values = []
+        ndwi_values = []
+        
+        for region, data in region_results.items():
+            if 'error' not in data and 'data_acquisition' in data:
+                sat_data = data['data_acquisition'].get('satellite', {})
+                if 'time_series' in sat_data:
+                    ts = sat_data['time_series']
+                    region_summary = {
+                        'region_name': data.get('region_info', {}).get('name', region),
+                        'data_points': len(ts) if isinstance(ts, list) else 0,
+                        'latest_ndvi': ts[-1].get('NDVI', 0) if ts and isinstance(ts, list) else 0,
+                        'latest_ndwi': ts[-1].get('NDWI', 0) if ts and isinstance(ts, list) else 0,
+                        'avg_ndvi': sum([d.get('NDVI', 0) for d in ts]) / len(ts) if ts else 0,
+                        'avg_ndwi': sum([d.get('NDWI', 0) for d in ts]) / len(ts) if ts else 0
+                    }
+                    consolidated['regions'][region] = region_summary
+                    ndvi_values.append(region_summary['latest_ndvi'])
+                    ndwi_values.append(region_summary['latest_ndwi'])
+        
+        # National statistics
+        if ndvi_values:
+            consolidated['national_statistics'] = {
+                'avg_ndvi': sum(ndvi_values) / len(ndvi_values),
+                'min_ndvi': min(ndvi_values),
+                'max_ndvi': max(ndvi_values),
+                'avg_ndwi': sum(ndwi_values) / len(ndwi_values),
+                'min_ndwi': min(ndwi_values),
+                'max_ndwi': max(ndwi_values)
+            }
+        
+        return consolidated
+
+    def _consolidate_weather_soil_data(self, region_results: Dict) -> Dict:
+        """Consolidate weather and soil data from all regions"""
+        consolidated = {
+            'timestamp': datetime.now().isoformat(),
+            'total_regions': len(region_results),
+            'weather_data': {},
+            'soil_data': {},
+            'climate_summary': {}
+        }
+        
+        temperatures = []
+        precipitations = []
+        
+        for region, data in region_results.items():
+            if 'error' not in data and 'data_acquisition' in data:
+                # Weather data
+                weather_data = data['data_acquisition'].get('weather', {})
+                if weather_data:
+                    latest_temp = weather_data.get('T2M', 0) if isinstance(weather_data.get('T2M'), (int, float)) else 0
+                    latest_precip = weather_data.get('PRECTOTCORR', 0) if isinstance(weather_data.get('PRECTOTCORR'), (int, float)) else 0
+                    
+                    consolidated['weather_data'][region] = {
+                        'region_name': data.get('region_info', {}).get('name', region),
+                        'temperature': latest_temp,
+                        'precipitation': latest_precip,
+                        'evapotranspiration': weather_data.get('EVPTRNS', 0)
+                    }
+                    temperatures.append(latest_temp)
+                    precipitations.append(latest_precip)
+                
+                # Soil data
+                soil_data = data['data_acquisition'].get('soil', {})
+                if soil_data:
+                    consolidated['soil_data'][region] = {
+                        'region_name': data.get('region_info', {}).get('name', region),
+                        'properties': soil_data
+                    }
+        
+        # Climate summary
+        if temperatures:
+            consolidated['climate_summary'] = {
+                'avg_temperature': sum(temperatures) / len(temperatures),
+                'min_temperature': min(temperatures),
+                'max_temperature': max(temperatures),
+                'avg_precipitation': sum(precipitations) / len(precipitations),
+                'total_precipitation': sum(precipitations)
+            }
+        
+        return consolidated
+
+    def _consolidate_prescription_data(self, combined_prescriptions: Dict) -> Dict:
+        """Consolidate prescription map data from all regions"""
+        consolidated = {
+            'timestamp': datetime.now().isoformat(),
+            'total_regions': len(combined_prescriptions),
+            'regional_prescriptions': {},
+            'national_irrigation_summary': {},
+            'water_usage_optimization': {}
+        }
+        
+        total_irrigation_rates = []
+        
+        for region, prescription_data in combined_prescriptions.items():
+            if 'error' not in prescription_data and 'prescription_map' in prescription_data:
+                pmap = prescription_data['prescription_map']
+                
+                # Extract irrigation recommendations
+                irrigation_rate = 0
+                if 'irrigation_recommendations' in pmap and 'total_irrigation_mm_day' in pmap['irrigation_recommendations']:
+                    irrigation_rate = pmap['irrigation_recommendations']['total_irrigation_mm_day']
+                
+                consolidated['regional_prescriptions'][region] = {
+                    'irrigation_rate_mm_day': irrigation_rate,
+                    'prescription_zones': pmap.get('zones', {}),
+                    'efficiency_metrics': pmap.get('efficiency_metrics', {}),
+                    'coordinates': prescription_data.get('coordinates', {})
+                }
+                
+                if irrigation_rate > 0:
+                    total_irrigation_rates.append(irrigation_rate)
+        
+        # National irrigation summary
+        if total_irrigation_rates:
+            consolidated['national_irrigation_summary'] = {
+                'avg_irrigation_rate': sum(total_irrigation_rates) / len(total_irrigation_rates),
+                'total_regions_requiring_irrigation': len(total_irrigation_rates),
+                'max_irrigation_rate': max(total_irrigation_rates),
+                'min_irrigation_rate': min(total_irrigation_rates),
+                'total_water_requirement_estimate': sum(total_irrigation_rates) * 1624  # 1624 km² per region
+            }
+        
+        return consolidated
+
+    def _create_organized_directories(self, output_dir: Path, date_str: str) -> Path:
+        """Create organized directory structure for reports and maps"""
+        # Create directories for future reports and maps
+        reports_dir = output_dir / "statistical_reports"
+        reports_dir.mkdir(exist_ok=True)
+        
+        maps_dir = output_dir / "interactive_maps"
+        maps_dir.mkdir(exist_ok=True)
+        
+        return reports_dir
+
 def main():
     """Main entry point"""
     parser = argparse.ArgumentParser(description='Water Stress Detection System')
@@ -792,11 +1113,24 @@ def main():
         ))
 
         print(f"Analysis completed successfully!")
-        print(f"Results saved to: {results.get('output_path', 'Unknown')}")
-
+        
         # Print summary based on analysis type
         if 'analysis_type' in results and results['analysis_type'] == 'multi_region':
-            # Multi-region summary
+            # Multi-region consolidated output summary
+            output_paths = results.get('output_paths', {})
+            if output_paths:
+                print(f"\n🇦🇷 === CONSOLIDATED ARGENTINA ANALYSIS COMPLETE ===")
+                print(f"📊 Generated {len(output_paths)} consolidated files:")
+                print(f"   🌍 National Analysis: {output_paths.get('national_analysis', 'N/A')}")
+                print(f"   🚨 Alerts Consolidated: {output_paths.get('alerts_consolidated', 'N/A')}")
+                print(f"   🛰️  Satellite Data: {output_paths.get('satellite_data', 'N/A')}")
+                print(f"   🌦️  Weather/Soil Data: {output_paths.get('weather_soil_data', 'N/A')}")
+                print(f"   💧 Prescription Maps: {output_paths.get('prescription_maps', 'N/A')}")
+                print(f"\n📈 === STATISTICAL REPORTS GENERATED ===")
+                print(f"   📋 National Summary: {output_paths.get('national_summary_report', 'N/A')}")
+                print(f"   📊 Regional Comparison: {output_paths.get('regional_comparison_report', 'N/A')}")
+            
+            # National summary
             if 'national_summary' in results:
                 summary = results['national_summary']
                 print(f"\n=== NATIONAL SUMMARY ===")
@@ -812,7 +1146,12 @@ def main():
                     print(f"High priority regions: {', '.join(summary['high_priority_regions'])}")
             
             if 'regions_analyzed' in results:
-                print(f"\nRegions analyzed: {', '.join(results['regions_analyzed'])}")
+                print(f"\nRegions analyzed: {len(results['regions_analyzed'])} total")
+                print(f"Regional coverage: Buenos Aires (10), Córdoba (8), Santa Fe (8), Entre Ríos (3), La Pampa (3), Northern (5), Test (1)")
+                
+            print(f"\n📁 Output Structure:")
+            print(f"   ├── statistical_reports/     # Future analytical reports")
+            print(f"   └── interactive_maps/        # National visualization maps")
         else:
             # Single region summary
             if 'alerts' in results and 'current_alert' in results['alerts']:

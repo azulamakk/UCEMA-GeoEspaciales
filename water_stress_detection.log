@@ -1152,3 +1152,1551 @@ Ensure that you are not aggregating at a higher resolution than you intended; th
 2025-09-19 21:03:30,408 - data_acquisition.satellite_data - INFO - Processing area: 1604.52 km²
 2025-09-19 21:03:30,408 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
 2025-09-19 21:03:30,410 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:48:31,414 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-20 13:48:31,415 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-20 13:48:31,416 - __main__ - INFO - Starting COMPLETE ARGENTINA analysis for ALL 39 agricultural regions, soybean from 2025-05-09 to 2025-09-06
+2025-09-20 13:48:31,416 - __main__ - INFO - Analyzing 39 regions: buenos_aires_01_northwest, buenos_aires_02_northeast, buenos_aires_03_east, buenos_aires_04_far_east, buenos_aires_05_central_west, buenos_aires_06_central, buenos_aires_07_central_east, buenos_aires_08_southwest, buenos_aires_09_south_central, buenos_aires_10_southeast, cordoba_01_north, cordoba_02_northeast, cordoba_03_east, cordoba_04_central_west, cordoba_05_central, cordoba_06_central_east, cordoba_07_south, cordoba_08_southeast, santa_fe_01_northwest, santa_fe_02_north, santa_fe_03_northeast, santa_fe_04_central_west, santa_fe_05_central, santa_fe_06_central_east, santa_fe_07_south, santa_fe_08_southeast, entre_rios_01_north, entre_rios_02_central, entre_rios_03_south, la_pampa_01_east, la_pampa_02_central, la_pampa_03_north, santiago_estero_01, santiago_estero_02, chaco_01_south, chaco_02_central, tucuman_01, salta_01, test_area_micro
+2025-09-20 13:48:31,416 - __main__ - INFO - Analyzing region 1/39: buenos_aires_01_northwest
+2025-09-20 13:48:31,416 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:48:31,659 - data_acquisition.satellite_data - INFO - Processing area: 1624.47 km²
+2025-09-20 13:48:31,659 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:48:31,660 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:48:44,780 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:48:44,797 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:48:44,810 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:48:44,813 - utils.data_management - INFO - Stored soil_data data: soil_-61.04_-34.839999999999996
+2025-09-20 13:48:44,814 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:48:44,816 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:48:44,868 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:48:44,870 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:48:44,888 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:48:44,899 - modeling.ml_models - INFO - Prepared 148 samples with 135 features
+2025-09-20 13:48:44,901 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:48:44,902 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:48:44,902 - utils.data_management - INFO - Stored alert_history data: alert_20250920_134844
+2025-09-20 13:48:44,904 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:48:44,905 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:48:45,240 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:48:45,278 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:48:45,284 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:48:45,285 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:48:45,286 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:48:45,316 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_134845.json
+2025-09-20 13:48:45,316 - __main__ - INFO - Analyzing region 2/39: buenos_aires_02_northeast
+2025-09-20 13:48:45,316 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:48:46,384 - data_acquisition.satellite_data - INFO - Processing area: 1624.47 km²
+2025-09-20 13:48:46,384 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:48:46,385 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:49:04,661 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:49:04,681 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:49:04,694 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:49:04,697 - utils.data_management - INFO - Stored soil_data data: soil_-60.64_-34.839999999999996
+2025-09-20 13:49:04,699 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:49:04,699 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:49:04,750 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:49:04,751 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:49:04,767 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:49:04,778 - modeling.ml_models - INFO - Prepared 167 samples with 135 features
+2025-09-20 13:49:04,781 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:49:04,781 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:49:04,782 - utils.data_management - INFO - Stored alert_history data: alert_20250920_134904
+2025-09-20 13:49:04,783 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:49:04,784 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:49:04,979 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:49:04,983 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:49:04,988 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:49:04,989 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:49:04,990 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:49:05,024 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_134904.json
+2025-09-20 13:49:05,024 - __main__ - INFO - Analyzing region 3/39: buenos_aires_03_east
+2025-09-20 13:49:05,024 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:49:06,090 - data_acquisition.satellite_data - INFO - Processing area: 1624.47 km²
+2025-09-20 13:49:06,090 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:49:06,091 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:49:20,149 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:49:20,164 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:49:20,176 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:49:20,179 - utils.data_management - INFO - Stored soil_data data: soil_-60.239999999999995_-34.839999999999996
+2025-09-20 13:49:20,181 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:49:20,181 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:49:20,227 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:49:20,229 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:49:20,244 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:49:20,255 - modeling.ml_models - INFO - Prepared 163 samples with 135 features
+2025-09-20 13:49:20,258 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:49:20,259 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:49:20,259 - utils.data_management - INFO - Stored alert_history data: alert_20250920_134920
+2025-09-20 13:49:20,260 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:49:20,261 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:49:20,449 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:49:20,451 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:49:20,457 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:49:20,458 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:49:20,459 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:49:20,492 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_134920.json
+2025-09-20 13:49:20,492 - __main__ - INFO - Analyzing region 4/39: buenos_aires_04_far_east
+2025-09-20 13:49:20,492 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:49:21,397 - data_acquisition.satellite_data - INFO - Processing area: 1624.47 km²
+2025-09-20 13:49:21,397 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:49:21,398 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:49:35,134 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:49:35,152 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:49:35,164 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:49:35,167 - utils.data_management - INFO - Stored soil_data data: soil_-59.839999999999996_-34.839999999999996
+2025-09-20 13:49:35,168 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:49:35,169 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:49:35,218 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:49:35,219 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:49:35,236 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:49:35,247 - modeling.ml_models - INFO - Prepared 163 samples with 135 features
+2025-09-20 13:49:35,250 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:49:35,250 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:49:35,251 - utils.data_management - INFO - Stored alert_history data: alert_20250920_134935
+2025-09-20 13:49:35,252 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:49:35,253 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:49:35,451 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:49:35,454 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:49:35,459 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:49:35,460 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:49:35,461 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:49:35,494 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_134935.json
+2025-09-20 13:49:35,495 - __main__ - INFO - Analyzing region 5/39: buenos_aires_05_central_west
+2025-09-20 13:49:35,495 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:49:35,786 - data_acquisition.satellite_data - INFO - Processing area: 1616.55 km²
+2025-09-20 13:49:35,786 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:49:35,788 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:49:50,071 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:49:50,086 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:49:50,100 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:49:50,103 - utils.data_management - INFO - Stored soil_data data: soil_-61.04_-35.24
+2025-09-20 13:49:50,104 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:49:50,105 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:49:50,153 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:49:50,155 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:49:50,170 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:49:50,182 - modeling.ml_models - INFO - Prepared 212 samples with 135 features
+2025-09-20 13:49:50,186 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:49:50,186 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:49:50,187 - utils.data_management - INFO - Stored alert_history data: alert_20250920_134950
+2025-09-20 13:49:50,188 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:49:50,189 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:49:50,428 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:49:50,430 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:49:50,435 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:49:50,437 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:49:50,438 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:49:50,470 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_134950.json
+2025-09-20 13:49:50,471 - __main__ - INFO - Analyzing region 6/39: buenos_aires_06_central
+2025-09-20 13:49:50,471 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:49:50,731 - data_acquisition.satellite_data - INFO - Processing area: 1616.55 km²
+2025-09-20 13:49:50,731 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:49:50,732 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:50:07,336 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:50:07,354 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:50:07,364 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:50:07,367 - utils.data_management - INFO - Stored soil_data data: soil_-60.64_-35.24
+2025-09-20 13:50:07,368 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:50:07,368 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:50:07,415 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:50:07,416 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:50:07,432 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:50:07,443 - modeling.ml_models - INFO - Prepared 212 samples with 135 features
+2025-09-20 13:50:07,446 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:50:07,446 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:50:07,447 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135007
+2025-09-20 13:50:07,448 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:50:07,449 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:50:07,645 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:50:07,648 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:50:07,653 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:50:07,654 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:50:07,656 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:50:07,689 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135007.json
+2025-09-20 13:50:07,690 - __main__ - INFO - Analyzing region 7/39: buenos_aires_07_central_east
+2025-09-20 13:50:07,690 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:50:08,611 - data_acquisition.satellite_data - INFO - Processing area: 1616.55 km²
+2025-09-20 13:50:08,611 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:50:08,613 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:50:26,109 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:50:26,129 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:50:26,146 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:50:26,150 - utils.data_management - INFO - Stored soil_data data: soil_-60.239999999999995_-35.24
+2025-09-20 13:50:26,152 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:50:26,152 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:50:26,202 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:50:26,204 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:50:26,219 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:50:26,230 - modeling.ml_models - INFO - Prepared 208 samples with 135 features
+2025-09-20 13:50:26,233 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:50:26,234 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:50:26,234 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135026
+2025-09-20 13:50:26,235 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:50:26,236 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:50:26,425 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:50:26,428 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:50:26,434 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:50:26,435 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:50:26,436 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:50:26,469 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135026.json
+2025-09-20 13:50:26,469 - __main__ - INFO - Analyzing region 8/39: buenos_aires_08_southwest
+2025-09-20 13:50:26,469 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:50:26,808 - data_acquisition.satellite_data - INFO - Processing area: 1604.52 km²
+2025-09-20 13:50:26,809 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:50:26,811 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:50:37,217 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:50:37,238 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:50:37,257 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:50:37,260 - utils.data_management - INFO - Stored soil_data data: soil_-61.44_-35.839999999999996
+2025-09-20 13:50:37,263 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:50:37,263 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:50:37,313 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:50:37,315 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:50:37,330 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:50:37,341 - modeling.ml_models - INFO - Prepared 133 samples with 135 features
+2025-09-20 13:50:37,344 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:50:37,344 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:50:37,345 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135037
+2025-09-20 13:50:37,346 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:50:37,347 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:50:37,551 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:50:37,554 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:50:37,559 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:50:37,560 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:50:37,562 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:50:37,594 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135037.json
+2025-09-20 13:50:37,594 - __main__ - INFO - Analyzing region 9/39: buenos_aires_09_south_central
+2025-09-20 13:50:37,594 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:50:37,883 - data_acquisition.satellite_data - INFO - Processing area: 1604.52 km²
+2025-09-20 13:50:37,883 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:50:37,884 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:50:46,994 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:50:47,017 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:50:47,033 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:50:47,036 - utils.data_management - INFO - Stored soil_data data: soil_-61.04_-35.839999999999996
+2025-09-20 13:50:47,039 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:50:47,039 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:50:47,090 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:50:47,091 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:50:47,107 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:50:47,117 - modeling.ml_models - INFO - Prepared 142 samples with 135 features
+2025-09-20 13:50:47,120 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:50:47,120 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:50:47,120 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135047
+2025-09-20 13:50:47,122 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:50:47,123 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:50:47,355 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:50:47,357 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:50:47,362 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:50:47,364 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:50:47,365 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:50:47,396 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135047.json
+2025-09-20 13:50:47,396 - __main__ - INFO - Analyzing region 10/39: buenos_aires_10_southeast
+2025-09-20 13:50:47,396 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:50:47,809 - data_acquisition.satellite_data - INFO - Processing area: 1604.52 km²
+2025-09-20 13:50:47,809 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:50:47,811 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:51:02,249 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:51:02,270 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:51:02,280 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:51:02,282 - utils.data_management - INFO - Stored soil_data data: soil_-60.64_-35.839999999999996
+2025-09-20 13:51:02,283 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:51:02,284 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:51:02,333 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:51:02,335 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:51:02,351 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:51:02,362 - modeling.ml_models - INFO - Prepared 167 samples with 135 features
+2025-09-20 13:51:02,365 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:51:02,365 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:51:02,366 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135102
+2025-09-20 13:51:02,367 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:51:02,368 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:51:02,558 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:51:02,560 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:51:02,565 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:51:02,566 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:51:02,568 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:51:02,602 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135102.json
+2025-09-20 13:51:02,602 - __main__ - INFO - Analyzing region 11/39: cordoba_01_north
+2025-09-20 13:51:02,602 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:51:02,855 - data_acquisition.satellite_data - INFO - Processing area: 1690.37 km²
+2025-09-20 13:51:02,855 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:51:02,857 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:51:20,069 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:51:20,090 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:51:20,099 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:51:20,102 - utils.data_management - INFO - Stored soil_data data: soil_-63.839999999999996_-31.339999999999996
+2025-09-20 13:51:20,103 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:51:20,104 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:51:20,155 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:51:20,157 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:51:20,172 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:51:20,183 - modeling.ml_models - INFO - Prepared 179 samples with 135 features
+2025-09-20 13:51:20,186 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:51:20,186 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:51:20,187 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135120
+2025-09-20 13:51:20,188 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:51:20,189 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:51:20,388 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:51:20,391 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:51:20,396 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:51:20,398 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:51:20,400 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:51:20,435 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135120.json
+2025-09-20 13:51:20,435 - __main__ - INFO - Analyzing region 12/39: cordoba_02_northeast
+2025-09-20 13:51:20,435 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:51:20,878 - data_acquisition.satellite_data - INFO - Processing area: 1690.37 km²
+2025-09-20 13:51:20,879 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:51:20,881 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:51:29,158 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:51:29,179 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:51:29,198 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:51:29,202 - utils.data_management - INFO - Stored soil_data data: soil_-63.44_-31.339999999999996
+2025-09-20 13:51:29,205 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:51:29,205 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:51:29,256 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:51:29,257 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:51:29,272 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:51:29,283 - modeling.ml_models - INFO - Prepared 134 samples with 135 features
+2025-09-20 13:51:29,285 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:51:29,286 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:51:29,286 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135129
+2025-09-20 13:51:29,288 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:51:29,288 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:51:29,477 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:51:29,479 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:51:29,484 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:51:29,487 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:51:29,488 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:51:29,518 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135129.json
+2025-09-20 13:51:29,518 - __main__ - INFO - Analyzing region 13/39: cordoba_03_east
+2025-09-20 13:51:29,518 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:51:29,763 - data_acquisition.satellite_data - INFO - Processing area: 1690.37 km²
+2025-09-20 13:51:29,763 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:51:29,765 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:51:42,301 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:51:42,322 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:51:42,339 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:51:42,342 - utils.data_management - INFO - Stored soil_data data: soil_-63.04_-31.339999999999996
+2025-09-20 13:51:42,345 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:51:42,345 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:51:42,397 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:51:42,399 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:51:42,414 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:51:42,425 - modeling.ml_models - INFO - Prepared 148 samples with 135 features
+2025-09-20 13:51:42,428 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:51:42,428 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:51:42,429 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135142
+2025-09-20 13:51:42,430 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:51:42,431 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:51:42,672 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:51:42,674 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:51:42,678 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:51:42,680 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:51:42,682 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:51:42,715 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135142.json
+2025-09-20 13:51:42,715 - __main__ - INFO - Analyzing region 14/39: cordoba_04_central_west
+2025-09-20 13:51:42,715 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:51:43,713 - data_acquisition.satellite_data - INFO - Processing area: 1683.15 km²
+2025-09-20 13:51:43,713 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:51:43,714 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:51:58,267 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:51:58,290 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:51:58,304 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:51:58,308 - utils.data_management - INFO - Stored soil_data data: soil_-63.839999999999996_-31.74
+2025-09-20 13:51:58,309 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:51:58,310 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:51:58,362 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:51:58,364 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:51:58,379 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:51:58,389 - modeling.ml_models - INFO - Prepared 178 samples with 135 features
+2025-09-20 13:51:58,392 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:51:58,393 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:51:58,393 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135158
+2025-09-20 13:51:58,394 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:51:58,395 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:51:58,592 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:51:58,594 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:51:58,599 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:51:58,600 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:51:58,602 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:51:58,636 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135158.json
+2025-09-20 13:51:58,636 - __main__ - INFO - Analyzing region 15/39: cordoba_05_central
+2025-09-20 13:51:58,636 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:51:59,897 - data_acquisition.satellite_data - INFO - Processing area: 1683.15 km²
+2025-09-20 13:51:59,898 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:51:59,899 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:52:08,930 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:52:08,950 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:52:08,966 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:52:08,969 - utils.data_management - INFO - Stored soil_data data: soil_-63.44_-31.74
+2025-09-20 13:52:08,971 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:52:08,972 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:52:09,021 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:52:09,023 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:52:09,037 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:52:09,048 - modeling.ml_models - INFO - Prepared 147 samples with 135 features
+2025-09-20 13:52:09,050 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:52:09,051 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:52:09,051 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135209
+2025-09-20 13:52:09,053 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:52:09,053 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:52:09,246 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:52:09,248 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:52:09,253 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:52:09,255 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:52:09,256 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:52:09,288 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135209.json
+2025-09-20 13:52:09,288 - __main__ - INFO - Analyzing region 16/39: cordoba_06_central_east
+2025-09-20 13:52:09,288 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:52:09,728 - data_acquisition.satellite_data - INFO - Processing area: 1683.15 km²
+2025-09-20 13:52:09,729 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:52:09,731 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:52:22,219 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:52:22,242 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:52:22,257 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:52:22,260 - utils.data_management - INFO - Stored soil_data data: soil_-63.04_-31.74
+2025-09-20 13:52:22,262 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:52:22,263 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:52:22,315 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:52:22,317 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:52:22,332 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:52:22,343 - modeling.ml_models - INFO - Prepared 174 samples with 135 features
+2025-09-20 13:52:22,346 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:52:22,346 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:52:22,347 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135222
+2025-09-20 13:52:22,348 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:52:22,349 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:52:22,542 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:52:22,545 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:52:22,550 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:52:22,551 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:52:22,553 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:52:22,587 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135222.json
+2025-09-20 13:52:22,587 - __main__ - INFO - Analyzing region 17/39: cordoba_07_south
+2025-09-20 13:52:22,587 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:52:22,827 - data_acquisition.satellite_data - INFO - Processing area: 1675.85 km²
+2025-09-20 13:52:22,827 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:52:22,828 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:52:36,148 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:52:36,167 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:52:36,181 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:52:36,184 - utils.data_management - INFO - Stored soil_data data: soil_-63.839999999999996_-32.14
+2025-09-20 13:52:36,186 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:52:36,187 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:52:36,236 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:52:36,238 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:52:36,252 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:52:36,308 - modeling.ml_models - INFO - Prepared 149 samples with 135 features
+2025-09-20 13:52:36,311 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:52:36,311 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:52:36,312 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135236
+2025-09-20 13:52:36,313 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:52:36,314 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:52:36,499 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:52:36,501 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:52:36,506 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:52:36,508 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:52:36,509 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:52:36,542 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135236.json
+2025-09-20 13:52:36,542 - __main__ - INFO - Analyzing region 18/39: cordoba_08_southeast
+2025-09-20 13:52:36,542 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:52:37,581 - data_acquisition.satellite_data - INFO - Processing area: 1675.85 km²
+2025-09-20 13:52:37,581 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:52:37,582 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:52:48,739 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:52:48,754 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:52:48,769 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:52:48,772 - utils.data_management - INFO - Stored soil_data data: soil_-63.44_-32.14
+2025-09-20 13:52:48,775 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:52:48,775 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:52:48,824 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:52:48,826 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:52:48,841 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:52:48,852 - modeling.ml_models - INFO - Prepared 134 samples with 135 features
+2025-09-20 13:52:48,854 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:52:48,855 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:52:48,855 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135248
+2025-09-20 13:52:48,857 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:52:48,858 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:52:49,053 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:52:49,055 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:52:49,060 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:52:49,063 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:52:49,065 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:52:49,096 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135249.json
+2025-09-20 13:52:49,097 - __main__ - INFO - Analyzing region 19/39: santa_fe_01_northwest
+2025-09-20 13:52:49,097 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:52:50,172 - data_acquisition.satellite_data - INFO - Processing area: 1709.79 km²
+2025-09-20 13:52:50,172 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:52:50,173 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:53:01,751 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:53:01,768 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:53:01,783 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:53:01,786 - utils.data_management - INFO - Stored soil_data data: soil_-61.239999999999995_-30.24
+2025-09-20 13:53:01,789 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:53:01,789 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:53:01,838 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:53:01,839 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:53:01,854 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:53:01,864 - modeling.ml_models - INFO - Prepared 150 samples with 135 features
+2025-09-20 13:53:01,867 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:53:01,867 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:53:01,868 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135301
+2025-09-20 13:53:01,869 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:53:01,870 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:53:02,065 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:53:02,067 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:53:02,072 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:53:02,074 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:53:02,075 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:53:02,107 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135302.json
+2025-09-20 13:53:02,107 - __main__ - INFO - Analyzing region 20/39: santa_fe_02_north
+2025-09-20 13:53:02,107 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:53:02,362 - data_acquisition.satellite_data - INFO - Processing area: 1709.79 km²
+2025-09-20 13:53:02,362 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:53:02,364 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:53:12,497 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:53:12,517 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:53:12,533 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:53:12,537 - utils.data_management - INFO - Stored soil_data data: soil_-60.839999999999996_-30.24
+2025-09-20 13:53:12,540 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:53:12,540 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:53:12,591 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:53:12,593 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:53:12,608 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:53:12,619 - modeling.ml_models - INFO - Prepared 147 samples with 135 features
+2025-09-20 13:53:12,622 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:53:12,622 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:53:12,622 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135312
+2025-09-20 13:53:12,624 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:53:12,625 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:53:12,821 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:53:12,823 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:53:12,828 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:53:12,830 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:53:12,832 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:53:12,864 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135312.json
+2025-09-20 13:53:12,864 - __main__ - INFO - Analyzing region 21/39: santa_fe_03_northeast
+2025-09-20 13:53:12,864 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:53:13,101 - data_acquisition.satellite_data - INFO - Processing area: 1709.79 km²
+2025-09-20 13:53:13,101 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:53:13,102 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:53:24,374 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:53:24,385 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:53:24,397 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:53:24,401 - utils.data_management - INFO - Stored soil_data data: soil_-60.44_-30.24
+2025-09-20 13:53:24,403 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:53:24,403 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:53:24,450 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:53:24,452 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:53:24,470 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:53:24,481 - modeling.ml_models - INFO - Prepared 135 samples with 135 features
+2025-09-20 13:53:24,484 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:53:24,484 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:53:24,485 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135324
+2025-09-20 13:53:24,487 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:53:24,548 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:53:24,749 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:53:24,751 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:53:24,756 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:53:24,758 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:53:24,760 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:53:24,791 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135324.json
+2025-09-20 13:53:24,791 - __main__ - INFO - Analyzing region 22/39: santa_fe_04_central_west
+2025-09-20 13:53:24,791 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:53:25,911 - data_acquisition.satellite_data - INFO - Processing area: 1702.80 km²
+2025-09-20 13:53:25,911 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:53:25,913 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:53:38,415 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:53:38,432 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:53:38,445 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:53:38,449 - utils.data_management - INFO - Stored soil_data data: soil_-61.239999999999995_-30.640000000000004
+2025-09-20 13:53:38,451 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:53:38,452 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:53:38,501 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:53:38,502 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:53:38,517 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:53:38,528 - modeling.ml_models - INFO - Prepared 174 samples with 135 features
+2025-09-20 13:53:38,531 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:53:38,531 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:53:38,532 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135338
+2025-09-20 13:53:38,533 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:53:38,534 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:53:38,722 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:53:38,724 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:53:38,729 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:53:38,731 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:53:38,733 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:53:38,766 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135338.json
+2025-09-20 13:53:38,766 - __main__ - INFO - Analyzing region 23/39: santa_fe_05_central
+2025-09-20 13:53:38,766 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:53:39,728 - data_acquisition.satellite_data - INFO - Processing area: 1702.80 km²
+2025-09-20 13:53:39,728 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:53:39,730 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:53:52,644 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:53:52,660 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:53:52,673 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:53:52,676 - utils.data_management - INFO - Stored soil_data data: soil_-60.839999999999996_-30.640000000000004
+2025-09-20 13:53:52,679 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:53:52,679 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:53:52,729 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:53:52,730 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:53:52,745 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:53:52,756 - modeling.ml_models - INFO - Prepared 170 samples with 135 features
+2025-09-20 13:53:52,759 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:53:52,760 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:53:52,760 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135352
+2025-09-20 13:53:52,762 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:53:52,763 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:53:52,961 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:53:52,963 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:53:52,968 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:53:52,970 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:53:52,972 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:53:53,006 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135352.json
+2025-09-20 13:53:53,006 - __main__ - INFO - Analyzing region 24/39: santa_fe_06_central_east
+2025-09-20 13:53:53,006 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:53:53,385 - data_acquisition.satellite_data - INFO - Processing area: 1702.80 km²
+2025-09-20 13:53:53,385 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:53:53,386 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:54:03,189 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:54:03,209 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:54:03,225 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:54:03,229 - utils.data_management - INFO - Stored soil_data data: soil_-60.44_-30.640000000000004
+2025-09-20 13:54:03,232 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:54:03,232 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:54:03,283 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:54:03,285 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:54:03,301 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:54:03,312 - modeling.ml_models - INFO - Prepared 147 samples with 135 features
+2025-09-20 13:54:03,315 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:54:03,315 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:54:03,316 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135403
+2025-09-20 13:54:03,317 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:54:03,318 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:54:03,507 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:54:03,509 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:54:03,514 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:54:03,516 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:54:03,518 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:54:03,550 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135403.json
+2025-09-20 13:54:03,550 - __main__ - INFO - Analyzing region 25/39: santa_fe_07_south
+2025-09-20 13:54:03,550 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:54:03,894 - data_acquisition.satellite_data - INFO - Processing area: 1695.73 km²
+2025-09-20 13:54:03,894 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:54:03,896 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:54:19,481 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:54:19,504 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:54:19,519 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:54:19,522 - utils.data_management - INFO - Stored soil_data data: soil_-61.239999999999995_-31.04
+2025-09-20 13:54:19,525 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:54:19,525 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:54:19,576 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:54:19,578 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:54:19,594 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:54:19,605 - modeling.ml_models - INFO - Prepared 174 samples with 135 features
+2025-09-20 13:54:19,607 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:54:19,608 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:54:19,608 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135419
+2025-09-20 13:54:19,610 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:54:19,611 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:54:19,853 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:54:19,855 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:54:19,859 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:54:19,861 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:54:19,863 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:54:19,897 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135419.json
+2025-09-20 13:54:19,897 - __main__ - INFO - Analyzing region 26/39: santa_fe_08_southeast
+2025-09-20 13:54:19,897 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:54:20,156 - data_acquisition.satellite_data - INFO - Processing area: 1695.73 km²
+2025-09-20 13:54:20,156 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:54:20,157 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:54:34,537 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:54:34,559 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:54:34,575 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:54:34,578 - utils.data_management - INFO - Stored soil_data data: soil_-60.839999999999996_-31.04
+2025-09-20 13:54:34,581 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:54:34,581 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:54:34,631 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:54:34,633 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:54:34,648 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:54:34,658 - modeling.ml_models - INFO - Prepared 170 samples with 135 features
+2025-09-20 13:54:34,661 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:54:34,662 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:54:34,662 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135434
+2025-09-20 13:54:34,664 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:54:34,665 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:54:34,857 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:54:34,859 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:54:34,864 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:54:34,866 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:54:34,868 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:54:34,901 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135434.json
+2025-09-20 13:54:34,901 - __main__ - INFO - Analyzing region 27/39: entre_rios_01_north
+2025-09-20 13:54:34,901 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:54:35,955 - data_acquisition.satellite_data - INFO - Processing area: 1702.80 km²
+2025-09-20 13:54:35,956 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:54:35,957 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:54:50,250 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:54:50,266 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:54:50,280 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:54:50,283 - utils.data_management - INFO - Stored soil_data data: soil_-59.64_-30.640000000000004
+2025-09-20 13:54:50,286 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:54:50,286 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:54:50,338 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:54:50,340 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:54:50,356 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:54:50,366 - modeling.ml_models - INFO - Prepared 200 samples with 135 features
+2025-09-20 13:54:50,369 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:54:50,370 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:54:50,370 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135450
+2025-09-20 13:54:50,372 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:54:50,373 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:54:50,561 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:54:50,564 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:54:50,569 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:54:50,571 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:54:50,574 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:54:50,604 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135450.json
+2025-09-20 13:54:50,604 - __main__ - INFO - Analyzing region 28/39: entre_rios_02_central
+2025-09-20 13:54:50,605 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:54:51,724 - data_acquisition.satellite_data - INFO - Processing area: 1695.73 km²
+2025-09-20 13:54:51,724 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:54:51,725 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:55:06,164 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:55:06,187 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:55:06,203 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:55:06,207 - utils.data_management - INFO - Stored soil_data data: soil_-59.64_-31.04
+2025-09-20 13:55:06,210 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:55:06,210 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:55:06,262 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:55:06,265 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:55:06,281 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:55:06,292 - modeling.ml_models - INFO - Prepared 158 samples with 135 features
+2025-09-20 13:55:06,295 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:55:06,295 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:55:06,295 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135506
+2025-09-20 13:55:06,298 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:55:06,299 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:55:06,497 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:55:06,499 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:55:06,503 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:55:06,506 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:55:06,508 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:55:06,541 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135506.json
+2025-09-20 13:55:06,541 - __main__ - INFO - Analyzing region 29/39: entre_rios_03_south
+2025-09-20 13:55:06,541 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:55:06,779 - data_acquisition.satellite_data - INFO - Processing area: 1688.57 km²
+2025-09-20 13:55:06,779 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:55:06,780 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:55:23,166 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:55:23,181 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:55:23,264 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:55:23,267 - utils.data_management - INFO - Stored soil_data data: soil_-59.64_-31.440000000000005
+2025-09-20 13:55:23,269 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:55:23,269 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:55:23,317 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:55:23,319 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:55:23,336 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:55:23,347 - modeling.ml_models - INFO - Prepared 171 samples with 135 features
+2025-09-20 13:55:23,350 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:55:23,350 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:55:23,350 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135523
+2025-09-20 13:55:23,353 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:55:23,353 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:55:23,554 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:55:23,556 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:55:23,561 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:55:23,563 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:55:23,565 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:55:23,601 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135523.json
+2025-09-20 13:55:23,601 - __main__ - INFO - Analyzing region 30/39: la_pampa_01_east
+2025-09-20 13:55:23,601 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:55:23,796 - data_acquisition.satellite_data - INFO - Processing area: 1596.40 km²
+2025-09-20 13:55:23,796 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:55:23,797 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:55:35,653 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:55:35,673 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:55:35,689 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:55:35,693 - utils.data_management - INFO - Stored soil_data data: soil_-65.03999999999999_-36.24
+2025-09-20 13:55:35,696 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:55:35,696 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:55:35,746 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:55:35,748 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:55:35,763 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:55:35,773 - modeling.ml_models - INFO - Prepared 157 samples with 135 features
+2025-09-20 13:55:35,776 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:55:35,776 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:55:35,777 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135535
+2025-09-20 13:55:35,779 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:55:35,780 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:55:35,972 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:55:35,974 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:55:35,979 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:55:35,981 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:55:35,983 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:55:36,015 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135535.json
+2025-09-20 13:55:36,015 - __main__ - INFO - Analyzing region 31/39: la_pampa_02_central
+2025-09-20 13:55:36,015 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:55:36,266 - data_acquisition.satellite_data - INFO - Processing area: 1596.40 km²
+2025-09-20 13:55:36,266 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:55:36,267 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:55:48,873 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:55:48,893 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:55:48,910 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:55:48,915 - utils.data_management - INFO - Stored soil_data data: soil_-65.44000000000001_-36.24
+2025-09-20 13:55:48,918 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:55:48,918 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:55:48,969 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:55:48,972 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:55:48,988 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:55:48,999 - modeling.ml_models - INFO - Prepared 207 samples with 135 features
+2025-09-20 13:55:49,002 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:55:49,003 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:55:49,003 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135549
+2025-09-20 13:55:49,006 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:55:49,006 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:55:49,206 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:55:49,209 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:55:49,214 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:55:49,216 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:55:49,218 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:55:49,251 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135549.json
+2025-09-20 13:55:49,251 - __main__ - INFO - Analyzing region 32/39: la_pampa_03_north
+2025-09-20 13:55:49,251 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:55:49,570 - data_acquisition.satellite_data - INFO - Processing area: 1604.52 km²
+2025-09-20 13:55:49,571 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:55:49,572 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:56:02,392 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:56:02,415 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:56:02,432 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:56:02,436 - utils.data_management - INFO - Stored soil_data data: soil_-65.03999999999999_-35.839999999999996
+2025-09-20 13:56:02,439 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:56:02,440 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:56:02,491 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:56:02,493 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:56:02,509 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:56:02,520 - modeling.ml_models - INFO - Prepared 160 samples with 135 features
+2025-09-20 13:56:02,523 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:56:02,523 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:56:02,524 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135602
+2025-09-20 13:56:02,526 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:56:02,527 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:56:02,729 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:56:02,731 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:56:02,736 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:56:02,738 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:56:02,740 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:56:02,774 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135602.json
+2025-09-20 13:56:02,775 - __main__ - INFO - Analyzing region 33/39: santiago_estero_01
+2025-09-20 13:56:02,775 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:56:03,009 - data_acquisition.satellite_data - INFO - Processing area: 1749.96 km²
+2025-09-20 13:56:03,009 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:56:03,010 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:56:18,160 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:56:18,184 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:56:18,200 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:56:18,204 - utils.data_management - INFO - Stored soil_data data: soil_-63.239999999999995_-27.839999999999996
+2025-09-20 13:56:18,207 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:56:18,208 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:56:18,259 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:56:18,261 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:56:18,277 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:56:18,287 - modeling.ml_models - INFO - Prepared 163 samples with 135 features
+2025-09-20 13:56:18,290 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:56:18,291 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:56:18,291 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135618
+2025-09-20 13:56:18,293 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:56:18,294 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:56:18,566 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:56:18,568 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:56:18,573 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:56:18,575 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:56:18,578 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:56:18,611 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135618.json
+2025-09-20 13:56:18,611 - __main__ - INFO - Analyzing region 34/39: santiago_estero_02
+2025-09-20 13:56:18,612 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:56:18,963 - data_acquisition.satellite_data - INFO - Processing area: 1749.96 km²
+2025-09-20 13:56:18,964 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:56:18,965 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:56:38,951 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:56:38,973 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:56:38,989 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:56:38,993 - utils.data_management - INFO - Stored soil_data data: soil_-62.839999999999996_-27.839999999999996
+2025-09-20 13:56:38,996 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:56:38,997 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:56:39,046 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:56:39,049 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:56:39,064 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:56:39,074 - modeling.ml_models - INFO - Prepared 151 samples with 135 features
+2025-09-20 13:56:39,077 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:56:39,077 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:56:39,078 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135639
+2025-09-20 13:56:39,080 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:56:39,081 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:56:39,291 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:56:39,294 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:56:39,299 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:56:39,301 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:56:39,305 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:56:39,339 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135639.json
+2025-09-20 13:56:39,339 - __main__ - INFO - Analyzing region 35/39: chaco_01_south
+2025-09-20 13:56:39,339 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:56:40,269 - data_acquisition.satellite_data - INFO - Processing area: 1765.80 km²
+2025-09-20 13:56:40,270 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:56:40,270 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:56:52,641 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:56:52,656 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:56:52,670 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:56:52,674 - utils.data_management - INFO - Stored soil_data data: soil_-60.64_-26.839999999999996
+2025-09-20 13:56:52,677 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:56:52,678 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:56:52,726 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:56:52,729 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:56:52,744 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:56:52,755 - modeling.ml_models - INFO - Prepared 148 samples with 135 features
+2025-09-20 13:56:52,758 - modeling.ml_models - ERROR - Error training Random Forest: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.
+2025-09-20 13:56:52,758 - __main__ - ERROR - Error in ML predictions: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.
+2025-09-20 13:56:52,758 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:56:52,759 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:56:52,759 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135652
+2025-09-20 13:56:52,761 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:56:52,762 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:56:52,974 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:56:52,976 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:56:52,981 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:56:52,983 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:56:52,986 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:56:53,018 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135652.json
+2025-09-20 13:56:53,019 - __main__ - INFO - Analyzing region 36/39: chaco_02_central
+2025-09-20 13:56:53,019 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:56:53,369 - data_acquisition.satellite_data - INFO - Processing area: 1765.80 km²
+2025-09-20 13:56:53,370 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:56:53,371 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:57:09,868 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:57:09,891 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:57:09,908 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:57:09,912 - utils.data_management - INFO - Stored soil_data data: soil_-60.239999999999995_-26.839999999999996
+2025-09-20 13:57:09,915 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:57:09,915 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:57:09,967 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:57:09,969 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:57:09,984 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:57:09,996 - modeling.ml_models - INFO - Prepared 158 samples with 135 features
+2025-09-20 13:57:09,999 - modeling.ml_models - ERROR - Error training Random Forest: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.
+2025-09-20 13:57:09,999 - __main__ - ERROR - Error in ML predictions: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.
+2025-09-20 13:57:09,999 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:57:09,999 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:57:10,000 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135709
+2025-09-20 13:57:10,002 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:57:10,003 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:57:10,211 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:57:10,213 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:57:10,218 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:57:10,221 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:57:10,223 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:57:10,256 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135710.json
+2025-09-20 13:57:10,257 - __main__ - INFO - Analyzing region 37/39: tucuman_01
+2025-09-20 13:57:10,257 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:57:10,573 - data_acquisition.satellite_data - INFO - Processing area: 1768.90 km²
+2025-09-20 13:57:10,573 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:57:10,574 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:57:22,461 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:57:22,483 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:57:22,500 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:57:22,504 - utils.data_management - INFO - Stored soil_data data: soil_-65.44000000000001_-26.640000000000004
+2025-09-20 13:57:22,507 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:57:22,508 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:57:22,557 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:57:22,559 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:57:22,574 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:57:22,585 - modeling.ml_models - INFO - Prepared 151 samples with 135 features
+2025-09-20 13:57:22,587 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:57:22,588 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:57:22,588 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135722
+2025-09-20 13:57:22,590 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:57:22,591 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:57:22,841 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:57:22,843 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:57:22,848 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:57:22,850 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:57:22,852 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:57:22,885 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135722.json
+2025-09-20 13:57:22,885 - __main__ - INFO - Analyzing region 38/39: salta_01
+2025-09-20 13:57:22,885 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:57:23,105 - data_acquisition.satellite_data - INFO - Processing area: 1792.94 km²
+2025-09-20 13:57:23,105 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:57:23,106 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:57:36,284 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:57:36,304 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:57:36,321 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:57:36,326 - utils.data_management - INFO - Stored soil_data data: soil_-65.03999999999999_-25.04
+2025-09-20 13:57:36,330 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:57:36,330 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:57:36,383 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:57:36,385 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:57:36,401 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:57:36,413 - modeling.ml_models - INFO - Prepared 188 samples with 135 features
+2025-09-20 13:57:36,416 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:57:36,417 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:57:36,417 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135736
+2025-09-20 13:57:36,420 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:57:36,421 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:57:36,634 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:57:36,636 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:57:36,641 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:57:36,643 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:57:36,646 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:57:36,677 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135736.json
+2025-09-20 13:57:36,677 - __main__ - INFO - Analyzing region 39/39: test_area_micro
+2025-09-20 13:57:36,677 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 13:57:36,993 - data_acquisition.satellite_data - INFO - Processing area: 410.50 km²
+2025-09-20 13:57:36,993 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 13:57:36,994 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 13:57:46,440 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 13:57:46,456 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 13:57:46,469 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 13:57:46,473 - utils.data_management - INFO - Stored soil_data data: soil_-59.92_-33.92
+2025-09-20 13:57:46,476 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 13:57:46,476 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 13:57:46,525 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 13:57:46,528 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 13:57:46,544 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 13:57:46,555 - modeling.ml_models - INFO - Prepared 180 samples with 135 features
+2025-09-20 13:57:46,558 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 13:57:46,558 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 13:57:46,559 - utils.data_management - INFO - Stored alert_history data: alert_20250920_135746
+2025-09-20 13:57:46,561 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 13:57:46,562 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 13:57:46,762 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 13:57:46,764 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 13:57:46,769 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 13:57:46,771 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 13:57:46,773 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 13:57:46,808 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_135746.json
+2025-09-20 13:57:46,808 - outputs.prescription_maps - INFO - Comprehensive prescription map created for 0 ha across 39 regions
+2025-09-20 13:57:47,985 - __main__ - INFO - Multi-region analysis completed successfully. Results saved to outputs/multi_region_20250920_135746.json
+2025-09-20 14:06:32,982 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-20 14:06:32,982 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-20 14:06:32,982 - __main__ - INFO - Starting single-region analysis for buenos_aires_01_northwest, soybean from 2025-05-09 to 2025-09-06
+2025-09-20 14:06:32,982 - __main__ - INFO - Step 1: Acquiring satellite, weather, and soil data...
+2025-09-20 14:06:34,028 - data_acquisition.satellite_data - INFO - Processing area: 1624.47 km²
+2025-09-20 14:06:34,028 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:06:34,029 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:06:38,783 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:06:38,796 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:06:38,809 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:06:38,813 - utils.data_management - INFO - Stored soil_data data: soil_-61.04_-34.839999999999996
+2025-09-20 14:06:38,816 - __main__ - INFO - Step 2: Validating data quality...
+2025-09-20 14:06:38,818 - __main__ - INFO - Step 3: Processing data and engineering features...
+2025-09-20 14:06:38,864 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:06:38,867 - __main__ - INFO - Step 4: Performing time series analysis...
+2025-09-20 14:06:38,886 - __main__ - INFO - Step 5: Running machine learning predictions...
+2025-09-20 14:06:38,898 - modeling.ml_models - INFO - Prepared 148 samples with 135 features
+2025-09-20 14:06:38,900 - __main__ - INFO - Step 6: Generating water stress alerts...
+2025-09-20 14:06:38,901 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:06:38,901 - utils.data_management - INFO - Stored alert_history data: alert_20250920_140638
+2025-09-20 14:06:38,904 - __main__ - INFO - Step 7: Creating prescription maps...
+2025-09-20 14:06:38,906 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:06:39,239 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:06:39,284 - outputs.prescription_maps - INFO - Prescription maps saved to ./outputs/prescription_maps_20250920
+2025-09-20 14:06:39,289 - utils.data_management - INFO - Stored prescription_maps data: prescription_20250920
+2025-09-20 14:06:39,292 - __main__ - INFO - Step 8: Applying data minimization...
+2025-09-20 14:06:39,295 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:06:39,321 - __main__ - INFO - Single region analysis completed successfully. Results saved to outputs/water_stress_analysis_20250920_140639.json
+2025-09-20 14:08:14,604 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-20 14:08:14,604 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-20 14:08:14,605 - __main__ - INFO - Starting COMPLETE ARGENTINA analysis for ALL 39 agricultural regions, soybean from 2025-05-09 to 2025-09-06
+2025-09-20 14:08:14,605 - __main__ - INFO - Analyzing 39 regions: buenos_aires_01_northwest, buenos_aires_02_northeast, buenos_aires_03_east, buenos_aires_04_far_east, buenos_aires_05_central_west, buenos_aires_06_central, buenos_aires_07_central_east, buenos_aires_08_southwest, buenos_aires_09_south_central, buenos_aires_10_southeast, cordoba_01_north, cordoba_02_northeast, cordoba_03_east, cordoba_04_central_west, cordoba_05_central, cordoba_06_central_east, cordoba_07_south, cordoba_08_southeast, santa_fe_01_northwest, santa_fe_02_north, santa_fe_03_northeast, santa_fe_04_central_west, santa_fe_05_central, santa_fe_06_central_east, santa_fe_07_south, santa_fe_08_southeast, entre_rios_01_north, entre_rios_02_central, entre_rios_03_south, la_pampa_01_east, la_pampa_02_central, la_pampa_03_north, santiago_estero_01, santiago_estero_02, chaco_01_south, chaco_02_central, tucuman_01, salta_01, test_area_micro
+2025-09-20 14:08:14,605 - __main__ - INFO - Analyzing region 1/39: buenos_aires_01_northwest
+2025-09-20 14:08:15,576 - data_acquisition.satellite_data - INFO - Processing area: 1624.47 km²
+2025-09-20 14:08:15,576 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:08:15,577 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:08:21,112 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:08:21,128 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:08:21,142 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:08:21,146 - utils.data_management - INFO - Stored soil_data data: soil_-61.04_-34.839999999999996
+2025-09-20 14:08:21,190 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:08:21,218 - modeling.ml_models - INFO - Prepared 148 samples with 135 features
+2025-09-20 14:08:21,221 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:08:21,221 - utils.data_management - INFO - Stored alert_history data: alert_20250920_140821
+2025-09-20 14:08:21,224 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:08:21,534 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:08:21,537 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:08:21,539 - __main__ - INFO - Analyzing region 2/39: buenos_aires_02_northeast
+2025-09-20 14:08:22,483 - data_acquisition.satellite_data - INFO - Processing area: 1624.47 km²
+2025-09-20 14:08:22,483 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:08:22,484 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:08:28,072 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:08:28,088 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:08:28,104 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:08:28,109 - utils.data_management - INFO - Stored soil_data data: soil_-60.64_-34.839999999999996
+2025-09-20 14:08:28,156 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:08:28,184 - modeling.ml_models - INFO - Prepared 167 samples with 135 features
+2025-09-20 14:08:28,187 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:08:28,187 - utils.data_management - INFO - Stored alert_history data: alert_20250920_140828
+2025-09-20 14:08:28,190 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:08:28,389 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:08:28,393 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:08:28,396 - __main__ - INFO - Analyzing region 3/39: buenos_aires_03_east
+2025-09-20 14:08:29,321 - data_acquisition.satellite_data - INFO - Processing area: 1624.47 km²
+2025-09-20 14:08:29,321 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:08:29,323 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:08:34,408 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:08:34,431 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:08:34,447 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:08:34,452 - utils.data_management - INFO - Stored soil_data data: soil_-60.239999999999995_-34.839999999999996
+2025-09-20 14:08:34,501 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:08:34,531 - modeling.ml_models - INFO - Prepared 163 samples with 135 features
+2025-09-20 14:08:34,534 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:08:34,535 - utils.data_management - INFO - Stored alert_history data: alert_20250920_140834
+2025-09-20 14:08:34,538 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:08:34,736 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:08:34,740 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:08:34,742 - __main__ - INFO - Analyzing region 4/39: buenos_aires_04_far_east
+2025-09-20 14:08:35,012 - data_acquisition.satellite_data - INFO - Processing area: 1624.47 km²
+2025-09-20 14:08:35,012 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:08:35,013 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:08:39,783 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:08:39,804 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:08:39,821 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:08:39,826 - utils.data_management - INFO - Stored soil_data data: soil_-59.839999999999996_-34.839999999999996
+2025-09-20 14:08:39,872 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:08:39,902 - modeling.ml_models - INFO - Prepared 163 samples with 135 features
+2025-09-20 14:08:39,906 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:08:39,906 - utils.data_management - INFO - Stored alert_history data: alert_20250920_140839
+2025-09-20 14:08:39,909 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:08:40,105 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:08:40,109 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:08:40,111 - __main__ - INFO - Analyzing region 5/39: buenos_aires_05_central_west
+2025-09-20 14:08:40,334 - data_acquisition.satellite_data - INFO - Processing area: 1616.55 km²
+2025-09-20 14:08:40,335 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:08:40,335 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:08:45,737 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:08:45,752 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:08:45,768 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:08:45,772 - utils.data_management - INFO - Stored soil_data data: soil_-61.04_-35.24
+2025-09-20 14:08:45,817 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:08:45,845 - modeling.ml_models - INFO - Prepared 212 samples with 135 features
+2025-09-20 14:08:45,849 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:08:45,850 - utils.data_management - INFO - Stored alert_history data: alert_20250920_140845
+2025-09-20 14:08:45,853 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:08:46,090 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:08:46,093 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:08:46,095 - __main__ - INFO - Analyzing region 6/39: buenos_aires_06_central
+2025-09-20 14:08:46,359 - data_acquisition.satellite_data - INFO - Processing area: 1616.55 km²
+2025-09-20 14:08:46,359 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:08:46,360 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:08:51,853 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:08:51,869 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:08:51,886 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:08:51,890 - utils.data_management - INFO - Stored soil_data data: soil_-60.64_-35.24
+2025-09-20 14:08:51,937 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:08:51,965 - modeling.ml_models - INFO - Prepared 212 samples with 135 features
+2025-09-20 14:08:51,969 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:08:51,970 - utils.data_management - INFO - Stored alert_history data: alert_20250920_140851
+2025-09-20 14:08:51,973 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:08:52,168 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:08:52,171 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:08:52,173 - __main__ - INFO - Analyzing region 7/39: buenos_aires_07_central_east
+2025-09-20 14:08:52,440 - data_acquisition.satellite_data - INFO - Processing area: 1616.55 km²
+2025-09-20 14:08:52,440 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:08:52,441 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:08:57,695 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:08:57,709 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:08:57,725 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:08:57,730 - utils.data_management - INFO - Stored soil_data data: soil_-60.239999999999995_-35.24
+2025-09-20 14:08:57,775 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:08:57,803 - modeling.ml_models - INFO - Prepared 208 samples with 135 features
+2025-09-20 14:08:57,807 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:08:57,808 - utils.data_management - INFO - Stored alert_history data: alert_20250920_140857
+2025-09-20 14:08:57,811 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:08:58,006 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:08:58,009 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:08:58,012 - __main__ - INFO - Analyzing region 8/39: buenos_aires_08_southwest
+2025-09-20 14:08:58,234 - data_acquisition.satellite_data - INFO - Processing area: 1604.52 km²
+2025-09-20 14:08:58,235 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:08:58,235 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:09:03,197 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:09:03,209 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:09:03,225 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:09:03,230 - utils.data_management - INFO - Stored soil_data data: soil_-61.44_-35.839999999999996
+2025-09-20 14:09:03,273 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:09:03,302 - modeling.ml_models - INFO - Prepared 133 samples with 135 features
+2025-09-20 14:09:03,304 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:09:03,305 - utils.data_management - INFO - Stored alert_history data: alert_20250920_140903
+2025-09-20 14:09:03,308 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:09:03,497 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:09:03,499 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:09:03,502 - __main__ - INFO - Analyzing region 9/39: buenos_aires_09_south_central
+2025-09-20 14:09:04,415 - data_acquisition.satellite_data - INFO - Processing area: 1604.52 km²
+2025-09-20 14:09:04,415 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:09:04,417 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:09:08,957 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:09:08,976 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:09:08,994 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:09:09,000 - utils.data_management - INFO - Stored soil_data data: soil_-61.04_-35.839999999999996
+2025-09-20 14:09:09,045 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:09:09,072 - modeling.ml_models - INFO - Prepared 142 samples with 135 features
+2025-09-20 14:09:09,075 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:09:09,076 - utils.data_management - INFO - Stored alert_history data: alert_20250920_140909
+2025-09-20 14:09:09,079 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:09:09,310 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:09:09,313 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:09:09,315 - __main__ - INFO - Analyzing region 10/39: buenos_aires_10_southeast
+2025-09-20 14:09:09,636 - data_acquisition.satellite_data - INFO - Processing area: 1604.52 km²
+2025-09-20 14:09:09,637 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:09:09,638 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:09:14,621 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:09:14,644 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:09:14,661 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:09:14,666 - utils.data_management - INFO - Stored soil_data data: soil_-60.64_-35.839999999999996
+2025-09-20 14:09:14,714 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:09:14,742 - modeling.ml_models - INFO - Prepared 167 samples with 135 features
+2025-09-20 14:09:14,745 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:09:14,746 - utils.data_management - INFO - Stored alert_history data: alert_20250920_140914
+2025-09-20 14:09:14,749 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:09:14,942 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:09:14,946 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:09:14,948 - __main__ - INFO - Analyzing region 11/39: cordoba_01_north
+2025-09-20 14:09:16,088 - data_acquisition.satellite_data - INFO - Processing area: 1690.37 km²
+2025-09-20 14:09:16,088 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:09:16,090 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:09:21,322 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:09:21,346 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:09:21,364 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:09:21,369 - utils.data_management - INFO - Stored soil_data data: soil_-63.839999999999996_-31.339999999999996
+2025-09-20 14:09:21,416 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:09:21,445 - modeling.ml_models - INFO - Prepared 179 samples with 135 features
+2025-09-20 14:09:21,449 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:09:21,449 - utils.data_management - INFO - Stored alert_history data: alert_20250920_140921
+2025-09-20 14:09:21,453 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:09:21,648 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:09:21,651 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:09:21,654 - __main__ - INFO - Analyzing region 12/39: cordoba_02_northeast
+2025-09-20 14:09:22,028 - data_acquisition.satellite_data - INFO - Processing area: 1690.37 km²
+2025-09-20 14:09:22,029 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:09:22,030 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:09:26,585 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:09:26,600 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:09:26,617 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:09:26,622 - utils.data_management - INFO - Stored soil_data data: soil_-63.44_-31.339999999999996
+2025-09-20 14:09:26,667 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:09:26,695 - modeling.ml_models - INFO - Prepared 134 samples with 135 features
+2025-09-20 14:09:26,698 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:09:26,698 - utils.data_management - INFO - Stored alert_history data: alert_20250920_140926
+2025-09-20 14:09:26,702 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:09:26,896 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:09:26,900 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:09:26,902 - __main__ - INFO - Analyzing region 13/39: cordoba_03_east
+2025-09-20 14:09:27,864 - data_acquisition.satellite_data - INFO - Processing area: 1690.37 km²
+2025-09-20 14:09:27,864 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:09:27,866 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:09:33,422 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:09:33,443 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:09:33,461 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:09:33,467 - utils.data_management - INFO - Stored soil_data data: soil_-63.04_-31.339999999999996
+2025-09-20 14:09:33,514 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:09:33,542 - modeling.ml_models - INFO - Prepared 148 samples with 135 features
+2025-09-20 14:09:33,545 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:09:33,546 - utils.data_management - INFO - Stored alert_history data: alert_20250920_140933
+2025-09-20 14:09:33,549 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:09:33,783 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:09:33,786 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:09:33,788 - __main__ - INFO - Analyzing region 14/39: cordoba_04_central_west
+2025-09-20 14:09:34,111 - data_acquisition.satellite_data - INFO - Processing area: 1683.15 km²
+2025-09-20 14:09:34,112 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:09:34,113 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:09:40,009 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:09:40,031 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:09:40,046 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:09:40,051 - utils.data_management - INFO - Stored soil_data data: soil_-63.839999999999996_-31.74
+2025-09-20 14:09:40,098 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:09:40,125 - modeling.ml_models - INFO - Prepared 178 samples with 135 features
+2025-09-20 14:09:40,128 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:09:40,129 - utils.data_management - INFO - Stored alert_history data: alert_20250920_140940
+2025-09-20 14:09:40,132 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:09:40,325 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:09:40,328 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:09:40,330 - __main__ - INFO - Analyzing region 15/39: cordoba_05_central
+2025-09-20 14:09:40,671 - data_acquisition.satellite_data - INFO - Processing area: 1683.15 km²
+2025-09-20 14:09:40,672 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:09:40,674 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:09:45,071 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:09:45,090 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:09:45,109 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:09:45,115 - utils.data_management - INFO - Stored soil_data data: soil_-63.44_-31.74
+2025-09-20 14:09:45,163 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:09:45,191 - modeling.ml_models - INFO - Prepared 147 samples with 135 features
+2025-09-20 14:09:45,194 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:09:45,195 - utils.data_management - INFO - Stored alert_history data: alert_20250920_140945
+2025-09-20 14:09:45,198 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:09:45,394 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:09:45,397 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:09:45,400 - __main__ - INFO - Analyzing region 16/39: cordoba_06_central_east
+2025-09-20 14:09:45,610 - data_acquisition.satellite_data - INFO - Processing area: 1683.15 km²
+2025-09-20 14:09:45,610 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:09:45,611 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:09:50,227 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:09:50,250 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:09:50,266 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:09:50,271 - utils.data_management - INFO - Stored soil_data data: soil_-63.04_-31.74
+2025-09-20 14:09:50,318 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:09:50,346 - modeling.ml_models - INFO - Prepared 174 samples with 135 features
+2025-09-20 14:09:50,349 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:09:50,349 - utils.data_management - INFO - Stored alert_history data: alert_20250920_140950
+2025-09-20 14:09:50,353 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:09:50,547 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:09:50,551 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:09:50,554 - __main__ - INFO - Analyzing region 17/39: cordoba_07_south
+2025-09-20 14:09:50,905 - data_acquisition.satellite_data - INFO - Processing area: 1675.85 km²
+2025-09-20 14:09:50,905 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:09:50,906 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:09:55,683 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:09:55,705 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:09:55,722 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:09:55,728 - utils.data_management - INFO - Stored soil_data data: soil_-63.839999999999996_-32.14
+2025-09-20 14:09:55,775 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:09:55,805 - modeling.ml_models - INFO - Prepared 149 samples with 135 features
+2025-09-20 14:09:55,808 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:09:55,808 - utils.data_management - INFO - Stored alert_history data: alert_20250920_140955
+2025-09-20 14:09:55,811 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:09:56,044 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:09:56,048 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:09:56,050 - __main__ - INFO - Analyzing region 18/39: cordoba_08_southeast
+2025-09-20 14:09:57,069 - data_acquisition.satellite_data - INFO - Processing area: 1675.85 km²
+2025-09-20 14:09:57,069 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:09:57,071 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:10:01,425 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:10:01,437 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:10:01,453 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:10:01,458 - utils.data_management - INFO - Stored soil_data data: soil_-63.44_-32.14
+2025-09-20 14:10:01,505 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:10:01,537 - modeling.ml_models - INFO - Prepared 134 samples with 135 features
+2025-09-20 14:10:01,539 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:10:01,540 - utils.data_management - INFO - Stored alert_history data: alert_20250920_141001
+2025-09-20 14:10:01,544 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:10:01,751 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:10:01,754 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:10:01,757 - __main__ - INFO - Analyzing region 19/39: santa_fe_01_northwest
+2025-09-20 14:10:02,140 - data_acquisition.satellite_data - INFO - Processing area: 1709.79 km²
+2025-09-20 14:10:02,140 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:10:02,141 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:10:09,375 - data_acquisition.satellite_data - INFO - Google Earth Engine initialized successfully
+2025-09-20 14:10:09,375 - __main__ - INFO - Water Stress Detection System initialized
+2025-09-20 14:10:09,376 - __main__ - INFO - Starting COMPLETE ARGENTINA analysis for ALL 39 agricultural regions, soybean from 2025-05-09 to 2025-09-06
+2025-09-20 14:10:09,376 - __main__ - INFO - Analyzing 39 regions: buenos_aires_01_northwest, buenos_aires_02_northeast, buenos_aires_03_east, buenos_aires_04_far_east, buenos_aires_05_central_west, buenos_aires_06_central, buenos_aires_07_central_east, buenos_aires_08_southwest, buenos_aires_09_south_central, buenos_aires_10_southeast, cordoba_01_north, cordoba_02_northeast, cordoba_03_east, cordoba_04_central_west, cordoba_05_central, cordoba_06_central_east, cordoba_07_south, cordoba_08_southeast, santa_fe_01_northwest, santa_fe_02_north, santa_fe_03_northeast, santa_fe_04_central_west, santa_fe_05_central, santa_fe_06_central_east, santa_fe_07_south, santa_fe_08_southeast, entre_rios_01_north, entre_rios_02_central, entre_rios_03_south, la_pampa_01_east, la_pampa_02_central, la_pampa_03_north, santiago_estero_01, santiago_estero_02, chaco_01_south, chaco_02_central, tucuman_01, salta_01, test_area_micro
+2025-09-20 14:10:09,376 - __main__ - INFO - Analyzing region 1/39: buenos_aires_01_northwest
+2025-09-20 14:10:10,466 - data_acquisition.satellite_data - INFO - Processing area: 1624.47 km²
+2025-09-20 14:10:10,466 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:10:10,468 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:10:14,877 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:10:14,892 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:10:14,908 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:10:14,913 - utils.data_management - INFO - Stored soil_data data: soil_-61.04_-34.839999999999996
+2025-09-20 14:10:14,968 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:10:15,000 - modeling.ml_models - INFO - Prepared 148 samples with 135 features
+2025-09-20 14:10:15,003 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:10:15,003 - utils.data_management - INFO - Stored alert_history data: alert_20250920_141015
+2025-09-20 14:10:15,011 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:10:15,328 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:10:15,331 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:10:15,333 - __main__ - INFO - Analyzing region 2/39: buenos_aires_02_northeast
+2025-09-20 14:10:15,687 - data_acquisition.satellite_data - INFO - Processing area: 1624.47 km²
+2025-09-20 14:10:15,688 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:10:15,689 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:10:22,042 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:10:22,059 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:10:22,076 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:10:22,081 - utils.data_management - INFO - Stored soil_data data: soil_-60.64_-34.839999999999996
+2025-09-20 14:10:22,131 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:10:22,161 - modeling.ml_models - INFO - Prepared 167 samples with 135 features
+2025-09-20 14:10:22,165 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:10:22,165 - utils.data_management - INFO - Stored alert_history data: alert_20250920_141022
+2025-09-20 14:10:22,169 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:10:22,376 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:10:22,379 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:10:22,382 - __main__ - INFO - Analyzing region 3/39: buenos_aires_03_east
+2025-09-20 14:10:22,648 - data_acquisition.satellite_data - INFO - Processing area: 1624.47 km²
+2025-09-20 14:10:22,648 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:10:22,649 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:10:28,829 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:10:28,848 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:10:28,864 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:10:28,870 - utils.data_management - INFO - Stored soil_data data: soil_-60.239999999999995_-34.839999999999996
+2025-09-20 14:10:28,921 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:10:28,950 - modeling.ml_models - INFO - Prepared 163 samples with 135 features
+2025-09-20 14:10:28,954 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:10:28,954 - utils.data_management - INFO - Stored alert_history data: alert_20250920_141028
+2025-09-20 14:10:28,958 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:10:29,161 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:10:29,165 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:10:29,168 - __main__ - INFO - Analyzing region 4/39: buenos_aires_04_far_east
+2025-09-20 14:10:30,226 - data_acquisition.satellite_data - INFO - Processing area: 1624.47 km²
+2025-09-20 14:10:30,228 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:10:30,229 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:10:35,255 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:10:35,279 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:10:35,297 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:10:35,303 - utils.data_management - INFO - Stored soil_data data: soil_-59.839999999999996_-34.839999999999996
+2025-09-20 14:10:35,357 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:10:35,387 - modeling.ml_models - INFO - Prepared 163 samples with 135 features
+2025-09-20 14:10:35,390 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:10:35,390 - utils.data_management - INFO - Stored alert_history data: alert_20250920_141035
+2025-09-20 14:10:35,395 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:10:35,593 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:10:35,597 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:10:35,600 - __main__ - INFO - Analyzing region 5/39: buenos_aires_05_central_west
+2025-09-20 14:10:36,679 - data_acquisition.satellite_data - INFO - Processing area: 1616.55 km²
+2025-09-20 14:10:36,679 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:10:36,681 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:10:42,133 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:10:42,153 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:10:42,172 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:10:42,179 - utils.data_management - INFO - Stored soil_data data: soil_-61.04_-35.24
+2025-09-20 14:10:42,232 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:10:42,262 - modeling.ml_models - INFO - Prepared 212 samples with 135 features
+2025-09-20 14:10:42,267 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:10:42,267 - utils.data_management - INFO - Stored alert_history data: alert_20250920_141042
+2025-09-20 14:10:42,272 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:10:42,514 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:10:42,518 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:10:42,521 - __main__ - INFO - Analyzing region 6/39: buenos_aires_06_central
+2025-09-20 14:10:43,434 - data_acquisition.satellite_data - INFO - Processing area: 1616.55 km²
+2025-09-20 14:10:43,434 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:10:43,435 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:10:48,463 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:10:48,481 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:10:48,499 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:10:48,505 - utils.data_management - INFO - Stored soil_data data: soil_-60.64_-35.24
+2025-09-20 14:10:48,558 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:10:48,588 - modeling.ml_models - INFO - Prepared 212 samples with 135 features
+2025-09-20 14:10:48,592 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:10:48,593 - utils.data_management - INFO - Stored alert_history data: alert_20250920_141048
+2025-09-20 14:10:48,597 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:10:48,800 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:10:48,803 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:10:48,806 - __main__ - INFO - Analyzing region 7/39: buenos_aires_07_central_east
+2025-09-20 14:10:49,895 - data_acquisition.satellite_data - INFO - Processing area: 1616.55 km²
+2025-09-20 14:10:49,895 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:10:49,896 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:10:54,455 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:10:54,470 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:10:54,487 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:10:54,493 - utils.data_management - INFO - Stored soil_data data: soil_-60.239999999999995_-35.24
+2025-09-20 14:10:54,543 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:10:54,572 - modeling.ml_models - INFO - Prepared 208 samples with 135 features
+2025-09-20 14:10:54,576 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:10:54,577 - utils.data_management - INFO - Stored alert_history data: alert_20250920_141054
+2025-09-20 14:10:54,581 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:10:54,780 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:10:54,783 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:10:54,786 - __main__ - INFO - Analyzing region 8/39: buenos_aires_08_southwest
+2025-09-20 14:10:55,725 - data_acquisition.satellite_data - INFO - Processing area: 1604.52 km²
+2025-09-20 14:10:55,725 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:10:55,726 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:11:00,196 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:11:00,216 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:11:00,234 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:11:00,240 - utils.data_management - INFO - Stored soil_data data: soil_-61.44_-35.839999999999996
+2025-09-20 14:11:00,292 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:11:00,322 - modeling.ml_models - INFO - Prepared 133 samples with 135 features
+2025-09-20 14:11:00,324 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:11:00,325 - utils.data_management - INFO - Stored alert_history data: alert_20250920_141100
+2025-09-20 14:11:00,330 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:11:00,536 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:11:00,541 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:11:00,544 - __main__ - INFO - Analyzing region 9/39: buenos_aires_09_south_central
+2025-09-20 14:11:00,773 - data_acquisition.satellite_data - INFO - Processing area: 1604.52 km²
+2025-09-20 14:11:00,773 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:11:00,774 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:11:06,484 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:11:06,496 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:11:06,511 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:11:06,517 - utils.data_management - INFO - Stored soil_data data: soil_-61.04_-35.839999999999996
+2025-09-20 14:11:06,569 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:11:06,599 - modeling.ml_models - INFO - Prepared 142 samples with 135 features
+2025-09-20 14:11:06,602 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:11:06,602 - utils.data_management - INFO - Stored alert_history data: alert_20250920_141106
+2025-09-20 14:11:06,606 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:11:06,850 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:11:06,854 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:11:06,857 - __main__ - INFO - Analyzing region 10/39: buenos_aires_10_southeast
+2025-09-20 14:11:07,119 - data_acquisition.satellite_data - INFO - Processing area: 1604.52 km²
+2025-09-20 14:11:07,120 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:11:07,121 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:11:11,273 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:11:11,293 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:11:11,310 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:11:11,316 - utils.data_management - INFO - Stored soil_data data: soil_-60.64_-35.839999999999996
+2025-09-20 14:11:11,368 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:11:11,399 - modeling.ml_models - INFO - Prepared 167 samples with 135 features
+2025-09-20 14:11:11,402 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:11:11,403 - utils.data_management - INFO - Stored alert_history data: alert_20250920_141111
+2025-09-20 14:11:11,407 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:11:11,606 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:11:11,610 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:11:11,613 - __main__ - INFO - Analyzing region 11/39: cordoba_01_north
+2025-09-20 14:11:11,906 - data_acquisition.satellite_data - INFO - Processing area: 1690.37 km²
+2025-09-20 14:11:11,906 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:11:11,907 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:11:16,315 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:11:16,336 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:11:16,352 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:11:16,358 - utils.data_management - INFO - Stored soil_data data: soil_-63.839999999999996_-31.339999999999996
+2025-09-20 14:11:16,412 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:11:16,441 - modeling.ml_models - INFO - Prepared 179 samples with 135 features
+2025-09-20 14:11:16,445 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:11:16,445 - utils.data_management - INFO - Stored alert_history data: alert_20250920_141116
+2025-09-20 14:11:16,449 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:11:16,651 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:11:16,656 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:11:16,659 - __main__ - INFO - Analyzing region 12/39: cordoba_02_northeast
+2025-09-20 14:11:16,948 - data_acquisition.satellite_data - INFO - Processing area: 1690.37 km²
+2025-09-20 14:11:16,948 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:11:16,949 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:11:22,878 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:11:22,898 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:11:22,915 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:11:22,921 - utils.data_management - INFO - Stored soil_data data: soil_-63.44_-31.339999999999996
+2025-09-20 14:11:22,971 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:11:23,002 - modeling.ml_models - INFO - Prepared 134 samples with 135 features
+2025-09-20 14:11:23,005 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:11:23,005 - utils.data_management - INFO - Stored alert_history data: alert_20250920_141123
+2025-09-20 14:11:23,009 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:11:23,219 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:11:23,222 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:11:23,226 - __main__ - INFO - Analyzing region 13/39: cordoba_03_east
+2025-09-20 14:11:24,148 - data_acquisition.satellite_data - INFO - Processing area: 1690.37 km²
+2025-09-20 14:11:24,148 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:11:24,148 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:11:28,298 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:11:28,313 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:11:28,330 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:11:28,336 - utils.data_management - INFO - Stored soil_data data: soil_-63.04_-31.339999999999996
+2025-09-20 14:11:28,385 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:11:28,415 - modeling.ml_models - INFO - Prepared 148 samples with 135 features
+2025-09-20 14:11:28,418 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:11:28,418 - utils.data_management - INFO - Stored alert_history data: alert_20250920_141128
+2025-09-20 14:11:28,422 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:11:28,627 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:11:28,630 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:11:28,633 - __main__ - INFO - Analyzing region 14/39: cordoba_04_central_west
+2025-09-20 14:11:29,005 - data_acquisition.satellite_data - INFO - Processing area: 1683.15 km²
+2025-09-20 14:11:29,005 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:11:29,006 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...
+2025-09-20 14:11:35,363 - __main__ - INFO - Using default soil properties (skipping unreliable SoilGrids API)
+2025-09-20 14:11:35,385 - utils.data_management - INFO - Stored satellite_data data: satellite_2025-05-09_2025-09-06
+2025-09-20 14:11:35,401 - utils.data_management - INFO - Stored weather_data data: weather_2025-05-09_2025-09-06
+2025-09-20 14:11:35,408 - utils.data_management - INFO - Stored soil_data data: soil_-63.839999999999996_-31.74
+2025-09-20 14:11:35,528 - utils.data_management - INFO - Stored processed_data data: processed_20250920
+2025-09-20 14:11:35,558 - modeling.ml_models - INFO - Prepared 178 samples with 135 features
+2025-09-20 14:11:35,562 - outputs.alerts - INFO - Alert generated: warning level for soybean at default
+2025-09-20 14:11:35,562 - utils.data_management - INFO - Stored alert_history data: alert_20250920_141135
+2025-09-20 14:11:35,566 - outputs.prescription_maps - WARNING - Insufficient data points for interpolation
+2025-09-20 14:11:35,763 - outputs.prescription_maps - INFO - Prescription map created for 0.00 ha field
+2025-09-20 14:11:35,766 - utils.data_management - INFO - Cleanup completed: 0 files removed, 0.00 MB freed
+2025-09-20 14:11:35,770 - __main__ - INFO - Analyzing region 15/39: cordoba_05_central
+2025-09-20 14:11:35,976 - data_acquisition.satellite_data - INFO - Processing area: 1683.15 km²
+2025-09-20 14:11:35,977 - data_acquisition.satellite_data - INFO - Using standard resolution (100m scale)
+2025-09-20 14:11:35,977 - data_acquisition.satellite_data - INFO - Extracting time series data from Google Earth Engine...

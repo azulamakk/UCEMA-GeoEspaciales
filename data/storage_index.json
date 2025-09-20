@@ -2089,6 +2089,4006 @@
       "metadata": {},
       "data_hash": "be8311ecf991a1016efce8ba409bdb86",
       "storage_path": "data/essential/prescription_20250919.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:48:44.781400",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "b6c437c91fba22b2a6a66671e124cbe1",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_134844.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:48:44.800304",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "65d1ce49be9f5c68bcdb5cb905fde5ff",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_134844.npz"
+    },
+    {
+      "identifier": "soil_-61.04_-34.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:48:44.812162",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "0e840cbf7b3d28c900372189491a64af",
+      "storage_path": "data/temporary/soil_-61.04_-34.839999999999996_20250920_134844.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:48:44.838645",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "3de1fbe34233f003e138e08afdbd8164",
+      "storage_path": "data/temporary/processed_20250920_20250920_134844.npz"
+    },
+    {
+      "identifier": "alert_20250920_134844",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:48:44.902043",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "943760609a11db45fe6a75b3d3c59318",
+      "storage_path": "data/essential/alert_20250920_134844.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:48:45.278147",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "e4601d4240eb33227ffeab29c6a21e90",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:49:04.662100",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "9710a91655c404e66b741b78349c99ab",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_134904.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:49:04.683816",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "ac8d00eab6b69b95cf43b48fb7f0aa5b",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_134904.npz"
+    },
+    {
+      "identifier": "soil_-60.64_-34.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:49:04.696783",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "0861d6177d808d86cbcb861c474bf6ee",
+      "storage_path": "data/temporary/soil_-60.64_-34.839999999999996_20250920_134904.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:49:04.717753",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "98cd26c604c2a4564825920f10bd1404",
+      "storage_path": "data/temporary/processed_20250920_20250920_134904.npz"
+    },
+    {
+      "identifier": "alert_20250920_134904",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:49:04.781813",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "8fc4d7e71e4b079fd8364791f3bf1ce9",
+      "storage_path": "data/essential/alert_20250920_134904.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:49:04.983279",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "9685116ee0cadb424146ce08da3c8fc8",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:49:20.150868",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "7e3480bb7daf94087aa2b4dc30fe1e41",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_134920.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:49:20.166710",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "b126975e836742841984841536bf20c4",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_134920.npz"
+    },
+    {
+      "identifier": "soil_-60.239999999999995_-34.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:49:20.178548",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "b8cd6775c51baea3c6c191bed7c56ce5",
+      "storage_path": "data/temporary/soil_-60.239999999999995_-34.839999999999996_20250920_134920.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:49:20.198149",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "10f86f35afc6938740252535f36aa7d3",
+      "storage_path": "data/temporary/processed_20250920_20250920_134920.npz"
+    },
+    {
+      "identifier": "alert_20250920_134920",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:49:20.259213",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "aa9b4f44166f07205a9768fc4e99e3af",
+      "storage_path": "data/essential/alert_20250920_134920.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:49:20.451629",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "1d52ce0f8cbdeaa502aafe78d9ccc3d0",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:49:35.135062",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "ec7c59050e60625ae5d1d32cd5dd9e04",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_134935.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:49:35.155265",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "59e5bc096382c6481f101cef154b4375",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_134935.npz"
+    },
+    {
+      "identifier": "soil_-59.839999999999996_-34.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:49:35.166226",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "286505c746fb7ac8cc8660bafc24f123",
+      "storage_path": "data/temporary/soil_-59.839999999999996_-34.839999999999996_20250920_134935.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:49:35.186941",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "f5a0e7182e213df1a7ccbb4c93132481",
+      "storage_path": "data/temporary/processed_20250920_20250920_134935.npz"
+    },
+    {
+      "identifier": "alert_20250920_134935",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:49:35.250692",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "aa9b4f44166f07205a9768fc4e99e3af",
+      "storage_path": "data/essential/alert_20250920_134935.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:49:35.454151",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "cacc0f2127b7d9ccf7e8f1704d7a308a",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:49:50.072088",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "d9fce41bfdbd8507d0c7b87ddac2f159",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_134950.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:49:50.088110",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "d6137e0b5dc7b4c59eca853550822082",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_134950.npz"
+    },
+    {
+      "identifier": "soil_-61.04_-35.24",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:49:50.102087",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "4c56c5d3c59e0a7cc10258138ad62c32",
+      "storage_path": "data/temporary/soil_-61.04_-35.24_20250920_134950.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:49:50.124163",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "d440216068ea71b8f749ffe7e96f734f",
+      "storage_path": "data/temporary/processed_20250920_20250920_134950.npz"
+    },
+    {
+      "identifier": "alert_20250920_134950",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:49:50.186979",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "9e81c3386dc8026ab44f6572ac3ba57a",
+      "storage_path": "data/essential/alert_20250920_134950.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:49:50.430430",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "2c873e6bd09511d115458079ccac2b76",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:50:07.338277",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "bc0d729ce02881dc8c49259fabe1b1c2",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135007.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:50:07.356748",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "69afd9f0a3c8996b5ef93b37026f9eec",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135007.npz"
+    },
+    {
+      "identifier": "soil_-60.64_-35.24",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:50:07.366199",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "f6a47af4ad63e845ac28abe5276f6fd2",
+      "storage_path": "data/temporary/soil_-60.64_-35.24_20250920_135007.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:50:07.384219",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "cd765548034d4eabb88a1e9e84bbf3ee",
+      "storage_path": "data/temporary/processed_20250920_20250920_135007.npz"
+    },
+    {
+      "identifier": "alert_20250920_135007",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:50:07.446950",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "8fc4d7e71e4b079fd8364791f3bf1ce9",
+      "storage_path": "data/essential/alert_20250920_135007.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:50:07.648354",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "826eb49511d6dd144a248c1aa774cb23",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:50:26.110831",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "42b17aedb0dd6b46b4c5befe3a108678",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135026.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:50:26.132719",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "7fef426a01926a359733b54bac08269e",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135026.npz"
+    },
+    {
+      "identifier": "soil_-60.239999999999995_-35.24",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:50:26.149215",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "ff5136c794c87302f512f66323dcd1c9",
+      "storage_path": "data/temporary/soil_-60.239999999999995_-35.24_20250920_135026.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:50:26.172394",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "5f427f4df28b970e34409423987f350f",
+      "storage_path": "data/temporary/processed_20250920_20250920_135026.npz"
+    },
+    {
+      "identifier": "alert_20250920_135026",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:50:26.234055",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "bb89f53168eb2be179d6347537d5dd62",
+      "storage_path": "data/essential/alert_20250920_135026.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:50:26.429016",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "ea45a4cf61ec8e912cedce8066e5ac61",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:50:37.219519",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "9bc60f7bffaba6ff746b4fd404ba60f5",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135037.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:50:37.242355",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "43c2dd1f05a7194c87abe7d8d447fc90",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135037.npz"
+    },
+    {
+      "identifier": "soil_-61.44_-35.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:50:37.259683",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "045720716dce68a536aa04b953f2ae0e",
+      "storage_path": "data/temporary/soil_-61.44_-35.839999999999996_20250920_135037.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:50:37.283997",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "9c3d396013420d8b89fc5a3e504802c8",
+      "storage_path": "data/temporary/processed_20250920_20250920_135037.npz"
+    },
+    {
+      "identifier": "alert_20250920_135037",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:50:37.344799",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "52242a2e9866e767ac8e23a0a56efe7a",
+      "storage_path": "data/essential/alert_20250920_135037.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:50:37.554402",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "244ac997bdf5096eaecd3ca7f0dde004",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:50:46.995545",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "be9769358a9915459345971d537282e0",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135047.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:50:47.019849",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "810771193c5d38854fee63fecf4932b6",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135047.npz"
+    },
+    {
+      "identifier": "soil_-61.04_-35.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:50:47.035761",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "518255f288a47cef43800d5768219fe9",
+      "storage_path": "data/temporary/soil_-61.04_-35.839999999999996_20250920_135047.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:50:47.059294",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "80090d15baa20e7986c1516390fe3e0b",
+      "storage_path": "data/temporary/processed_20250920_20250920_135047.npz"
+    },
+    {
+      "identifier": "alert_20250920_135047",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:50:47.120662",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "977558f9544510819870cb0ae38a38c9",
+      "storage_path": "data/essential/alert_20250920_135047.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:50:47.357404",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "0badbd7a8912d3123f4e7571ebdd7b2a",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:51:02.250530",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "fc5a83a6bf6eb01e8cf97a48367302d1",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135102.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:51:02.271769",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "64ba828078d76da4902c9cd792256e6b",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135102.npz"
+    },
+    {
+      "identifier": "soil_-60.64_-35.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:51:02.281557",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "707e959e6719e017d52838463c7d7c05",
+      "storage_path": "data/temporary/soil_-60.64_-35.839999999999996_20250920_135102.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:51:02.302171",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "74ac2f102f8f6135232c041ee66f9c46",
+      "storage_path": "data/temporary/processed_20250920_20250920_135102.npz"
+    },
+    {
+      "identifier": "alert_20250920_135102",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:51:02.365804",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "f59bb1c4a37b1ddc5ea8435a1e9ddb57",
+      "storage_path": "data/essential/alert_20250920_135102.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:51:02.560630",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "8f5af2c8adc28d2c1ea344751f053e0b",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:51:20.070568",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "b05c79cd78069ab0342f887ef8026d08",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135120.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:51:20.092573",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "0f9e5028594aa19015a3b7fc53429fc7",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135120.npz"
+    },
+    {
+      "identifier": "soil_-63.839999999999996_-31.339999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:51:20.101459",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "378b61c1a4a52b50a38fc2e76c3f4dba",
+      "storage_path": "data/temporary/soil_-63.839999999999996_-31.339999999999996_20250920_135120.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:51:20.119101",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "a187e4304af9bd40bb6b1459761d33be",
+      "storage_path": "data/temporary/processed_20250920_20250920_135120.npz"
+    },
+    {
+      "identifier": "alert_20250920_135120",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:51:20.186621",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "2b02e3c13ccf0b4b02fd8f7fa6850ba1",
+      "storage_path": "data/essential/alert_20250920_135120.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:51:20.391581",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "7dc9a7b556b6885305b2dc8bdf7bf7c8",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:51:29.160089",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "70361f6fdfd67cd7069dba03bea99ac6",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135129.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:51:29.183274",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "a41b86e88f436b069e0570a7f5320942",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135129.npz"
+    },
+    {
+      "identifier": "soil_-63.44_-31.339999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:51:29.201525",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "7175ffd122e97b3217231382aa7d1a83",
+      "storage_path": "data/temporary/soil_-63.44_-31.339999999999996_20250920_135129.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:51:29.226078",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "e802423e85863ae6e560a497f28d6529",
+      "storage_path": "data/temporary/processed_20250920_20250920_135129.npz"
+    },
+    {
+      "identifier": "alert_20250920_135129",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:51:29.286209",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "39682caad310a224d351aadba0d26bfe",
+      "storage_path": "data/essential/alert_20250920_135129.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:51:29.479541",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "0efa37ed0f286d053144455505e9bccc",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:51:42.302048",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "42b949d76dc6206fac2fa33c90164441",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135142.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:51:42.325546",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "0ba8dcd4be25e14ebbe79d5fc55938cd",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135142.npz"
+    },
+    {
+      "identifier": "soil_-63.04_-31.339999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:51:42.341491",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "f5adf6142cfe8e45e9c7539b0af60ee5",
+      "storage_path": "data/temporary/soil_-63.04_-31.339999999999996_20250920_135142.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:51:42.365857",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "565004916ecf4813ffc80e010ca1d0c7",
+      "storage_path": "data/temporary/processed_20250920_20250920_135142.npz"
+    },
+    {
+      "identifier": "alert_20250920_135142",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:51:42.428865",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "b5a1310dc8355f5d99051aaca35a168c",
+      "storage_path": "data/essential/alert_20250920_135142.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:51:42.674153",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "766163aac555bc919ebca00267a8d1b6",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:51:58.268581",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "6367ab485c5ece4efd8c33932267d53a",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135158.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:51:58.293954",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "02188761a38255e9faf8d20b3dda1eee",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135158.npz"
+    },
+    {
+      "identifier": "soil_-63.839999999999996_-31.74",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:51:58.307063",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "f7f24c40aa97640d769cd1b9322e9d0b",
+      "storage_path": "data/temporary/soil_-63.839999999999996_-31.74_20250920_135158.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:51:58.327938",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "2229f81483ee3ae3ed0f3ce58a3cfe96",
+      "storage_path": "data/temporary/processed_20250920_20250920_135158.npz"
+    },
+    {
+      "identifier": "alert_20250920_135158",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:51:58.393042",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "c69e904d5e50a7195b86e6034a80787d",
+      "storage_path": "data/essential/alert_20250920_135158.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:51:58.594324",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "760c3a41aa5e422b6953af963dbd5c50",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:52:08.930793",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "51052dd4aa5afd9e8e2248bb67ad4ca6",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135208.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:52:08.953936",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "48d9934d3155764f47778f1892f1b981",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135208.npz"
+    },
+    {
+      "identifier": "soil_-63.44_-31.74",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:52:08.968482",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "ab79704ca8b550dd2a5a51cfb2c87dae",
+      "storage_path": "data/temporary/soil_-63.44_-31.74_20250920_135208.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:52:08.990425",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "b7a0ee7ca273ccbd72ab567db0281e45",
+      "storage_path": "data/temporary/processed_20250920_20250920_135209.npz"
+    },
+    {
+      "identifier": "alert_20250920_135209",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:52:09.051135",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "c69e904d5e50a7195b86e6034a80787d",
+      "storage_path": "data/essential/alert_20250920_135209.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:52:09.248562",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "af4a2e40b564437939e8d2b007759f5b",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:52:22.219706",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "b40aacdf82a6607cc12064b0957b02db",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135222.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:52:22.245696",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "368422ad2ca13aaa149b6e0a36c0f8ea",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135222.npz"
+    },
+    {
+      "identifier": "soil_-63.04_-31.74",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:52:22.259640",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "d6b9ff7561976f7e399db6d0b961cf72",
+      "storage_path": "data/temporary/soil_-63.04_-31.74_20250920_135222.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:52:22.281934",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "aa810a99a90b61711423f16b71389962",
+      "storage_path": "data/temporary/processed_20250920_20250920_135222.npz"
+    },
+    {
+      "identifier": "alert_20250920_135222",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:52:22.346742",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "e8b4f10ef9391d8c7691f4df670f51f3",
+      "storage_path": "data/essential/alert_20250920_135222.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:52:22.545228",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "093bd776361fea961cd0b271090bc26d",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:52:36.149623",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "b1c12ab80f35439d33d23d3d1be016c5",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135236.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:52:36.170381",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "5df892b6f894c3bb4f41e99100a61bcc",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135236.npz"
+    },
+    {
+      "identifier": "soil_-63.839999999999996_-32.14",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:52:36.183780",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "1d01455e5b428390fcfa05bc10cfe80c",
+      "storage_path": "data/temporary/soil_-63.839999999999996_-32.14_20250920_135236.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:52:36.204913",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "d9665260cfaacf688b2f57e380737cc0",
+      "storage_path": "data/temporary/processed_20250920_20250920_135236.npz"
+    },
+    {
+      "identifier": "alert_20250920_135236",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:52:36.311939",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "fb292f0f65a4d62ca6cec3a76d836d31",
+      "storage_path": "data/essential/alert_20250920_135236.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:52:36.501771",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "b9b908b1bde0bcebcf1b9ca7fd31fce4",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:52:48.740567",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "e07d1313111b4c9c3e3ad78cd2b4f1cc",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135248.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:52:48.757820",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "c5e688c286b060550697da30f07ee23e",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135248.npz"
+    },
+    {
+      "identifier": "soil_-63.44_-32.14",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:52:48.771833",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "2f5c91fa50b5a6dcf4833dda8a736c51",
+      "storage_path": "data/temporary/soil_-63.44_-32.14_20250920_135248.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:52:48.793868",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "3c7b6165e9bd3a8a4002289b9f072680",
+      "storage_path": "data/temporary/processed_20250920_20250920_135248.npz"
+    },
+    {
+      "identifier": "alert_20250920_135248",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:52:48.855292",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "fb292f0f65a4d62ca6cec3a76d836d31",
+      "storage_path": "data/essential/alert_20250920_135248.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:52:49.055812",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "c63474c74d16c40aab1c1a11d2598400",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:53:01.752132",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "4cfc1167e8252b60d48835ae47f10848",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135301.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:53:01.771826",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "81401146c2fde9ca60692bf229dd7381",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135301.npz"
+    },
+    {
+      "identifier": "soil_-61.239999999999995_-30.24",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:53:01.785649",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "fa33f8acb104e8ab2804142b81e9fce1",
+      "storage_path": "data/temporary/soil_-61.239999999999995_-30.24_20250920_135301.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:53:01.807203",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "fc9c2cc8b9c9e94638257a30fb01afe2",
+      "storage_path": "data/temporary/processed_20250920_20250920_135301.npz"
+    },
+    {
+      "identifier": "alert_20250920_135301",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:53:01.867987",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "92ba3aa60320f4e67ecbe3e300020580",
+      "storage_path": "data/essential/alert_20250920_135301.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:53:02.067453",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "4879e31c80c7da9fcc8fcea805a66eb6",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:53:12.497895",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "92c4ba91a56a2520b134e27bb9a33a67",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135312.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:53:12.521203",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "7dd586c85860b63f91203b48b8f932c0",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135312.npz"
+    },
+    {
+      "identifier": "soil_-60.839999999999996_-30.24",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:53:12.536709",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "6ab5adea4a23d9b8a255492a72e71b43",
+      "storage_path": "data/temporary/soil_-60.839999999999996_-30.24_20250920_135312.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:53:12.559694",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "954bbcb9e54e562e65904323ce2c25ec",
+      "storage_path": "data/temporary/processed_20250920_20250920_135312.npz"
+    },
+    {
+      "identifier": "alert_20250920_135312",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:53:12.622612",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "45503fde657aa7e0b56ff1c6f8ef761a",
+      "storage_path": "data/essential/alert_20250920_135312.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:53:12.823531",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "c20dd32a52fb41cd754f9e58020fde8c",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:53:24.375355",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "f1e0d00d12894a38a864b5e7a6feca62",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135324.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:53:24.388204",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "1c71aee039e90362047245bd448f0bef",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135324.npz"
+    },
+    {
+      "identifier": "soil_-60.44_-30.24",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:53:24.400089",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "6d3990366838a0ee300feda8816cc98b",
+      "storage_path": "data/temporary/soil_-60.44_-30.24_20250920_135324.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:53:24.420694",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "22e4e16bde9fb03f62b8ed258e543cb4",
+      "storage_path": "data/temporary/processed_20250920_20250920_135324.npz"
+    },
+    {
+      "identifier": "alert_20250920_135324",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:53:24.484734",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "45503fde657aa7e0b56ff1c6f8ef761a",
+      "storage_path": "data/essential/alert_20250920_135324.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:53:24.751676",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "912d7ce6ca09470a885abf75212ec471",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:53:38.416693",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "89f3e333cf28db6d71f7c54184ed02c5",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135338.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:53:38.435605",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "2c13ba85cea9355f36bc2d3017faa51d",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135338.npz"
+    },
+    {
+      "identifier": "soil_-61.239999999999995_-30.640000000000004",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:53:38.448398",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "e1ab8a4d66411668e149e6764ebaaa34",
+      "storage_path": "data/temporary/soil_-61.239999999999995_-30.640000000000004_20250920_135338.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:53:38.469173",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "b6f0a7fb66af4e7f16f17820116e5e90",
+      "storage_path": "data/temporary/processed_20250920_20250920_135338.npz"
+    },
+    {
+      "identifier": "alert_20250920_135338",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:53:38.531736",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "71e3dddbfedf3389595768f6ea653083",
+      "storage_path": "data/essential/alert_20250920_135338.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:53:38.724919",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "9aecf68987a9228d5f0adb8ca4c511b0",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:53:52.644955",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "df619bf00ba7c6ab96d928ee987e7dd8",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135352.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:53:52.663256",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "e19890a0feeaf56ece65517e842901d0",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135352.npz"
+    },
+    {
+      "identifier": "soil_-60.839999999999996_-30.640000000000004",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:53:52.675740",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "d2098b558fbc225ede4134f1a286d9ee",
+      "storage_path": "data/temporary/soil_-60.839999999999996_-30.640000000000004_20250920_135352.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:53:52.696812",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "c66bee5fc185e33bd1437abb05e01a61",
+      "storage_path": "data/temporary/processed_20250920_20250920_135352.npz"
+    },
+    {
+      "identifier": "alert_20250920_135352",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:53:52.760262",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "0a7c62ece442fb84ae4d0f36bd37319f",
+      "storage_path": "data/essential/alert_20250920_135352.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:53:52.963781",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "7bd7da35f807023cdfa394de0a5d3b77",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:54:03.189754",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "87239d6fec2922d30eee78dab9a9784b",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135403.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:54:03.213508",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "9a811c57c06b3518defcccffc962627a",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135403.npz"
+    },
+    {
+      "identifier": "soil_-60.44_-30.640000000000004",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:54:03.228374",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "9edd7b66d41cfca5e280b757337276fa",
+      "storage_path": "data/temporary/soil_-60.44_-30.640000000000004_20250920_135403.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:54:03.251059",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "5d0cf4beb439eec2096fdc558abb2615",
+      "storage_path": "data/temporary/processed_20250920_20250920_135403.npz"
+    },
+    {
+      "identifier": "alert_20250920_135403",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:54:03.315677",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "0a7c62ece442fb84ae4d0f36bd37319f",
+      "storage_path": "data/essential/alert_20250920_135403.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:54:03.509058",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "576d559df5a7dd6a45192003a0b3fda1",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:54:19.483043",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "9422c1ed1571d1b9392ee911b684bb27",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135419.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:54:19.508065",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "09b17adb85cb61b5f62c2c74ed37f1d7",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135419.npz"
+    },
+    {
+      "identifier": "soil_-61.239999999999995_-31.04",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:54:19.521896",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "ea7fbe71c68256663eb2b750d6a4303f",
+      "storage_path": "data/temporary/soil_-61.239999999999995_-31.04_20250920_135419.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:54:19.543758",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "492304fba3a94bbb6bef47dc8a74e563",
+      "storage_path": "data/temporary/processed_20250920_20250920_135419.npz"
+    },
+    {
+      "identifier": "alert_20250920_135419",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:54:19.608369",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "040e63729252a0411fe4e03ed00ac59d",
+      "storage_path": "data/essential/alert_20250920_135419.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:54:19.855109",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "0524f133bbf7bec12cc4d2900a524508",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:54:34.538614",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "fefd324b515001041cc7431a64f534ad",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135434.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:54:34.563471",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "e125e2bb3f673b7be47c5dd7d16f075c",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135434.npz"
+    },
+    {
+      "identifier": "soil_-60.839999999999996_-31.04",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:54:34.577799",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "f9054033c08f307cc3ce9472ecc19481",
+      "storage_path": "data/temporary/soil_-60.839999999999996_-31.04_20250920_135434.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:54:34.599085",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "aafab7309a00a753a413195bdf485e83",
+      "storage_path": "data/temporary/processed_20250920_20250920_135434.npz"
+    },
+    {
+      "identifier": "alert_20250920_135434",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:54:34.662227",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "6f4a564d4a8692727a31009e55f7aa25",
+      "storage_path": "data/essential/alert_20250920_135434.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:54:34.859806",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "65344a497f8c1791ad602c66bbbe0328",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:54:50.251250",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "e6f34df65c22915b6d45bffdb21a4f1f",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135450.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:54:50.269533",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "a5b43e8defbbfad7df53bce434ebf011",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135450.npz"
+    },
+    {
+      "identifier": "soil_-59.64_-30.640000000000004",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:54:50.282606",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "23c414f911cf0898ba6f0d6912c655d4",
+      "storage_path": "data/temporary/soil_-59.64_-30.640000000000004_20250920_135450.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:54:50.306020",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "95be2e87c7dd5a98e78f8d77ab4bb21a",
+      "storage_path": "data/temporary/processed_20250920_20250920_135450.npz"
+    },
+    {
+      "identifier": "alert_20250920_135450",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:54:50.370417",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "f224f7a4ab3e8df060450d2cdf14a43d",
+      "storage_path": "data/essential/alert_20250920_135450.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:54:50.564453",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "21d19bb15404bcb304361d63985d0234",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:55:06.165550",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "7a439bae960a464da09418be3d0b6723",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135506.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:55:06.191476",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "2e019b1409ee3a52632c8b0e3a9443a8",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135506.npz"
+    },
+    {
+      "identifier": "soil_-59.64_-31.04",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:55:06.206472",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "3e5116bcbe83ba17f36f179202df4847",
+      "storage_path": "data/temporary/soil_-59.64_-31.04_20250920_135506.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:55:06.229459",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "33c9801d2c0a1f2016090a0abe353c52",
+      "storage_path": "data/temporary/processed_20250920_20250920_135506.npz"
+    },
+    {
+      "identifier": "alert_20250920_135506",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:55:06.295429",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "ecc248e43e3cd6b032bf72b8e39b9308",
+      "storage_path": "data/essential/alert_20250920_135506.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:55:06.499139",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "8ca0318fd5bbd3c5a4f4526e0f0a9a24",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:55:23.167249",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "81b062c7e2dc5c12f32ed88dccc1b95e",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135523.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:55:23.256743",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "6a84ddc74b2145e39d60d0ab99b51e24",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135523.npz"
+    },
+    {
+      "identifier": "soil_-59.64_-31.440000000000005",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:55:23.266262",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "7363f695b4e42120e1634080dcec1ae3",
+      "storage_path": "data/temporary/soil_-59.64_-31.440000000000005_20250920_135523.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:55:23.284248",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "1db6a4be61e09c460cf46d839b5bf130",
+      "storage_path": "data/temporary/processed_20250920_20250920_135523.npz"
+    },
+    {
+      "identifier": "alert_20250920_135523",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:55:23.350493",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "896ab30c4cd52d8284b9b82d914e40b6",
+      "storage_path": "data/essential/alert_20250920_135523.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:55:23.557024",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "e1bf100934c536a6cf81708dbd81d2df",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:55:35.653850",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "f23ae8ab38ed6239431794eb43d06f87",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135535.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:55:35.677454",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "9ef904c83abc3ab1fc669b05641f8c9e",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135535.npz"
+    },
+    {
+      "identifier": "soil_-65.03999999999999_-36.24",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:55:35.692191",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "84541b710ce67bbc1424f94c7e7b695a",
+      "storage_path": "data/temporary/soil_-65.03999999999999_-36.24_20250920_135535.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:55:35.714340",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "2e846e321b932aae7b98622912081adf",
+      "storage_path": "data/temporary/processed_20250920_20250920_135535.npz"
+    },
+    {
+      "identifier": "alert_20250920_135535",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:55:35.776918",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "a22fa9d545d5d372bef017b02d1eba9b",
+      "storage_path": "data/essential/alert_20250920_135535.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:55:35.974474",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "2b936ce10b707b755bd9ffa8f745424e",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:55:48.874954",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "d194f37a7b59708efd9b194d62319b32",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135548.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:55:48.898109",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "b19e9937eb0e15e923e2354825ea5ee6",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135548.npz"
+    },
+    {
+      "identifier": "soil_-65.44000000000001_-36.24",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:55:48.913992",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "ad07f874d0038b42588a2411c2c853d3",
+      "storage_path": "data/temporary/soil_-65.44000000000001_-36.24_20250920_135548.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:55:48.937848",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "7a9930a1ec23084e921760e2aa83c186",
+      "storage_path": "data/temporary/processed_20250920_20250920_135548.npz"
+    },
+    {
+      "identifier": "alert_20250920_135549",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:55:49.003514",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "77ecb96cb2027180a7c51ae17fee3a57",
+      "storage_path": "data/essential/alert_20250920_135549.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:55:49.209399",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "22df5f8abc04cf039106673f0aef8101",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:56:02.394676",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "e67f529b1eef5b0564a4415d07b17633",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135602.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:56:02.420174",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "8f69edaa926b9ed253a01ae61da60fbc",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135602.npz"
+    },
+    {
+      "identifier": "soil_-65.03999999999999_-35.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:56:02.435325",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "492da5fbb8572c1ccf1f0327da807159",
+      "storage_path": "data/temporary/soil_-65.03999999999999_-35.839999999999996_20250920_135602.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:56:02.458320",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "e8d76c244db76275b57e6486638e021e",
+      "storage_path": "data/temporary/processed_20250920_20250920_135602.npz"
+    },
+    {
+      "identifier": "alert_20250920_135602",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:56:02.523823",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "a22fa9d545d5d372bef017b02d1eba9b",
+      "storage_path": "data/essential/alert_20250920_135602.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:56:02.731530",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "c2371b3fe0a65012e9d76ee59bb246c6",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:56:18.161810",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "012b33bfa883b7a25a6847bbc3c3b08d",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135618.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:56:18.188621",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "ba807869c173b11329acf4cc753e3057",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135618.npz"
+    },
+    {
+      "identifier": "soil_-63.239999999999995_-27.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:56:18.203750",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "53460c95b4210cf0683c2e47a20b1b36",
+      "storage_path": "data/temporary/soil_-63.239999999999995_-27.839999999999996_20250920_135618.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:56:18.226263",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "7e093cf181be9ac4dafa8646e5ba0858",
+      "storage_path": "data/temporary/processed_20250920_20250920_135618.npz"
+    },
+    {
+      "identifier": "alert_20250920_135618",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:56:18.291254",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "6f09622239ec450f833467ed89c48b08",
+      "storage_path": "data/essential/alert_20250920_135618.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:56:18.568640",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "4b1fd570f6d4aa2b42346a021844fccb",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:56:38.952929",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "e8439f4207d1eb7bca57460e4b6a4bb7",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135638.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:56:38.977390",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "ffaba732e20fcec4883f8ae946369ee5",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135638.npz"
+    },
+    {
+      "identifier": "soil_-62.839999999999996_-27.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:56:38.992727",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "4ab778d80855f38a458369b79f618f0a",
+      "storage_path": "data/temporary/soil_-62.839999999999996_-27.839999999999996_20250920_135638.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:56:39.015206",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "b66358024a2ce4105ec458e0c0fffedc",
+      "storage_path": "data/temporary/processed_20250920_20250920_135639.npz"
+    },
+    {
+      "identifier": "alert_20250920_135639",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:56:39.077960",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "6f09622239ec450f833467ed89c48b08",
+      "storage_path": "data/essential/alert_20250920_135639.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:56:39.294440",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "5e6756a8499672530501a1f8fefec801",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:56:52.641624",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "963c60e3548cdc67683c14e49abacf21",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135652.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:56:52.659672",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "21bf0d316b16e511292522bf1ddba476",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135652.npz"
+    },
+    {
+      "identifier": "soil_-60.64_-26.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:56:52.673634",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "fd9b6eb52cad01ee1f206e94d27978ab",
+      "storage_path": "data/temporary/soil_-60.64_-26.839999999999996_20250920_135652.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:56:52.695965",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "eeeb2c29fab043d97a45aa99c9ab28f4",
+      "storage_path": "data/temporary/processed_20250920_20250920_135652.npz"
+    },
+    {
+      "identifier": "alert_20250920_135652",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:56:52.759331",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "cf5c0ae140c8fdd24b0b0b32ddb775ad",
+      "storage_path": "data/essential/alert_20250920_135652.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:56:52.976684",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "133bffdd29323c68ccf4773d018d0ae1",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:57:09.869298",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "cf079521cbc058fd467639b243fe969d",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135709.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:57:09.895909",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "f12fad479376fdb2310b155705a1f07f",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135709.npz"
+    },
+    {
+      "identifier": "soil_-60.239999999999995_-26.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:57:09.911276",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "fe2a0b543f039ee617cb6fa7ea0a12cf",
+      "storage_path": "data/temporary/soil_-60.239999999999995_-26.839999999999996_20250920_135709.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:57:09.934346",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "464b188f3e462a5af6c6e1cc0c69ca8e",
+      "storage_path": "data/temporary/processed_20250920_20250920_135709.npz"
+    },
+    {
+      "identifier": "alert_20250920_135709",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:57:09.999646",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "751f53d3f02efb1786c9d1d4307b1bc2",
+      "storage_path": "data/essential/alert_20250920_135709.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:57:10.213998",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "4d583a29861cd6f6baa66be6e3e04e4a",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:57:22.462830",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "91899b0e3dd84d0fd12405f5e75a854f",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135722.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:57:22.487899",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "2820e89ab2ef9e3d8127a474546d6943",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135722.npz"
+    },
+    {
+      "identifier": "soil_-65.44000000000001_-26.640000000000004",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:57:22.503430",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "717b1624f6ac6572dce02b175a49c334",
+      "storage_path": "data/temporary/soil_-65.44000000000001_-26.640000000000004_20250920_135722.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:57:22.526285",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "f963f154ea477cc0fe6bfb639f9c0556",
+      "storage_path": "data/temporary/processed_20250920_20250920_135722.npz"
+    },
+    {
+      "identifier": "alert_20250920_135722",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:57:22.588283",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "44d79bb8cbd3b617dcafccbf229a3b10",
+      "storage_path": "data/essential/alert_20250920_135722.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:57:22.843126",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "b9797ed1eaf1aab8899f2165915e0217",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:57:36.285679",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "2025ae663151c6496070b41eb1faf0ea",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135736.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:57:36.308978",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "2ebc241dc0c4fc466adc8ca0d3ef48e7",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135736.npz"
+    },
+    {
+      "identifier": "soil_-65.03999999999999_-25.04",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:57:36.325379",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "dfb7029f57592ca5c04fe1ce94f3ae29",
+      "storage_path": "data/temporary/soil_-65.03999999999999_-25.04_20250920_135736.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:57:36.350272",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "f76a7f4a209097732ebde4f49dfa3a3d",
+      "storage_path": "data/temporary/processed_20250920_20250920_135736.npz"
+    },
+    {
+      "identifier": "alert_20250920_135736",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:57:36.417251",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "9ba4602fc0abee7e6ffc5c6265e5632a",
+      "storage_path": "data/essential/alert_20250920_135736.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:57:36.636452",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "0038a93d424cded397480da1b7380ff9",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T13:57:46.440983",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "6508647bacc76dd609c89178ea85ba82",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_135746.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T13:57:46.459347",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "4b2e0c609d123d195ab7f1ec00dfa402",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_135746.npz"
+    },
+    {
+      "identifier": "soil_-59.92_-33.92",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T13:57:46.472113",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "f03de3cedd696d02edfe8d45de24da73",
+      "storage_path": "data/temporary/soil_-59.92_-33.92_20250920_135746.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T13:57:46.493398",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "41bcd88c96aedd2cb8a3b835302a2ace",
+      "storage_path": "data/temporary/processed_20250920_20250920_135746.npz"
+    },
+    {
+      "identifier": "alert_20250920_135746",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T13:57:46.558801",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "6471576468c7fa3238be72cd3aeacc11",
+      "storage_path": "data/essential/alert_20250920_135746.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T13:57:46.764416",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "0c34df32a71e317c9f66b5cf694166ca",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:06:38.783705",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "9649f779adcea12b7648f908304e5a2c",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_140638.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:06:38.800067",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "65d1ce49be9f5c68bcdb5cb905fde5ff",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_140638.npz"
+    },
+    {
+      "identifier": "soil_-61.04_-34.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:06:38.812164",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "0e840cbf7b3d28c900372189491a64af",
+      "storage_path": "data/temporary/soil_-61.04_-34.839999999999996_20250920_140638.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:06:38.838392",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "8c84bff78106cc7b54388f6001bb2441",
+      "storage_path": "data/temporary/processed_20250920_20250920_140638.npz"
+    },
+    {
+      "identifier": "alert_20250920_140638",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:06:38.901372",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "943760609a11db45fe6a75b3d3c59318",
+      "storage_path": "data/essential/alert_20250920_140638.npz"
+    },
+    {
+      "identifier": "prescription_20250920",
+      "data_type": "prescription_maps",
+      "timestamp": "2025-09-20T14:06:39.284066",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "76e131d28ad1ebfe1cc6e1675bfaa3d5",
+      "storage_path": "data/essential/prescription_20250920.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:08:21.112614",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "9649f779adcea12b7648f908304e5a2c",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_140821.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:08:21.132314",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "65d1ce49be9f5c68bcdb5cb905fde5ff",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_140821.npz"
+    },
+    {
+      "identifier": "soil_-61.04_-34.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:08:21.145701",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "0e840cbf7b3d28c900372189491a64af",
+      "storage_path": "data/temporary/soil_-61.04_-34.839999999999996_20250920_140821.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:08:21.167206",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "8c84bff78106cc7b54388f6001bb2441",
+      "storage_path": "data/temporary/processed_20250920_20250920_140821.npz"
+    },
+    {
+      "identifier": "alert_20250920_140821",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:08:21.221183",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "943760609a11db45fe6a75b3d3c59318",
+      "storage_path": "data/essential/alert_20250920_140821.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:08:28.073008",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "2551c7b4cb4cf9311939e7cb5e2fb925",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_140828.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:08:28.092431",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "ac8d00eab6b69b95cf43b48fb7f0aa5b",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_140828.npz"
+    },
+    {
+      "identifier": "soil_-60.64_-34.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:08:28.108169",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "0861d6177d808d86cbcb861c474bf6ee",
+      "storage_path": "data/temporary/soil_-60.64_-34.839999999999996_20250920_140828.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:08:28.130668",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "29fa6e5537be06fdff06ca2d9f94302e",
+      "storage_path": "data/temporary/processed_20250920_20250920_140828.npz"
+    },
+    {
+      "identifier": "alert_20250920_140828",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:08:28.187277",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "8fc4d7e71e4b079fd8364791f3bf1ce9",
+      "storage_path": "data/essential/alert_20250920_140828.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:08:34.411010",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "ed64ce2d904e47cf18768950f3158541",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_140834.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:08:34.435772",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "b126975e836742841984841536bf20c4",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_140834.npz"
+    },
+    {
+      "identifier": "soil_-60.239999999999995_-34.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:08:34.451269",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "b8cd6775c51baea3c6c191bed7c56ce5",
+      "storage_path": "data/temporary/soil_-60.239999999999995_-34.839999999999996_20250920_140834.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:08:34.474592",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "62c7ba2e1ddfc13df166530c4cc7cb78",
+      "storage_path": "data/temporary/processed_20250920_20250920_140834.npz"
+    },
+    {
+      "identifier": "alert_20250920_140834",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:08:34.534736",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "aa9b4f44166f07205a9768fc4e99e3af",
+      "storage_path": "data/essential/alert_20250920_140834.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:08:39.784370",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "0982b92d8c6392618264bb085ecae9f9",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_140839.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:08:39.809510",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "59e5bc096382c6481f101cef154b4375",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_140839.npz"
+    },
+    {
+      "identifier": "soil_-59.839999999999996_-34.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:08:39.824882",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "286505c746fb7ac8cc8660bafc24f123",
+      "storage_path": "data/temporary/soil_-59.839999999999996_-34.839999999999996_20250920_140839.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:08:39.847328",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "b5f4423faeb3d828f88d1b06faae7130",
+      "storage_path": "data/temporary/processed_20250920_20250920_140839.npz"
+    },
+    {
+      "identifier": "alert_20250920_140839",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:08:39.906247",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "aa9b4f44166f07205a9768fc4e99e3af",
+      "storage_path": "data/essential/alert_20250920_140839.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:08:45.738626",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "f33155c1fb40aca6a48477d1e86515e7",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_140845.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:08:45.757013",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "d6137e0b5dc7b4c59eca853550822082",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_140845.npz"
+    },
+    {
+      "identifier": "soil_-61.04_-35.24",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:08:45.771605",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "4c56c5d3c59e0a7cc10258138ad62c32",
+      "storage_path": "data/temporary/soil_-61.04_-35.24_20250920_140845.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:08:45.793366",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "7289060ef15f0e8de2c01882356a2ab3",
+      "storage_path": "data/temporary/processed_20250920_20250920_140845.npz"
+    },
+    {
+      "identifier": "alert_20250920_140845",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:08:45.849774",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "9e81c3386dc8026ab44f6572ac3ba57a",
+      "storage_path": "data/essential/alert_20250920_140845.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:08:51.854611",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "ae130dce2e821561d13e05a2e0d82b74",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_140851.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:08:51.874794",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "69afd9f0a3c8996b5ef93b37026f9eec",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_140851.npz"
+    },
+    {
+      "identifier": "soil_-60.64_-35.24",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:08:51.889444",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "f6a47af4ad63e845ac28abe5276f6fd2",
+      "storage_path": "data/temporary/soil_-60.64_-35.24_20250920_140851.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:08:51.911594",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "15abe605508eb45bdacc242c38a71d64",
+      "storage_path": "data/temporary/processed_20250920_20250920_140851.npz"
+    },
+    {
+      "identifier": "alert_20250920_140851",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:08:51.969951",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "8fc4d7e71e4b079fd8364791f3bf1ce9",
+      "storage_path": "data/essential/alert_20250920_140851.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:08:57.695830",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "de71480c9a698256059e5b50f243bfb7",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_140857.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:08:57.714454",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "7fef426a01926a359733b54bac08269e",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_140857.npz"
+    },
+    {
+      "identifier": "soil_-60.239999999999995_-35.24",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:08:57.729455",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "ff5136c794c87302f512f66323dcd1c9",
+      "storage_path": "data/temporary/soil_-60.239999999999995_-35.24_20250920_140857.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:08:57.751548",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "69473ea7a26d0be415986725463b5912",
+      "storage_path": "data/temporary/processed_20250920_20250920_140857.npz"
+    },
+    {
+      "identifier": "alert_20250920_140857",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:08:57.807867",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "bb89f53168eb2be179d6347537d5dd62",
+      "storage_path": "data/essential/alert_20250920_140857.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:09:03.197533",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "97ea287198ade15d486f005a929cc9e1",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_140903.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:09:03.214405",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "43c2dd1f05a7194c87abe7d8d447fc90",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_140903.npz"
+    },
+    {
+      "identifier": "soil_-61.44_-35.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:09:03.228907",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "045720716dce68a536aa04b953f2ae0e",
+      "storage_path": "data/temporary/soil_-61.44_-35.839999999999996_20250920_140903.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:09:03.250299",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "643a5a82c20e46725a2f2eb495bd1312",
+      "storage_path": "data/temporary/processed_20250920_20250920_140903.npz"
+    },
+    {
+      "identifier": "alert_20250920_140903",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:09:03.304873",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "52242a2e9866e767ac8e23a0a56efe7a",
+      "storage_path": "data/essential/alert_20250920_140903.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:09:08.958017",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "3113f2e9b1829744a5bc9d28096fb129",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_140908.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:09:08.981908",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "810771193c5d38854fee63fecf4932b6",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_140908.npz"
+    },
+    {
+      "identifier": "soil_-61.04_-35.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:09:08.999608",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "518255f288a47cef43800d5768219fe9",
+      "storage_path": "data/temporary/soil_-61.04_-35.839999999999996_20250920_140909.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:09:09.021578",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "8f97347e4090a0253792aff427ce9ed2",
+      "storage_path": "data/temporary/processed_20250920_20250920_140909.npz"
+    },
+    {
+      "identifier": "alert_20250920_140909",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:09:09.075710",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "977558f9544510819870cb0ae38a38c9",
+      "storage_path": "data/essential/alert_20250920_140909.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:09:14.623435",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "c82acc6545655b92a1c3175b1ab35f45",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_140914.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:09:14.649922",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "64ba828078d76da4902c9cd792256e6b",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_140914.npz"
+    },
+    {
+      "identifier": "soil_-60.64_-35.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:09:14.665267",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "707e959e6719e017d52838463c7d7c05",
+      "storage_path": "data/temporary/soil_-60.64_-35.839999999999996_20250920_140914.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:09:14.687756",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "2299da1de809896b7d6a1d6f5f79e398",
+      "storage_path": "data/temporary/processed_20250920_20250920_140914.npz"
+    },
+    {
+      "identifier": "alert_20250920_140914",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:09:14.745947",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "f59bb1c4a37b1ddc5ea8435a1e9ddb57",
+      "storage_path": "data/essential/alert_20250920_140914.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:09:21.323094",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "c1b10402bf898f5cbadf9908031245f7",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_140921.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:09:21.352166",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "0f9e5028594aa19015a3b7fc53429fc7",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_140921.npz"
+    },
+    {
+      "identifier": "soil_-63.839999999999996_-31.339999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:09:21.368214",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "378b61c1a4a52b50a38fc2e76c3f4dba",
+      "storage_path": "data/temporary/soil_-63.839999999999996_-31.339999999999996_20250920_140921.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:09:21.390284",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "a7b14b2a5e9ce781716fa56cfe8e2aed",
+      "storage_path": "data/temporary/processed_20250920_20250920_140921.npz"
+    },
+    {
+      "identifier": "alert_20250920_140921",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:09:21.449303",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "2b02e3c13ccf0b4b02fd8f7fa6850ba1",
+      "storage_path": "data/essential/alert_20250920_140921.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:09:26.585891",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "33a8adedaa5d2a6b25669ed782b7e5d2",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_140926.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:09:26.605992",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "a41b86e88f436b069e0570a7f5320942",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_140926.npz"
+    },
+    {
+      "identifier": "soil_-63.44_-31.339999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:09:26.621476",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "7175ffd122e97b3217231382aa7d1a83",
+      "storage_path": "data/temporary/soil_-63.44_-31.339999999999996_20250920_140926.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:09:26.643949",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "9eff6af8726dd2f5215a930853ea2ab1",
+      "storage_path": "data/temporary/processed_20250920_20250920_140926.npz"
+    },
+    {
+      "identifier": "alert_20250920_140926",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:09:26.698407",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "39682caad310a224d351aadba0d26bfe",
+      "storage_path": "data/essential/alert_20250920_140926.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:09:33.423271",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "c212eddc1b994733676f4c05ee62a958",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_140933.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:09:33.449357",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "0ba8dcd4be25e14ebbe79d5fc55938cd",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_140933.npz"
+    },
+    {
+      "identifier": "soil_-63.04_-31.339999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:09:33.465782",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "f5adf6142cfe8e45e9c7539b0af60ee5",
+      "storage_path": "data/temporary/soil_-63.04_-31.339999999999996_20250920_140933.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:09:33.488880",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "c71611f4cb7bddb34542f76b20e78c81",
+      "storage_path": "data/temporary/processed_20250920_20250920_140933.npz"
+    },
+    {
+      "identifier": "alert_20250920_140933",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:09:33.545642",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "b5a1310dc8355f5d99051aaca35a168c",
+      "storage_path": "data/essential/alert_20250920_140933.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:09:40.009988",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "b48749ab042c7600a9e36932201df15a",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_140940.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:09:40.035897",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "02188761a38255e9faf8d20b3dda1eee",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_140940.npz"
+    },
+    {
+      "identifier": "soil_-63.839999999999996_-31.74",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:09:40.050479",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "f7f24c40aa97640d769cd1b9322e9d0b",
+      "storage_path": "data/temporary/soil_-63.839999999999996_-31.74_20250920_140940.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:09:40.072128",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "e3418edbd61578c5a0252d9833745d9b",
+      "storage_path": "data/temporary/processed_20250920_20250920_140940.npz"
+    },
+    {
+      "identifier": "alert_20250920_140940",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:09:40.128954",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "c69e904d5e50a7195b86e6034a80787d",
+      "storage_path": "data/essential/alert_20250920_140940.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:09:45.072307",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "d360a908dfc1f60bf106247963ae311f",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_140945.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:09:45.096792",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "48d9934d3155764f47778f1892f1b981",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_140945.npz"
+    },
+    {
+      "identifier": "soil_-63.44_-31.74",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:09:45.114557",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "ab79704ca8b550dd2a5a51cfb2c87dae",
+      "storage_path": "data/temporary/soil_-63.44_-31.74_20250920_140945.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:09:45.137710",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "9eaa3cdce2610bb103e2dba6691d1b01",
+      "storage_path": "data/temporary/processed_20250920_20250920_140945.npz"
+    },
+    {
+      "identifier": "alert_20250920_140945",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:09:45.194748",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "c69e904d5e50a7195b86e6034a80787d",
+      "storage_path": "data/essential/alert_20250920_140945.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:09:50.227723",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "fd5a53b3764f446e5ff78ee2a3f88619",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_140950.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:09:50.255366",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "368422ad2ca13aaa149b6e0a36c0f8ea",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_140950.npz"
+    },
+    {
+      "identifier": "soil_-63.04_-31.74",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:09:50.270193",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "d6b9ff7561976f7e399db6d0b961cf72",
+      "storage_path": "data/temporary/soil_-63.04_-31.74_20250920_140950.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:09:50.291774",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "9030c765080704e0c6d21eab94788215",
+      "storage_path": "data/temporary/processed_20250920_20250920_140950.npz"
+    },
+    {
+      "identifier": "alert_20250920_140950",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:09:50.349570",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "e8b4f10ef9391d8c7691f4df670f51f3",
+      "storage_path": "data/essential/alert_20250920_140950.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:09:55.683960",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "aa257cc108e2c0364ab322dd5f4f997c",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_140955.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:09:55.710769",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "5df892b6f894c3bb4f41e99100a61bcc",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_140955.npz"
+    },
+    {
+      "identifier": "soil_-63.839999999999996_-32.14",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:09:55.726922",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "1d01455e5b428390fcfa05bc10cfe80c",
+      "storage_path": "data/temporary/soil_-63.839999999999996_-32.14_20250920_140955.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:09:55.749589",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "46dfd4a1356dac7f16943e0f6a384333",
+      "storage_path": "data/temporary/processed_20250920_20250920_140955.npz"
+    },
+    {
+      "identifier": "alert_20250920_140955",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:09:55.808198",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "fb292f0f65a4d62ca6cec3a76d836d31",
+      "storage_path": "data/essential/alert_20250920_140955.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:10:01.427112",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "707d760c647d13b94677a95a1929ff55",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_141001.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:10:01.443462",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "c5e688c286b060550697da30f07ee23e",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_141001.npz"
+    },
+    {
+      "identifier": "soil_-63.44_-32.14",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:10:01.457522",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "2f5c91fa50b5a6dcf4833dda8a736c51",
+      "storage_path": "data/temporary/soil_-63.44_-32.14_20250920_141001.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:10:01.482071",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "7e7c203a65cff11fd1fa08a71e6a252a",
+      "storage_path": "data/temporary/processed_20250920_20250920_141001.npz"
+    },
+    {
+      "identifier": "alert_20250920_141001",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:10:01.539997",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "fb292f0f65a4d62ca6cec3a76d836d31",
+      "storage_path": "data/essential/alert_20250920_141001.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:10:14.877472",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "f6a29a03c1eb60dae8b22f72e93daeca",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_141014.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:10:14.897085",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "65d1ce49be9f5c68bcdb5cb905fde5ff",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_141014.npz"
+    },
+    {
+      "identifier": "soil_-61.04_-34.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:10:14.912265",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "0e840cbf7b3d28c900372189491a64af",
+      "storage_path": "data/temporary/soil_-61.04_-34.839999999999996_20250920_141014.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:10:14.938767",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "031d3010407866e535e27e24f5ece748",
+      "storage_path": "data/temporary/processed_20250920_20250920_141014.npz"
+    },
+    {
+      "identifier": "alert_20250920_141015",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:10:15.003125",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "943760609a11db45fe6a75b3d3c59318",
+      "storage_path": "data/essential/alert_20250920_141015.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:10:22.042897",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "bc768eeccd23bda19a4f2663abba9e0c",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_141022.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:10:22.065571",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "ac8d00eab6b69b95cf43b48fb7f0aa5b",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_141022.npz"
+    },
+    {
+      "identifier": "soil_-60.64_-34.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:10:22.080039",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "0861d6177d808d86cbcb861c474bf6ee",
+      "storage_path": "data/temporary/soil_-60.64_-34.839999999999996_20250920_141022.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:10:22.102290",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "0d869d5f83c36e3a9e286e005790d121",
+      "storage_path": "data/temporary/processed_20250920_20250920_141022.npz"
+    },
+    {
+      "identifier": "alert_20250920_141022",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:10:22.165220",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "8fc4d7e71e4b079fd8364791f3bf1ce9",
+      "storage_path": "data/essential/alert_20250920_141022.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:10:28.830278",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "c87aef0478180ab14d98bfed76042738",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_141028.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:10:28.853296",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "b126975e836742841984841536bf20c4",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_141028.npz"
+    },
+    {
+      "identifier": "soil_-60.239999999999995_-34.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:10:28.869396",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "b8cd6775c51baea3c6c191bed7c56ce5",
+      "storage_path": "data/temporary/soil_-60.239999999999995_-34.839999999999996_20250920_141028.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:10:28.891773",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "b0ff38c5aa206278470ec979c1bff8b0",
+      "storage_path": "data/temporary/processed_20250920_20250920_141028.npz"
+    },
+    {
+      "identifier": "alert_20250920_141028",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:10:28.954206",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "aa9b4f44166f07205a9768fc4e99e3af",
+      "storage_path": "data/essential/alert_20250920_141028.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:10:35.257501",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "014461e1702994d5399d6ed0dba2d86c",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_141035.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:10:35.284807",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "59e5bc096382c6481f101cef154b4375",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_141035.npz"
+    },
+    {
+      "identifier": "soil_-59.839999999999996_-34.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:10:35.301692",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "286505c746fb7ac8cc8660bafc24f123",
+      "storage_path": "data/temporary/soil_-59.839999999999996_-34.839999999999996_20250920_141035.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:10:35.326094",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "473b0ad0c3aeb93c2816df421029326b",
+      "storage_path": "data/temporary/processed_20250920_20250920_141035.npz"
+    },
+    {
+      "identifier": "alert_20250920_141035",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:10:35.390503",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "aa9b4f44166f07205a9768fc4e99e3af",
+      "storage_path": "data/essential/alert_20250920_141035.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:10:42.134465",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "07c69c691c1f6fcfe06e1b886f12bedc",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_141042.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:10:42.159695",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "d6137e0b5dc7b4c59eca853550822082",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_141042.npz"
+    },
+    {
+      "identifier": "soil_-61.04_-35.24",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:10:42.177440",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "4c56c5d3c59e0a7cc10258138ad62c32",
+      "storage_path": "data/temporary/soil_-61.04_-35.24_20250920_141042.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:10:42.202604",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "3046a24e1c55c16e6d1b69a44ac84e50",
+      "storage_path": "data/temporary/processed_20250920_20250920_141042.npz"
+    },
+    {
+      "identifier": "alert_20250920_141042",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:10:42.267297",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "9e81c3386dc8026ab44f6572ac3ba57a",
+      "storage_path": "data/essential/alert_20250920_141042.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:10:48.463934",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "9fc6bd0657466cda25cbac10c6251664",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_141048.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:10:48.487291",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "69afd9f0a3c8996b5ef93b37026f9eec",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_141048.npz"
+    },
+    {
+      "identifier": "soil_-60.64_-35.24",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:10:48.504476",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "f6a47af4ad63e845ac28abe5276f6fd2",
+      "storage_path": "data/temporary/soil_-60.64_-35.24_20250920_141048.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:10:48.528620",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "8e6257b1baccf6f4e52b3dfdce6c8c3a",
+      "storage_path": "data/temporary/processed_20250920_20250920_141048.npz"
+    },
+    {
+      "identifier": "alert_20250920_141048",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:10:48.592813",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "8fc4d7e71e4b079fd8364791f3bf1ce9",
+      "storage_path": "data/essential/alert_20250920_141048.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:10:54.456401",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "114f466776e4e5c1d54093653725d2d5",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_141054.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:10:54.475783",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "7fef426a01926a359733b54bac08269e",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_141054.npz"
+    },
+    {
+      "identifier": "soil_-60.239999999999995_-35.24",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:10:54.491854",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "ff5136c794c87302f512f66323dcd1c9",
+      "storage_path": "data/temporary/soil_-60.239999999999995_-35.24_20250920_141054.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:10:54.514684",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "a2f6278e5b3beb8218e4d322164de2dd",
+      "storage_path": "data/temporary/processed_20250920_20250920_141054.npz"
+    },
+    {
+      "identifier": "alert_20250920_141054",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:10:54.576564",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "bb89f53168eb2be179d6347537d5dd62",
+      "storage_path": "data/essential/alert_20250920_141054.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:11:00.198043",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "208062080c82de1c521f270a5e294902",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_141100.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:11:00.221929",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "43c2dd1f05a7194c87abe7d8d447fc90",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_141100.npz"
+    },
+    {
+      "identifier": "soil_-61.44_-35.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:11:00.239153",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "045720716dce68a536aa04b953f2ae0e",
+      "storage_path": "data/temporary/soil_-61.44_-35.839999999999996_20250920_141100.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:11:00.263380",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "8606a35c0bfd1ce8537f5db0b7fea870",
+      "storage_path": "data/temporary/processed_20250920_20250920_141100.npz"
+    },
+    {
+      "identifier": "alert_20250920_141100",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:11:00.324943",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "52242a2e9866e767ac8e23a0a56efe7a",
+      "storage_path": "data/essential/alert_20250920_141100.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:11:06.484878",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "fc3642349e12ff222442874a13b2e8fd",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_141106.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:11:06.501063",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "810771193c5d38854fee63fecf4932b6",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_141106.npz"
+    },
+    {
+      "identifier": "soil_-61.04_-35.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:11:06.516029",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "518255f288a47cef43800d5768219fe9",
+      "storage_path": "data/temporary/soil_-61.04_-35.839999999999996_20250920_141106.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:11:06.539377",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "e67a985264f9b9055cbc796df5f0fe9a",
+      "storage_path": "data/temporary/processed_20250920_20250920_141106.npz"
+    },
+    {
+      "identifier": "alert_20250920_141106",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:11:06.602350",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "977558f9544510819870cb0ae38a38c9",
+      "storage_path": "data/essential/alert_20250920_141106.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:11:11.273732",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "9525614721fbfe8573a06b5735cca6f0",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_141111.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:11:11.298870",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "64ba828078d76da4902c9cd792256e6b",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_141111.npz"
+    },
+    {
+      "identifier": "soil_-60.64_-35.839999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:11:11.314974",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "707e959e6719e017d52838463c7d7c05",
+      "storage_path": "data/temporary/soil_-60.64_-35.839999999999996_20250920_141111.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:11:11.338520",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "5d50dcbc5d27ef48f528be32736e8e91",
+      "storage_path": "data/temporary/processed_20250920_20250920_141111.npz"
+    },
+    {
+      "identifier": "alert_20250920_141111",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:11:11.402590",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "f59bb1c4a37b1ddc5ea8435a1e9ddb57",
+      "storage_path": "data/essential/alert_20250920_141111.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:11:16.315811",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "b05c79cd78069ab0342f887ef8026d08",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_141116.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:11:16.341726",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "0f9e5028594aa19015a3b7fc53429fc7",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_141116.npz"
+    },
+    {
+      "identifier": "soil_-63.839999999999996_-31.339999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:11:16.357486",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "378b61c1a4a52b50a38fc2e76c3f4dba",
+      "storage_path": "data/temporary/soil_-63.839999999999996_-31.339999999999996_20250920_141116.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:11:16.381152",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "a5a24f248075c7c01ba5c8e50f9e5285",
+      "storage_path": "data/temporary/processed_20250920_20250920_141116.npz"
+    },
+    {
+      "identifier": "alert_20250920_141116",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:11:16.445360",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "2b02e3c13ccf0b4b02fd8f7fa6850ba1",
+      "storage_path": "data/essential/alert_20250920_141116.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:11:22.879850",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "36b4fefe7e38d2003e4db691fa8793fd",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_141122.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:11:22.904023",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "a41b86e88f436b069e0570a7f5320942",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_141122.npz"
+    },
+    {
+      "identifier": "soil_-63.44_-31.339999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:11:22.920310",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "7175ffd122e97b3217231382aa7d1a83",
+      "storage_path": "data/temporary/soil_-63.44_-31.339999999999996_20250920_141122.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:11:22.943736",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "64e0c280dcd10f962a2be9b8e77283d3",
+      "storage_path": "data/temporary/processed_20250920_20250920_141122.npz"
+    },
+    {
+      "identifier": "alert_20250920_141123",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:11:23.005182",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "39682caad310a224d351aadba0d26bfe",
+      "storage_path": "data/essential/alert_20250920_141123.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:11:28.298636",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "42b949d76dc6206fac2fa33c90164441",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_141128.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:11:28.319827",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "0ba8dcd4be25e14ebbe79d5fc55938cd",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_141128.npz"
+    },
+    {
+      "identifier": "soil_-63.04_-31.339999999999996",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:11:28.335452",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "f5adf6142cfe8e45e9c7539b0af60ee5",
+      "storage_path": "data/temporary/soil_-63.04_-31.339999999999996_20250920_141128.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:11:28.358041",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "83d383bc9a4f5598cdade140d83e43ca",
+      "storage_path": "data/temporary/processed_20250920_20250920_141128.npz"
+    },
+    {
+      "identifier": "alert_20250920_141128",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:11:28.418071",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "b5a1310dc8355f5d99051aaca35a168c",
+      "storage_path": "data/essential/alert_20250920_141128.npz"
+    },
+    {
+      "identifier": "satellite_2025-05-09_2025-09-06",
+      "data_type": "satellite_data",
+      "timestamp": "2025-09-20T14:11:35.364236",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "6367ab485c5ece4efd8c33932267d53a",
+      "storage_path": "data/temporary/satellite_2025-05-09_2025-09-06_20250920_141135.npz"
+    },
+    {
+      "identifier": "weather_2025-05-09_2025-09-06",
+      "data_type": "weather_data",
+      "timestamp": "2025-09-20T14:11:35.390308",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "02188761a38255e9faf8d20b3dda1eee",
+      "storage_path": "data/temporary/weather_2025-05-09_2025-09-06_20250920_141135.npz"
+    },
+    {
+      "identifier": "soil_-63.839999999999996_-31.74",
+      "data_type": "soil_data",
+      "timestamp": "2025-09-20T14:11:35.406819",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "f7f24c40aa97640d769cd1b9322e9d0b",
+      "storage_path": "data/temporary/soil_-63.839999999999996_-31.74_20250920_141135.npz"
+    },
+    {
+      "identifier": "processed_20250920",
+      "data_type": "processed_data",
+      "timestamp": "2025-09-20T14:11:35.497945",
+      "is_essential": false,
+      "retention_days": 30,
+      "metadata": {},
+      "data_hash": "73980e552a8789d317ea592e641b8ece",
+      "storage_path": "data/temporary/processed_20250920_20250920_141135.npz"
+    },
+    {
+      "identifier": "alert_20250920_141135",
+      "data_type": "alert_history",
+      "timestamp": "2025-09-20T14:11:35.562367",
+      "is_essential": true,
+      "retention_days": null,
+      "metadata": {},
+      "data_hash": "c69e904d5e50a7195b86e6034a80787d",
+      "storage_path": "data/essential/alert_20250920_141135.npz"
     }
   ]
 }
